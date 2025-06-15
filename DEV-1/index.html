@@ -3,57 +3,53 @@
 <title>Login Form</title>
 <style>
 body{
-margin: 0;
-padding: 0;
-font-family: sans-serif;
+margin: 0px;
+padding: 0px;
 }
 
 div{
 width: 300px;
 height: 300px;
 margin: 80px auto;
-padding: 20px;
-background-color: #484747;
-border-top: 5px solid #1293DE;
+background-color: grey;
+padding: 15px;
+border-top: 5px solid deepskyblue;
+box-shadow: 15px 0px 70px black;
+border-radius: 0px 0px 10px 10px;
 }
 
 h6{
-font-size: 20px;
-margin: 0px 0px 15px;
-padding: 0px 0px 15px;
+margin: 0 0 15px 0;
 text-align: center;
+font-size: 20px;
 color: white;
-border-bottom: 1px solid #6B6B6B;
+border-bottom: 1px solid lightgray;
+padding-bottom: 15px;
 }
 
 input{
 width: 100%;
-background-color: #212121;
 padding: 10px;
-margin: 0px 0px 15px;
-border-color: #1293DE;
-font-weight: bold;
+background-color: dimgray;
+border-color: white;
+margin-bottom: 15px;
 color: white;
+font-weight: bold;
 }
 
 input[type="button"]{
-background-color: #017BAD;
-border-color: #212121;
-color: wheat;
+background-color: deepskyblue;
+color: black;
+border-color: black;
 }
 
-center{
-border-bottom: 1px solid white;
-padding-bottom: 10px;
-}
-
-center a{
+a{
 text-decoration: none;
 color: white;
 }
 
-center a:hover{
-text-decoration: underline;
+a:hover{
+border-bottom: 1px dotted white;
 }
 
 </style>
@@ -61,7 +57,6 @@ text-decoration: underline;
 <body>
 
 <div>
-
 <h6>Login Form</h6>
 
 <input type="text" placeholder="Username">
@@ -71,9 +66,11 @@ text-decoration: underline;
 <input type="button" value="Login">
 
 <center>
+
 <a href="#">Don't have an account?</a>
 <a href="#">Forgotton Password?</a><br>
-<a href="#">Return to HomePage</a>
+<a href="#">Back to HomePage</a>
+
 </center>
 
 </div>
