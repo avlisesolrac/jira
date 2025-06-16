@@ -1,55 +1,63 @@
+<!-- <!DOCTYPE html> -->
 <html>
 <head>
-<title>Login Form</title>
+<title>Formulário de Login</title>
+<meta charset="UTF-8">
 <style>
+
 body{
 margin: 0px;
 padding: 0px;
+font-family: sans-serif;
 }
 
 div{
 width: 300px;
-height: 300px;
-margin: 80px auto;
-background-color: grey;
+height: 350px;
+margin: 40px auto;
+background-color: #484747;
 padding: 15px;
-border-top: 5px solid deepskyblue;
-box-shadow: 15px 0px 70px black;
-border-radius: 0px 0px 10px 10px;
+box-shadow: 15px -15px 40px grey;
+border-radius: 5px;
+border-top: 5px solid #1293de;
 }
 
 h6{
-margin: 0 0 15px 0;
-text-align: center;
-font-size: 20px;
+margin: 20px 0px;
 color: white;
-border-bottom: 1px solid lightgray;
-padding-bottom: 15px;
+font-size: 16px;
+text-align: center;
+border-bottom: 1px solid white;
+padding-bottom: 10px;
 }
 
 input{
 width: 100%;
 padding: 10px;
-background-color: dimgray;
-border-color: white;
 margin-bottom: 15px;
-color: white;
+background-color: #141414;
 font-weight: bold;
+color: white;
 }
 
 input[type="button"]{
-background-color: deepskyblue;
-color: black;
-border-color: black;
+background-color: #1293de;
+color: wheat;
+margin-top: 10px;
+}
+
+center{
+border-bottom: 1px solid white;
+padding-bottom: 15px;
 }
 
 a{
-text-decoration: none;
 color: white;
+text-decoration: none;
 }
 
 a:hover{
-border-bottom: 1px dotted white;
+border-bottom: 1px dotted #1293de;
 }
 
 </style>
@@ -57,20 +65,17 @@ border-bottom: 1px dotted white;
 <body>
 
 <div>
-<h6>Login Form</h6>
 
-<input type="text" placeholder="Username">
+<h6>Formulário de Login</h6>
 
-<input type="password" placeholder="Password">
-
-<input type="button" value="Login">
+<input id="user" type="text" placeholder="Digite seu usuário">
+<input id="pswd" type="password" placeholder="Digite sua senha">
+<input type="button" value="Logar">
 
 <center>
-
-<a href="#">Don't have an account?</a>
-<a href="#">Forgotton Password?</a><br>
-<a href="#">Back to HomePage</a>
-
+<a href="#">Ainda não tem uma conta?</a><br>
+<a href="#">Esqueceu a senha?</a><br>
+<a href="#">Voltar para a Página Principal</a>
 </center>
 
 </div>
