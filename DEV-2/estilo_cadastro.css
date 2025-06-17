@@ -1,0 +1,56 @@
+*{
+padding: 0;
+margin: 0;
+font-family: calibri;
+}
+
+div{
+width: 300px;
+padding: 30px;
+margin: 60px auto;
+background-color: #474747;
+box-shadow: -15px 15px 75px #474747;
+border-radius: 4px;
+height: 450px;
+color: white;
+}
+
+h5{
+font-size: 25px;
+font-weight: normal;
+}
+
+input[type="text"], input[type="password"]{
+width: 100%;
+margin: 10px 0;
+background: #474747;
+border: 1px solid #1293de;
+border-radius: 4px;
+padding: 10px;
+color: white;
+font-size: 16px;
+font-weight: bold;
+}
+
+p{
+margin: 15px 0;
+}
+
+a{
+text-decoration: none;
+color: white;
+}
+
+a:hover{
+border-bottom: 1px dotted #1293de;
+}
+
+input[type="button"]{
+width: 100%;
+font-size: 20px;
+padding: 8px;
+margin-bottom: 25px;
+color: wheat;
+background-color: #1293de;
+border-radius: 4px;
+}
