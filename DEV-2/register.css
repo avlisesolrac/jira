@@ -1,46 +1,53 @@
-#registerform{
-width: 360px;
-background-color: #484747;
-padding: 30px;
-color: white;
+*{
+margin: 0;
+padding: 0;
 font-family: calibri;
+}
+
+div{
+width: 350px;
+margin: 60px auto;
+height: 420px;
+background-color: #484747;
+padding: 25px;
 border-radius: 3px;
+box-shadow: 15px 15px 75px #484747;
+color: white;
 }
 
 h5{
-margin: 0;
 font-size: 22px;
-margin-bottom: 20px;
+margin-bottom: 15px;
 font-weight: normal;
 }
 
-input{
-background: #484747;
-border: 1px solid #1f53c5;
+input[type="text"], input[type="password"]{
 width: 100%;
-font-size: 18px;
-font-family: calibri;
+margin-bottom: 20px;
 padding: 10px;
-margin-bottom: 16px;
-border-radius: 4px;
-}
-
-input[type="button"]{
-margin: 16px 0px;
-background: #1f53c5;
-color: white;
-padding: 12px;
+background-color: #474747;
 font-size: 16px;
-}
-
-p{
-float: left;
-font-size: 18px;
-margin: 0 5px 0 0;
+color: white;
+border: 1px solid #1F53C5;
 }
 
 a{
-font-size: 18px;
 color: white;
 }
 
+center a{
+text-decoration: none;
+}
+
+center a:hover{
+border-bottom: 1px solid #1F53C5;
+}
+
+input[type="button"]{
+width: 100%;
+background-color: #1F53C5;
+padding: 5px;
+color: wheat;
+font-size: 25px;
+margin: 25px 0;
+}
