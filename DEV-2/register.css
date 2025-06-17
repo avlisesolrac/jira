@@ -1,0 +1,46 @@
+#registerform{
+width: 360px;
+background-color: #484747;
+padding: 30px;
+color: white;
+font-family: calibri;
+border-radius: 3px;
+}
+
+h5{
+margin: 0;
+font-size: 22px;
+margin-bottom: 20px;
+font-weight: normal;
+}
+
+input{
+background: #484747;
+border: 1px solid #1f53c5;
+width: 100%;
+font-size: 18px;
+font-family: calibri;
+padding: 10px;
+margin-bottom: 16px;
+border-radius: 4px;
+}
+
+input[type="button"]{
+margin: 16px 0px;
+background: #1f53c5;
+color: white;
+padding: 12px;
+font-size: 16px;
+}
+
+p{
+float: left;
+font-size: 18px;
+margin: 0 5px 0 0;
+}
+
+a{
+font-size: 18px;
+color: white;
+}
+
