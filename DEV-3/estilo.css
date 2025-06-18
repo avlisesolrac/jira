@@ -1,0 +1,40 @@
+*{
+padding: 0;
+margin: 0;
+font-family: Calibri;
+color: white;
+}
+
+#cabecalho{
+background: url(arranha-ceu.png);
+background-repeat: no-repeat;
+background-size: cover;
+height: 450px;
+}
+
+#cabecalho_interno{
+margin: auto;
+width: 1000px;
+padding: 20px 0px;
+}
+
+h1{
+text-shadow: -5px -5px 5px #474747;
+}
+
+p{
+margin: 80px;
+font-size: 64px;
+font-weight: bold;
+text-shadow: -5px -5px 5px #474747;
+}
+
+a{
+text-decoration: none;
+background-color: #1293de;
+padding: 20px 60px;
+margin: 0px 15px;
+border-radius: 40px;
+font-size: 22px;
+font-weight: bold;
+}
