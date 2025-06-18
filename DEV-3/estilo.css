@@ -1,40 +1,43 @@
 *{
 padding: 0;
 margin: 0;
-font-family: Calibri;
-color: white;
+font-family: calibri;
 }
 
-#cabecalho{
+#image_bg{
 background: url(arranha-ceu.png);
-background-repeat: no-repeat;
+/* background-size: (Number/ Number_Large with Number_Height / auto / cover / contain) */
 background-size: cover;
-height: 450px;
+height: 400px;
 }
 
-#cabecalho_interno{
-margin: auto;
+#header_logo{
 width: 1000px;
-padding: 20px 0px;
-}
-
-h1{
-text-shadow: -5px -5px 5px #474747;
+margin: auto;
+/* text-shadow: (-X/X)px (-Y/Y)px Number Color */
+text-shadow: -4px -1px 1px #474747;
+font-size: 18px;
+padding-top: 15px;
 }
 
 p{
-margin: 80px;
+margin: 60px 40px;
 font-size: 64px;
 font-weight: bold;
-text-shadow: -5px -5px 5px #474747;
+text-shadow: -4px -1px 1px #474747;
 }
 
 a{
-text-decoration: none;
-background-color: #1293de;
+background-color: #474747;
+font-size: 28px;
+color: white;
+margin: 0 20px;
 padding: 20px 60px;
-margin: 0px 15px;
-border-radius: 40px;
-font-size: 22px;
-font-weight: bold;
+border-radius: 80px;
+text-decoration: none;
+}
+
+a:hover{
+box-shadow: -4px -1px 50px black;
+border: 1px solid white;
 }
