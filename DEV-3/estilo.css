@@ -1,43 +1,42 @@
 *{
-padding: 0;
 margin: 0;
+padding: 0;
 font-family: calibri;
+color: #1293de;
 }
 
-#image_bg{
-background: url(arranha-ceu.png);
-/* background-size: (Number/ Number_Large with Number_Height / auto / cover / contain) */
+header{
+background-image: url(arranha-ceu.png);
 background-size: cover;
-height: 400px;
+padding: 30px 0px;
+height: 300px;
 }
 
-#header_logo{
+div{
 width: 1000px;
 margin: auto;
-/* text-shadow: (-X/X)px (-Y/Y)px Number Color */
-text-shadow: -4px -1px 1px #474747;
-font-size: 18px;
-padding-top: 15px;
+text-shadow: 4px 4px 10px black;
 }
 
 p{
-margin: 60px 40px;
-font-size: 64px;
+margin: 60px 0px;
+font-size: 54px;
 font-weight: bold;
-text-shadow: -4px -1px 1px #474747;
+text-shadow: 4px 4px 20px white;
 }
 
 a{
-background-color: #474747;
-font-size: 28px;
-color: white;
-margin: 0 20px;
-padding: 20px 60px;
-border-radius: 80px;
+background-color: #1293de;
 text-decoration: none;
+color: white;
+padding: 20px 60px;
+margin: 0 40px;
+border-radius: 80px;
+font-size: 20px;
+font-weight: bold;
 }
 
 a:hover{
-box-shadow: -4px -1px 50px black;
-border: 1px solid white;
+color: black;
+box-shadow: 4px 4px 20px black;
 }
