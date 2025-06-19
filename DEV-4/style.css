@@ -1,0 +1,56 @@
+body{
+margin: 0;
+padding: 0;
+font-family: calibri;
+background: #292929;
+}
+
+h1{
+width: 110px;
+margin: 0;
+font-size: 19px;
+color: #474747;
+float: left;
+padding: 10px;
+}
+
+header{
+content: '';
+display: table;
+clear: both;
+width: 100%;
+background: #03a9f4;
+}
+
+.menu{
+width: 80%;
+margin: 0 auto;
+}
+
+nav{
+float: right;
+}
+
+ul{
+margin: 0;
+padding: 0;
+}
+
+li{
+list-style: none;
+float: left;
+margin-right: 75px;
+padding: 12px 0;
+}
+
+a{
+padding: 11px 0;
+text-decoration: none;
+color: #444;
+font-weight: bold;
+}
+
+a:hover{
+padding: 7px 0;
+border-top: 5px solid #444;
+}
