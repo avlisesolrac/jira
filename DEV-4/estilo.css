@@ -1,0 +1,42 @@
+*{
+padding: 0;
+margin: 0;
+font-family: calibri;
+}
+
+body{
+background-color: #3ff;
+}
+
+header{
+background-color: #474747;
+color: #3ff;
+padding-left: 20%;
+padding-right: 20%;
+font-weight: bold;
+}
+
+h1{
+float: left;
+}
+
+nav{
+margin-right: 30px;
+text-align: right;
+padding: 15px 0;
+}
+
+ul li{
+list-style: none;
+display: inline;
+}
+
+a{
+text-decoration: none;
+color: #3ff;
+padding: 10px 10px;
+}
+
+a:hover{
+border-bottom:5px solid #3ff;
+}
