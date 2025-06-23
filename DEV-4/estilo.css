@@ -5,38 +5,46 @@ font-family: calibri;
 }
 
 body{
-background-color: #3ff;
+background-color: #474747;
 }
 
 header{
-background-color: #474747;
-color: #3ff;
-padding-left: 20%;
-padding-right: 20%;
-font-weight: bold;
-}
-
-h1{
-float: left;
+background-color: #1293de;
 }
 
 nav{
-margin-right: 30px;
-text-align: right;
-padding: 15px 0;
+width: 80%;
+margin: auto;
+display: table;
+padding: 10px 0px;
 }
 
-ul li{
-list-style: none;
-display: inline;
+h1{
+padding: 10px 0px;
+float: left;
+font-size: 16px;
+color: white;
+text-shadow: 1px 1px 1px #000;
+}
+
+ul{
+float: right;
+}
+
+li{
+float: left;
+list-style-type: none;
+padding: 10px 15px;
 }
 
 a{
 text-decoration: none;
-color: #3ff;
-padding: 10px 10px;
+font-weight: bold;
+color: black;
+padding: 15px 0px;
 }
 
 a:hover{
-border-bottom:5px solid #3ff;
+border-bottom: 5px solid white;
+color: #fff;
 }
