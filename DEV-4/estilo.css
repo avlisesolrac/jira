@@ -1,11 +1,11 @@
 *{
-padding: 0;
-margin: 0;
+padding: 0px;
+margin: 0px;
 font-family: calibri;
 }
 
 body{
-background-color: #474747;
+background-color: #444;
 }
 
 header{
@@ -15,36 +15,37 @@ background-color: #1293de;
 nav{
 width: 80%;
 margin: auto;
-display: table;
-padding: 10px 0px;
+padding: 10px 0;
+overflow: hidden;
 }
 
 h1{
-padding: 10px 0px;
-float: left;
-font-size: 16px;
 color: white;
 text-shadow: 1px 1px 1px #000;
+font-size: 16px;
+float: left;
+padding: 10px 0;
 }
 
 ul{
 float: right;
+padding: 10px 0;
 }
 
 li{
 float: left;
 list-style-type: none;
-padding: 10px 15px;
+padding: 0px 15px;
 }
 
 a{
 text-decoration: none;
+color: #000;
 font-weight: bold;
-color: black;
-padding: 15px 0px;
+padding: 15px 0;
 }
 
 a:hover{
-border-bottom: 5px solid white;
+border-bottom: 5px solid #fff;
 color: #fff;
 }
