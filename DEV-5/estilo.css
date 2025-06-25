@@ -14,34 +14,37 @@ width: 100%;
 }
 
 nav{
-width: 100%;
-margin: auto;
-padding-top: 15%;
 text-align: center;
+color: #fff;
+width: 100%;
 }
 
 h1{
-color: #fff;
+margin: 0 0 8% 0;
+font-size: 400%;
+padding-top: 23%;
 text-shadow: 0 0 10px #000;
-font-size: 500%;
 }
 
 a{
 text-decoration: none;
 color: #fff;
 font-weight: bold;
+font-size: 150%;
 border: 1px solid;
 border-radius: 10px;
 padding: 10px 20px;
-font-size: 150%;
 }
 
 a:hover{
+box-shadow: 0 0 10px #fff;
+text-shadow: 0 0 10px #fff;
 color: #1293de;
 }
 
 p{
 font-size: 160%;
-line-height: 200%;
 text-align: justify;
+line-height: 180%;
+margin: 5%;
 }
