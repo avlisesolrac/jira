@@ -1,0 +1,42 @@
+body{
+margin: 0;
+padding: 0;
+background: url(penhasco.jpg) no-repeat;
+background-size: cover;
+color: white;
+}
+
+.box{
+width: 450px;
+background: rgba(0,0,0,0.4);
+padding: 40px;
+text-align: center;
+margin: auto;
+margin-top: 5%;
+color: white;
+font-family: 'Century Gothic', sans-serif;
+box-shadow: 0 0 40px #000;
+}
+
+.box-img{
+border-radius: 50%;
+box-shadow: 0 0 10px #000;
+width: 200px;
+height: 200px;
+}
+
+.box h1{
+font-size: 40px;
+letter-spacing: 4px;
+font-weight: 100px;
+}
+
+.box h5{
+font-size: 20px;
+letter-spacing: 3px;
+font-weight: 100px;
+}
+
+.box p{
+text-align: justify;
+}
