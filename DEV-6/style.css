@@ -16,6 +16,8 @@ margin-top: 5%;
 color: white;
 font-family: 'Century Gothic', sans-serif;
 box-shadow: 0 0 40px #000;
+margin-bottom: 80px;
+height: 520px;
 }
 
 .box-img{
@@ -39,4 +41,10 @@ font-weight: 100px;
 
 .box p{
 text-align: justify;
+}
+
+ul li{
+list-style-type: none;
+float: left;
+margin-left: 50px;
 }
