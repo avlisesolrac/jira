@@ -1,50 +1,68 @@
+*{
+margin: 0px;
+padding: 0px;
+font-family: "Century Gothic";
+color: #fff;
+}
+
 body{
-margin: 0;
-padding: 0;
-background: url(penhasco.jpg) no-repeat;
+background: url("penhasco.jpg") no-repeat;
 background-size: cover;
-color: white;
 }
 
-.box{
-width: 450px;
+div{
 background: rgba(0,0,0,0.4);
-padding: 40px;
-text-align: center;
-margin: auto;
-margin-top: 5%;
-color: white;
-font-family: 'Century Gothic', sans-serif;
+width: 450px;
+height: 500px;
+margin: 45px auto;
+padding: 20px;
 box-shadow: 0 0 40px #000;
-margin-bottom: 80px;
-height: 520px;
 }
 
-.box-img{
+img{
 border-radius: 50%;
-box-shadow: 0 0 10px #000;
 width: 200px;
-height: 200px;
+margin: 0 32%;
+box-shadow: 0 0 40px #000;
 }
 
-.box h1{
-font-size: 40px;
-letter-spacing: 4px;
-font-weight: 100px;
+h3{
+text-align: center;
+font-size: 36px;
+margin: 25px 0 25px 0;
 }
 
-.box h5{
-font-size: 20px;
-letter-spacing: 3px;
-font-weight: 100px;
+h5{
+text-align: center;
+font-size: 18px;
+margin: 0 0 15px 0;
 }
 
-.box p{
-text-align: justify;
+ul{
+margin: 30px 95px;
 }
 
 ul li{
 list-style-type: none;
 float: left;
-margin-left: 50px;
+margin: 0 15px;
+}
+
+
+.fa-square-facebook:hover{
+cursor: pointer;
+transition: all ease-in-out 500ms;
+color: dodgerblue;
+}
+
+.fa-square-x-twitter:hover{
+cursor: pointer;
+transition: all ease-in-out 500ms;
+color: mediumslateblue;
+}
+
+.fa-square-instagram:hover{
+cursor: pointer;
+transition: all ease-in-out 500ms;
+color: tomato;
 }
