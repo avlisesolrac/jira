@@ -1,68 +1,71 @@
 *{
-margin: 0px;
-padding: 0px;
+margin: 0;
+padding: 0;
 font-family: "Century Gothic";
-color: #fff;
+color: #000;
+text-align: center;
 }
 
 body{
-background: url("penhasco.jpg") no-repeat;
+background: url(winterfell.webp) no-repeat;
 background-size: cover;
 }
 
 div{
-background: rgba(0,0,0,0.4);
-width: 450px;
-height: 500px;
-margin: 45px auto;
-padding: 20px;
+margin: 20px auto;
+padding: 20px 20px;
+width: 400px;
+height: 520px;
 box-shadow: 0 0 40px #000;
+background-color: #fff;
+border-radius: 1%;
 }
 
 img{
 border-radius: 50%;
-width: 200px;
-margin: 0 32%;
-box-shadow: 0 0 40px #000;
+width: 150px;
+display: block;
+margin: auto;
+box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
 }
 
 h3{
-text-align: center;
+margin: 20px 0;
 font-size: 36px;
-margin: 25px 0 25px 0;
 }
 
 h5{
-text-align: center;
+margin: 0 0 20px 0;
 font-size: 18px;
-margin: 0 0 15px 0;
+}
+
+p{
+text-align: left;
+}
+
+.fa{
+color: #000;
 }
 
 ul{
-margin: 30px 95px;
+display: inline-block;
+margin: 0 auto;
 }
 
 ul li{
-list-style-type: none;
 float: left;
-margin: 0 15px;
+list-style-type: none;
+padding-right: 30px;
 }
 
-
-.fa-square-facebook:hover{
-cursor: pointer;
-transition: all ease-in-out 500ms;
+.fa-facebook:hover{
 color: dodgerblue;
 }
 
-.fa-square-x-twitter:hover{
-cursor: pointer;
-transition: all ease-in-out 500ms;
+.fa-x:hover{
 color: mediumslateblue;
 }
 
-.fa-square-instagram:hover{
-cursor: pointer;
-transition: all ease-in-out 500ms;
+.fa-instagram:hover{
 color: tomato;
 }
