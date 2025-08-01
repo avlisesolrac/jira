@@ -58,6 +58,10 @@ list-style-type: none;
 padding-right: 30px;
 }
 
+a{
+text-decoration: none;
+}
+
 .fa-facebook:hover{
 color: dodgerblue;
 }
