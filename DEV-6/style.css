@@ -1,8 +1,5 @@
 *{
-margin: 0;
-padding: 0;
 font-family: "Century Gothic";
-color: #000;
 }
 
 body{
@@ -11,56 +8,62 @@ background-size: cover;
 }
 
 div{
-width: 350px;
-margin: 20px auto;
+height: 610px;
+width: 300px;
+margin: 0 auto;
+box-shadow: 0 0 40px rgba(0,0,0,0.4);
 padding: 15px;
-border-radius: 1%;
-box-shadow: 0 0 40px rgba(0,0,0,1);
 }
 
 img{
+box-shadow: 0 0 40px #000;
 border-radius: 50%;
 width: 180px;
-display: block;
 margin: 0 auto;
-box-shadow: 0 0 15px rgba(0,0,0,1);
+display: block;
 }
 
 h3{
-font-size: 36px;
 text-align: center;
-margin: 15px 0;
+font-size: 36px;
 }
 
 h5{
-font-size: 18px;
 text-align: center;
-margin: 15px 0;
+font-size: 18px;
+}
+
+p{
+color: #fff;
+text-align: center;
 }
 
 ul{
-display: inline-block;
-margin: 20px 0px 0px 60px;
+display: block;
 }
 
-ul li{
+li{
 list-style-type: none;
 float: left;
-margin-right: 30px;
+margin-right: 25px;
 }
 
 a{
 text-decoration: none;
+color: #fff;
 }
 
-.fa-square-facebook:hover{
+a.fa-square-facebook:hover{
+transition: all ease-in-out 550ms;
 color: dodgerblue;
 }
 
-.fa-square-x-twitter:hover{
+a.fa-square-x-twitter:hover{
+transition: all ease-in-out 550ms;
 color: mediumslateblue;
 }
 
-.fa-square-instagram:hover{
+a.fa-square-instagram:hover{
+transition: all ease-in-out 550ms;
 color: tomato;
 }
