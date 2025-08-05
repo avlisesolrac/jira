@@ -1,0 +1,68 @@
+*{
+font-family: "Century Gothic";
+}
+
+body{
+background: url("winterfell.webp") no-repeat;
+background-size: cover;
+}
+
+div{
+box-shadow: 0 0 40px rgba(0,0,0,0.3);
+padding: 15px;
+width: 400px;
+margin: 0 auto;
+}
+
+img{
+border-radius: 50%;
+width: 180px;
+display: block;
+margin: 0 auto;
+}
+
+h3{
+text-align: center;
+font-size: 28px;
+}
+
+h5{
+font-size: 18px;
+text-align: center;
+}
+
+p{
+color: white;
+font-weight: bold;
+text-align: justify;
+}
+
+ul{
+display: inline-block;
+}
+
+ul li{
+list-style-type: none;
+float: left;
+margin: 0 28px;
+}
+
+a{
+color: white;
+text-decoration: none;
+}
+
+a.fa-square-facebook:hover{
+transition: all ease-in-out 550ms;
+color: dodgerblue;
+}
+
+a.fa-square-x-twitter:hover{
+transition: all ease-in-out 550ms;
+color: mediumslateblue;
+}
+
+a.fa-square-instagram:hover{
+transition: all ease-in-out 550ms;
+color: tomato;
+}
