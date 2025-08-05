@@ -3,54 +3,53 @@ font-family: "Century Gothic";
 }
 
 body{
-background: url(winterfell.webp) no-repeat;
+background: url("winterfell.webp") no-repeat;
 background-size: cover;
 }
 
 div{
-height: 610px;
-width: 300px;
-margin: 0 auto;
-box-shadow: 0 0 40px rgba(0,0,0,0.4);
+box-shadow: 0 0 40px rgba(0,0,0,0.3);
 padding: 15px;
+width: 400px;
+margin: 0 auto;
 }
 
 img{
-box-shadow: 0 0 40px #000;
 border-radius: 50%;
 width: 180px;
-margin: 0 auto;
 display: block;
+margin: 0 auto;
 }
 
 h3{
 text-align: center;
-font-size: 36px;
+font-size: 28px;
 }
 
 h5{
-text-align: center;
 font-size: 18px;
+text-align: center;
 }
 
 p{
-color: #fff;
-text-align: center;
+color: white;
+font-weight: bold;
+text-align: justify;
 }
 
 ul{
-display: block;
+display: inline-block;
 }
 
-li{
+ul li{
 list-style-type: none;
 float: left;
-margin-right: 25px;
+margin: 0 28px;
 }
 
 a{
+color: white;
 text-decoration: none;
-color: #fff;
 }
 
 a.fa-square-facebook:hover{
