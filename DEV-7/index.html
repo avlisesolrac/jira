@@ -2,24 +2,18 @@
 <html>
 <head>
 <meta charset="utf-8">
-<link rel="stylesheet" type="text/css" href="style.css">
 <title>Navbar</title>
-<script
-  src="https://code.jquery.com/jquery-3.7.1.min.js"
-  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-  crossorigin="anonymous"></script>
-
-<script src="https://kit.fontawesome.com/ed13afc6d1.js" crossorigin="anonymous"></script>
-
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/ed13afc6d1.js" crossorigin="anonymous">
+</script>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
 <h1>DarkCode WebSite</h1>
 </header>
-
 <nav>
-
 <ul>
 <li><a href="#">Home</a></li>
 <li><a href="#">Blog</a></li>
@@ -28,17 +22,17 @@
 <li><a href="#">Images</a></li>
 <li><a href="#">Contact</a></li>
 </ul>
-
 <div class="hide">
-<i class="fa-solid fa-bars"></i> Menu
+<i class="fa-solid fa-bars" aria-hidden="true"> Menu</i>
 </div>
-
 </nav>
 
 <script type="text/javascript">
+
 $('.hide').on('click', function(){
 $('nav ul').toggleClass('show');
 });
+
 </script>
 
 </body>
