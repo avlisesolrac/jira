@@ -2,83 +2,83 @@
 margin: 0;
 padding: 0;
 font-family: "Century Gothic", sans-serif;
-color: #444444;
+color: #444;
 }
 
 header{
-width: 100%;
-padding: 50px 0;
 text-align: center;
-background: #2FB256;
+padding: 60px 0;
+background-color: #2FB256;
 }
 
 nav{
-background: #68d39e;
-}
-
-ul{
+padding: 10px 0;
 text-align: center;
-overflow: hidden;
+background-color: #68d39e;
 }
 
 ul li{
-font-weight: bold;
 display: inline-block;
-padding: 5px 15px;
-cursor: pointer;
-}
-
-li:hover{
-background: #2FB256;
-box-shadow: 0 0 5px #444444;
 }
 
 a{
-text-decoration: none;
 padding: 10px;
+text-decoration: none;
+font-weight: bold;
 }
 
-.hide{
+a:hover{
+background-color: #2FB256;
+}
+
+div{
 display: none;
-}
-
-i{
-width: 100%;
-padding: 15px 0 15px 0;
-background: #2FB256;
+font-weight: bold;
+background-color: #2FB256;
+cursor: pointer;
+padding: 0 10px;
 }
 
 @media screen and (max-width: 680px){
-.hide{
-display: block;
-cursor: pointer;
-}
 
-nav ul{
-max-height: 0em;
-}
-
-.show{
-max-height: 20em;
+nav{
+padding: 0;
 }
 
 ul li{
-width: 100%;
+display: block;
 text-align: left;
-padding: 10px;
 }
 
-li:hover{
-background: #2FB256;
-box-shadow: 0 0 5px #444;
+a{
+display: block;
 }
 
-li:first-child:hover{
-border-top: 1px solid #444;
+ul li:hover{
+background-color: #2FB256;
 }
 
-li:last-child:hover{
-border-bottom: 1px solid #444;
+ul li:nth-child(1):hover{
+border-top: 1px solid;
+}
+
+ul li:nth-child(6):hover{
+border-bottom: 1px solid;
+}
+
+div{
+display: block;
+}
+
+.hide{
+overflow: hidden;
+transition: all ease-in-out 250ms;
+height: 0px;
+}
+
+.show{
+transition: all ease-in-out 250ms;
+height: 241px;
 }
 
 }

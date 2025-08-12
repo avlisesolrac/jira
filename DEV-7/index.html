@@ -1,36 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
+<title>Navbar Responsive</title>
 <meta charset="utf-8">
-<title>Navbar</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<script src="https://kit.fontawesome.com/ed13afc6d1.js" crossorigin="anonymous"></script>
+
 <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-<script src="https://kit.fontawesome.com/ed13afc6d1.js" crossorigin="anonymous">
-</script>
-<link rel="stylesheet" href="style.css">
+
 </head>
 <body>
 
 <header>
 <h1>DarkCode WebSite</h1>
 </header>
-<nav>
+
+<nav class="hide">
 <ul>
 <li><a href="#">Home</a></li>
-<li><a href="#">Blog</a></li>
 <li><a href="#">About</a></li>
-<li><a href="#">Show</a></li>
 <li><a href="#">Images</a></li>
+<li><a href="#">Videos</a></li>
 <li><a href="#">Contact</a></li>
+<li><a href="#">FAQ</a></li>
 </ul>
-<div class="hide">
-<i class="fa-solid fa-bars" aria-hidden="true"> Menu</i>
-</div>
 </nav>
+
+<div>
+<i class="fa-solid fa-bars fa-2x"></i> Menu
+</div>
 
 <script type="text/javascript">
 
-$('.hide').on('click', function(){
-$('nav ul').toggleClass('show');
+$('div').on('click', function(){
+$('nav').toggleClass('show');
 });
 
 </script>
