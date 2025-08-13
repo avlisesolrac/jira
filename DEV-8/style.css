@@ -36,23 +36,23 @@ top: -30px;
 #btn:after{
 position: absolute;
 content: '❤';
-bottom: -80%;
-left: 42%;
+bottom: -120%;
+left: 50%;
 font-size: 40px;
 color: red;
-tranform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
 transition: all 0.5s;
 }
 
 #btn:hover:after{
-bottom: 0%;
+bottom: -40%;
 }
 
 /*
 ion-icon{
 position: absolute;
 font-size: 40px;
-bottom: -100%;
+bottom: -150%;
 left: 50%;
 transform: translate(-50%, -50%);
 color: red;
