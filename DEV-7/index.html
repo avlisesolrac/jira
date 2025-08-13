@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Navbar Responsive</title>
+<title>Barra de Navegação Responsiva</title>
 <meta charset="utf-8">
-<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="estilo.css">
 <script src="https://kit.fontawesome.com/ed13afc6d1.js" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </head>
 <body>
 
 <header>
-<h1>DarkCode WebSite</h1>
+<h1>Site Código Profundo</h1>
 </header>
-<nav class="hide">
+
+<nav class="esconder-lista-menu">
 <ul>
-<li><a href="#">Home</a></li>
-<li><a href="#">Blog</a></li>
-<li><a href="#">About Us</a></li>
-<li><a href="#">Services</a></li>
-<li><a href="#">Produtcs</a></li>
-<li><a href="#">Contact</a></li>
+<li><a href="#">Página Inicial</a></li>
+<li><a href="#">Sobre Nós</a></li>
+<li><a href="#">Produtos</a></li>
+<li><a href="#">Serviços</a></li>
+<li><a href="#">Contato</a></li>
+<li><a href="#">Mapa</a></li>
+<li><a href="#">F.A.Q.</a></li>
 </ul>
 </nav>
 
@@ -30,7 +32,7 @@
 <script type="text/javascript">
 
 $('div').on('click', function(){
-$('nav').toggleClass('show');
+$('nav').toggleClass('exibir-lista-menu');
 });
 
 </script>
