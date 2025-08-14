@@ -1,0 +1,47 @@
+*{
+margin: 0;
+padding: 0;
+font-family: "Century Gothic", sans-serif;
+}
+
+body{
+background-color: #f1f1f1;
+}
+
+div{
+background-color: #1F53C5;
+color: #fff;
+width: 200px;
+margin: 80px auto;
+padding: 20px 25px 0 25px;
+text-align: center;
+font-weight: bold;
+border-radius: 10px;
+display: fixed;
+overflow: hidden;
+cursor: pointer;
+box-shadow: 0 0 5px #000;
+}
+
+div:hover{
+box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+div:hover>p{
+position: relative;
+transition: all ease-in-out 550ms;
+transform: translate(0%,-250%);
+}
+
+i{
+color: tomato;
+font-size: 32px;
+position: relative;
+bottom: -60px;
+}
+
+div:hover>i{
+position: relative;
+transition: all ease-in-out 550ms;
+transform: translate(0%,-250%);
+}
