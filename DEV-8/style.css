@@ -1,65 +1,51 @@
 body{
 margin: 0;
 padding: 0;
-background: #f1f1f1;
+font-family: 'Century Gothic', sans-serif;
+background-color: #f1f1f1;
 }
 
-#btn{
+div{
 width: 200px;
-height: 60px;
+padding: 35px 20px;
+border-radius: 5px;
 position: absolute;
 top: 50%;
 left: 50%;
-transform: translate(-50%, -50%);
-background: #ffc107;
-cursor: pointer;
-border-radius: 5px;
+background-color: #2FB256;
 overflow: hidden;
+box-shadow: 0 0 50px rgba(0,0,0,0.3);
+transform: translate(-50%,-50%);
+cursor: pointer;
 }
 
-#btn:before{
-color: white;
-font-family: sans-serif;
+div:before{
+color: #fff;
+font-weight: bold;
+font-size: 22px;
 content: 'Hover Me';
 position: absolute;
 top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
-font-size: 20px;
 transition: all 0.5s;
 }
 
-#btn:hover:before{
-top: -30px;
+div:hover:before{
+top: -50%;
 }
 
-#btn:after{
+div:after{
+content: "❤";
 position: absolute;
-content: '❤';
-bottom: -120%;
+bottom: -100%;
 left: 50%;
-font-size: 40px;
-color: red;
+color: tomato;
+font-size: 32px;
 transform: translate(-50%, -50%);
 transition: all 0.5s;
 }
 
-#btn:hover:after{
-bottom: -40%;
+div:hover:after{
+bottom: 0%;
 }
-
-/*
-ion-icon{
-position: absolute;
-font-size: 40px;
-bottom: -150%;
-left: 50%;
-transform: translate(-50%, -50%);
-color: red;
-transition: all 0.5s;
-}
-
-ion-icon:before:hover{
-top: 50%;
-}
-*/
