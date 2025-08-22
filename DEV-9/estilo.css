@@ -1,0 +1,35 @@
+body{
+maring: 0;
+padding: 0;
+background: url(bg.jpg) no-repeat center;
+}
+
+input{
+display: block;
+margin: 200px auto;
+padding: 90px 30px;
+border-radius: 50%;
+background-color: dodgerblue;
+cursor: pointer;
+font-size: 22px;
+font-family: 'Century Gothic';
+color: #fff;
+font-weight: bold;
+text-shadow: 0px 0px 2px #000, 0 0 15px #fff, 0 0 5px #444;
+}
+
+input:hover{
+animation: sombreamento 3s linear infinite;
+}
+
+input:active{
+color: #000;
+text-shadow: 0px 0px 2px #fff, 0 0 15px #000, 0 0 5px #999;
+}
+
+@keyframes sombreamento{
+0%{box-shadow: 0 0 0 0 rgba(30,144,255,0.6), 0 0 0 0 rgba(30,144,255,0.6);}
+30%{box-shadow: 0 0 0 50px rgba(30,144,255,0), 0 0 0 0 rgba(30,144,255,0.6);}
+60%{box-shadow: 0 0 0 50px rgba(30,144,255,0), 0 0 0 30px rgba(30,144,255,0);}
+100%{box-shadow: 0 0 0 0px rgba(30,144,255,0), 0 0 0 0 rgba(30,144,255,0);}
+}
