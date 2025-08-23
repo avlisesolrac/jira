@@ -20,7 +20,7 @@ font-size: 18px;
 }
 
 i:hover{
-animation: bordasAnimadas 2s linear infinite;
+animation:bordasAnimadas 2s linear infinite;
 }
 
 i:active{
