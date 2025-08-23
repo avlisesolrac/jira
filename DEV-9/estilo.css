@@ -1,35 +1,35 @@
 body{
-maring: 0;
+margin: 0;
 padding: 0;
 background: url(bg.jpg) no-repeat center;
+background-size: cover;
+font-family: "Century Gothic";
 }
 
-input{
-display: block;
-margin: 200px auto;
-padding: 90px 30px;
+div{
+background: rgba(30,142,251,0.3);
+border: 1px solid rgb(30,142,251);
+width: 100px;
+margin: 15% auto;
+padding: 90px 50px;
 border-radius: 50%;
-background-color: dodgerblue;
-cursor: pointer;
-font-size: 22px;
-font-family: 'Century Gothic';
 color: #fff;
 font-weight: bold;
-text-shadow: 0px 0px 2px #000, 0 0 15px #fff, 0 0 5px #444;
+text-shadow: 0 0 10px #000, 0 0 10px #000;
+cursor: pointer;
 }
 
-input:hover{
-animation: sombreamento 3s linear infinite;
+div:hover{
+animation: bordas 3s linear infinite;
 }
 
-input:active{
-color: #000;
-text-shadow: 0px 0px 2px #fff, 0 0 15px #000, 0 0 5px #999;
+div:active{
+color: wheat;
 }
 
-@keyframes sombreamento{
-0%{box-shadow: 0 0 0 0 rgba(30,144,255,0.6), 0 0 0 0 rgba(30,144,255,0.6);}
-30%{box-shadow: 0 0 0 50px rgba(30,144,255,0), 0 0 0 0 rgba(30,144,255,0.6);}
-60%{box-shadow: 0 0 0 50px rgba(30,144,255,0), 0 0 0 30px rgba(30,144,255,0);}
-100%{box-shadow: 0 0 0 0px rgba(30,144,255,0), 0 0 0 0 rgba(30,144,255,0);}
+@keyframes bordas {
+0%{box-shadow: 0 0 0 0 rgba(30,142,251,0.6), 0 0 0 0 rgba(30,142,251,0)}
+30%{box-shadow: 0 0 0 50px rgba(30,142,251,0), 0 0 0 0 rgba(30,142,251,0.6)}
+60%{box-shadow: 0 0 0 0 rgba(30,142,251,0), 0 0 0 30px rgba(30,142,251,0)}
+100%{box-shadow: 0 0 0 0 rgba(30,142,251,0), 0 0 0 0 rgba(30,142,251,0)}
 }
