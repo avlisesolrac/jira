@@ -1,73 +1,63 @@
 body{
 margin: 0;
 padding: 0;
-font-family: "Open Sans", sans-serif;
-background: #f1f1f1;
-}
-
-.doc{
-width: 1000px;
-margin: auto;
-background: white;
-overflow: hidden;
+background-color: #f1f1f1;
+font-family: "Century Gothic", sans-serif;
 }
 
 header{
-height: 320px;
-background: url(bg.jpg) no-repeat;
-background-color: black;
+height: 300px;
+width: 1000px;
+margin: auto;
+background: url(bg.jpg) no-repeat center;
 background-size: cover;
-color: white;
-overflow: hidden;
-}
-
-.h-c{
 text-align: center;
-padding: 112px 0;
+padding: 150px auto;
 }
 
-img{
+header img,h2{
+color: #fff;
+opacity: 0.7;
+}
+
+header img{
+margin: 100px 0 -10px 0;
 width: 150px;
-opacity: 0.7;
 }
 
-header h2{
-opacity: 0.7;
-margin: 0;
-font-size: 30px;
-}
-
-.content{
-margin: 30px 60px;
-}
-
-.content p{
+section{
+display: block;
+margin: 0 auto;
+width: 900px;
+padding: 20px 50px;
+background-color: #fff;
 text-align: justify;
 }
 
-.content label{
-display: block;
-font-size: 16px;
-font-weight: 900;
-}
-
-.content input[type="text"]{
-width: 400px;
-font-size: 16px;
+section label{
 font-weight: 600;
-font-family: sans-serif;
-border: 1px solid #cecaca;
-background: #f1f1f1;
-padding: 14px 12px;
-margin: 8px 0;
 }
 
-.content input[type="button"]{
-background: black;
-border: none;
-color: white;
+section input[type="text"],[type="email"]{
 display: block;
-margin: auto;
+padding: 15px;
+width: 400px;
+background-color: #f0f0f0;
+border: 1px dotted #000;
+margin: 5px 0;
+}
+
+section input[type="button"]{
 padding: 20px 60px;
+background-color: #000;
+color: #fff;
+font-size: 18px;
 cursor: pointer;
+display: block;
+margin: 0 auto;
+}
+
+section input[type="button"]:active{
+color: #fff;
+opacity: 0.7;
 }
