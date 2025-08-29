@@ -4,15 +4,18 @@
 <title>Barra de Navegação Lateral</title>
 <meta charset="utf-8">
 <link rel="stylesheet" type="text/css" href="estilo.css">
-<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </head>
 <body>
 
 <nav>
-<span>X</span>
+
+<a id="fechar_menu" href="#">X</a>
+
 <img src="logo.png">
+
 <ul>
-<li><a href="#">Página Principal</a></li>
+<li><a href="#">Página Inicial</a></li>
 <li><a href="#">Minha Conta</a></li>
 <li><a href="#">Comprar/Vender</a></li>
 <li><a href="#">Blog</a></li>
@@ -20,29 +23,21 @@
 <li><a href="#">Configurações</a></li>
 <li><a href="#">Sobre</a></li>
 </ul>
+
 </nav>
 
 <section>
-<h2>Barra de Navegação Lateral</h2>
-<p>Existem muitas variações de passagens do Lorem Ipsum disponíveis, mas a maioria sofreu alguma alteração, seja por meio de humor ou palavras aleatórias que não parecem nem um pouco críveis. Se você for usar uma passagem do Lorem Ipsum, certifique-se de que não haja nada constrangedor escondido no meio do texto. Todos os geradores de Lorem Ipsum na internet tendem a repetir trechos predefinidos conforme necessário, tornando este o primeiro gerador de verdade na internet. Ele utiliza um dicionário com mais de 200 palavras latinas, combinado com um punhado de estruturas de frases modelo, para gerar um Lorem Ipsum com aparência razoável. O Lorem Ipsum gerado, portanto, está sempre livre de repetições, humor ou palavras não características, etc.
-</p>
 
-<input type="button" value="Exibir Menu Lateral">
+<h2>Barra de Navegação Lateral</h2>
+
+<p>É um fato conhecido que o leitor se distrai com o conteúdo legível de uma página ao observar seu layout. A vantagem de usar o Lorem Ipsum é que ele tem uma distribuição de letras mais ou menos normal, em oposição ao uso de "Conteúdo aqui, conteúdo aqui", o que o torna um inglês legível. Muitos pacotes de editoração eletrônica e editores de páginas da web agora usam o Lorem Ipsum como texto modelo padrão, e uma busca por "lorem ipsum" revelará muitos sites ainda em fase inicial. Várias versões evoluíram ao longo dos anos, às vezes por acidente, às vezes propositalmente (com humor e coisas do tipo).</p>
 
 </section>
 
-<script type="text/javascript">
+<script>
 
-/*Esta função em JQuery vai fazer com que ao clicar no botão para exibir o menu é acrescentado a classe exibir_menu em body com float igual a 0, pois antes disso esse elemento está com valor negativo para esconder o menu lateral*/
-
-$("input[type='button']").on('click', function(){
+$('nav>a').on('click', function(){
 $('body').toggleClass('exibir_menu');
-});
-
-/*Esta função em JQuery vai fazer com que ao clicar no botão X que está no menu é removido a classe exibir_menu e o elemento body volta ao seu valor original de antes da classe que é negativo para voltar a esconder o menu.*/
-
-$('span').on('click', function(){
-$('body').toggleClass();
 });
 
 </script>
