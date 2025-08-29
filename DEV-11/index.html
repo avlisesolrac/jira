@@ -1,56 +1,48 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>SideBar</title>
+<title>Barra de Navegação Lateral</title>
 <meta charset="utf-8">
-<link rel="stylesheet" href="style.css">
-<script src="https://kit.fontawesome.com/ed13afc6d1.js" crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="estilo.css">
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 </head>
 <body>
 
-<div class="doc">
-
-<div class="sidebar">
-
-<div class="sidehide">
-<i class="fa fa-times" aria-hidden="true"></i>
-</div>
-
-<img src="logo.png" alt="">
-
+<nav>
+<span>X</span>
+<img src="logo.png">
 <ul>
-<li><a href="#">Home</a></li>
-<li><a href="#">My Account</a></li>
-<li><a href="#">Buy/Sell</a></li>
+<li><a href="#">Página Principal</a></li>
+<li><a href="#">Minha Conta</a></li>
+<li><a href="#">Comprar/Vender</a></li>
 <li><a href="#">Blog</a></li>
-<li><a href="#">Contact</a></li>
-<li><a href="#">Settings</a></li>
-<li><a href="#">About</a></li>
+<li><a href="#">Contato</a></li>
+<li><a href="#">Configurações</a></li>
+<li><a href="#">Sobre</a></li>
 </ul>
+</nav>
 
-</div>
+<section>
+<h2>Barra de Navegação Lateral</h2>
+<p>Existem muitas variações de passagens do Lorem Ipsum disponíveis, mas a maioria sofreu alguma alteração, seja por meio de humor ou palavras aleatórias que não parecem nem um pouco críveis. Se você for usar uma passagem do Lorem Ipsum, certifique-se de que não haja nada constrangedor escondido no meio do texto. Todos os geradores de Lorem Ipsum na internet tendem a repetir trechos predefinidos conforme necessário, tornando este o primeiro gerador de verdade na internet. Ele utiliza um dicionário com mais de 200 palavras latinas, combinado com um punhado de estruturas de frases modelo, para gerar um Lorem Ipsum com aparência razoável. O Lorem Ipsum gerado, portanto, está sempre livre de repetições, humor ou palavras não características, etc.
+</p>
 
-<div class="content">
+<input type="button" value="Exibir Menu Lateral">
 
-<h2>Sidebar</h2>
+</section>
 
-<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+<script type="text/javascript">
 
-<span class="hide">Show Sidebar</span>
+/*Esta função em JQuery vai fazer com que ao clicar no botão para exibir o menu é acrescentado a classe exibir_menu em body com float igual a 0, pois antes disso esse elemento está com valor negativo para esconder o menu lateral*/
 
-</div>
-
-</div>
-
-<script>
-
-$(".sidehide").on('click', function(){
-$(".doc").toggleClass("show");
+$("input[type='button']").on('click', function(){
+$('body').toggleClass('exibir_menu');
 });
 
-$(".hide").on('click', function(){
-$(".doc").toggleClass("show");
+/*Esta função em JQuery vai fazer com que ao clicar no botão X que está no menu é removido a classe exibir_menu e o elemento body volta ao seu valor original de antes da classe que é negativo para voltar a esconder o menu.*/
+
+$('span').on('click', function(){
+$('body').toggleClass();
 });
 
 </script>
