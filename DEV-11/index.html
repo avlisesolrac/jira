@@ -4,40 +4,42 @@
 <title>Barra de Navegação Lateral</title>
 <meta charset="utf-8">
 <link rel="stylesheet" type="text/css" href="estilo.css">
-<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.slim.js" integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
 </head>
 <body>
 
 <nav>
-
-<a id="fechar_menu" href="#">X</a>
-
+<a href="#">X</a>
 <img src="logo.png">
-
 <ul>
 <li><a href="#">Página Inicial</a></li>
 <li><a href="#">Minha Conta</a></li>
 <li><a href="#">Comprar/Vender</a></li>
-<li><a href="#">Blog</a></li>
-<li><a href="#">Contato</a></li>
+<li><a href="#">Meu Blog</a></li>
+<li><a href="#">Contatos</a></li>
 <li><a href="#">Configurações</a></li>
 <li><a href="#">Sobre</a></li>
 </ul>
-
 </nav>
 
 <section>
 
 <h2>Barra de Navegação Lateral</h2>
 
-<p>É um fato conhecido que o leitor se distrai com o conteúdo legível de uma página ao observar seu layout. A vantagem de usar o Lorem Ipsum é que ele tem uma distribuição de letras mais ou menos normal, em oposição ao uso de "Conteúdo aqui, conteúdo aqui", o que o torna um inglês legível. Muitos pacotes de editoração eletrônica e editores de páginas da web agora usam o Lorem Ipsum como texto modelo padrão, e uma busca por "lorem ipsum" revelará muitos sites ainda em fase inicial. Várias versões evoluíram ao longo dos anos, às vezes por acidente, às vezes propositalmente (com humor e coisas do tipo).</p>
+<p>Ao contrário da crença popular, o Lorem Ipsum não é simplesmente um texto aleatório. Ele tem raízes em uma obra da literatura latina clássica de 45 a.C., o que lhe confere mais de 2.000 anos de idade. Richard McClintock, professor de latim no Hampden-Sydney College, na Virgínia, pesquisou uma das palavras latinas mais obscuras, consectetur, em uma passagem do Lorem Ipsum e, examinando as citações da palavra na literatura clássica, descobriu a fonte inquestionável. O Lorem Ipsum vem das seções 1.10.32 e 1.10.33 de "De Finibus Bonorum et Malorum" (Os Extremos do Bem e do Mal), de Cícero, escrito em 45 a.C. Este livro é um tratado sobre a teoria da ética, muito popular durante o Renascimento. A primeira linha do Lorem Ipsum, "Lorem ipsum dolor sit amet...", vem de uma linha da seção 1.10.32.</p>
+
+<input type="button" value="Exibir Menu">
 
 </section>
 
 <script>
 
-$('nav>a').on('click', function(){
+$('input[type="button"]').on('click', function(){
 $('body').toggleClass('exibir_menu');
+});
+
+$('nav>a').on('click', function(){
+$('body').toggleClass();
 });
 
 </script>

@@ -3,59 +3,68 @@ margin: 0;
 padding: 0;
 font-family: "Century Gothic", sans-serif;
 /*border: 1px solid;*/
+text-align: justify;
 }
+
 
 body{
 position: fixed;
-widht: 100%;
+width: 100%;
 height: 100%;
-left: -265px;
-transition: all ease-in-out 300ms;
+left: -320px;
+transition: ease-in-out 300ms;
+}
+
+.exibir_menu{
+left: 0;
 }
 
 nav{
 width: 320px;
-height: 100%;
 background-color: #000;
+height: 100%;
 float: left;
 }
 
-nav #fechar_menu{
-margin: 15px 20px 0 0;
-font-size: 30px;
+nav>a{
+float: right;
+margin: 15px 15px 0 0;
 font-weight: bold;
 text-decoration: none;
-float: right;
-color: #888;
+font-size: 29px;
+color: #999;
+transition: ease-in-out 100ms;
+}
+
+nav>a:active{
+color: #fff;
 }
 
 nav img{
-width: 130px;
+width: 180px;
 display: block;
-margin: 20px auto;
+margin: 0 auto;
+padding-top: 15px;
 opacity: .7;
 }
 
-nav ul li{
-margin: 5px;
-}
-
 nav ul li a{
-text-decoration: none;
 display: block;
-padding: 10px;
-color: #888;
-font-weight: bold;
-transition: all ease-in-out 100ms;
+margin: 2px 0;
+padding: 20px 0 20px 10px;
+color: #999;
+text-decoration: none;
+transition: all ease-in-out 200ms;
 }
 
 nav ul li a:hover{
 padding-left: 20px;
-background-color: #444;
+color: #000;
+background-color: #888;
 }
 
 section{
-text-align: justify;
+max-width: 100%;
 margin: 0 20px 0 340px;
 }
 
@@ -63,6 +72,22 @@ section h2{
 margin: 20px 0;
 }
 
-.exibir_menu{
-left: 0
+section p{
+display: block;
+}
+
+section input[type="button"]{
+border: none;
+background-color: #000;
+color: #999;
+padding: 10px 40px;
+margin: 20px 0;
+cursor: pointer;
+font-size: 19px;
+transition: ease-in-out 100ms;
+}
+
+section input[type="button"]:active{
+color: #fff;
+opacity: .7;
 }
