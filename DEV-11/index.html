@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Barra de Navegação Lateral</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="estilo.css">
+<script src="https://kit.fontawesome.com/ed13afc6d1.js" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<nav>
+<img src="logo.png">
+<ul>
+<li><a href="#">Página Inicial</a></li>
+<li><a href="#">Minha Conta</a></li>
+<li><a href="#">Comprar/Vender</a></li>
+<li><a href="#">Blog</a></li>
+<li><a href="#">Contato</a></li>
+<li><a href="#">Configurações</a></li>
+<li><a href="#">Sobre</a></li>
+</ul>
+</nav>
+
+<i class="fa-solid fa-bars fa-2x"></i>
+
+<section>
+<h2>Barra de Navegação Lateral</h2>
+<p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos. O Lorem Ipsum tem sido a simulação de texto padrão da indústria tipográfica e de impressos desde o século XVI, quando um impressor desconhecido pegou uma galera de tipos e os embaralhou para criar um livro de espécimes de tipos. Ele sobreviveu não apenas a cinco séculos, mas também ao salto para a composição eletrônica, permanecendo essencialmente inalterado. Foi popularizado na década de 1960 com o lançamento das folhas Letraset contendo passagens do Lorem Ipsum e, mais recentemente, com softwares de editoração eletrônica como o Aldus PageMaker, incluindo versões do Lorem Ipsum.</p>
+
+</section>
+
+<script>
+
+$('i').on('click', function(){
+$('body').toggleClass('exibir_menu');
+});
+
+</script>
+
+</body>
+</html>
