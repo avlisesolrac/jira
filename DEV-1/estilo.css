@@ -1,0 +1,70 @@
+*{
+margin: 0;
+padding: 0;
+font-family: "Century Gothic", sans-serif;
+color: #444;
+}
+
+body{
+background-color: #f1f1f1;
+}
+
+form{
+max-width: 300px;
+margin: 65px auto;
+background-color: #fff;
+padding: 40px;
+text-align: justify;
+box-shadow: 0 0 50px #000;
+border-top: 10px solid dodgerblue;
+border-radius: 10px 10px 0 0;
+}
+
+form *{
+display: block;
+margin: 20px 0;
+}
+
+form h3{
+margin-left: 12px;
+text-align: center;
+border-bottom: 2px solid;
+padding: 0 0 10px 0;
+}
+
+form input{
+box-sizing: content-box;
+display: block;
+width: 100%;
+padding: 10px 0;
+padding-left: 10px;
+margin-right: 20px;
+border: none;
+border-bottom: 1px solid;
+}
+
+form input[type="submit"]{
+cursor: pointer;
+background-color: #444;
+color: #fff;
+transition: ease-in-out 100ms;
+}
+
+form input[type="submit"]:hover{
+opacity: .7;
+}
+
+form span{
+text-align: center;
+display: block;
+width: 250px;
+margin: 10px auto;
+}
+
+form span a{
+text-decoration: none;
+}
+
+form span a:hover{
+text-decoration: underline dotted;
+}

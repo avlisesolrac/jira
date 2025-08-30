@@ -1,84 +1,29 @@
-<!-- <!DOCTYPE html> -->
+<!DOCTYPE html>
 <html>
 <head>
 <title>Formulário de Login</title>
-<meta charset="UTF-8">
-<style>
-
-body{
-margin: 0px;
-padding: 0px;
-font-family: sans-serif;
-}
-
-div{
-width: 300px;
-height: 350px;
-margin: 40px auto;
-background-color: #484747;
-padding: 15px;
-box-shadow: 15px -15px 40px grey;
-border-radius: 5px;
-border-top: 5px solid #1293de;
-}
-
-h6{
-margin: 20px 0px;
-color: white;
-font-size: 16px;
-text-align: center;
-border-bottom: 1px solid white;
-padding-bottom: 10px;
-}
-
-input{
-width: 100%;
-padding: 10px;
-margin-bottom: 15px;
-background-color: #141414;
-font-weight: bold;
-color: white;
-}
-
-input[type="button"]{
-background-color: #1293de;
-color: wheat;
-margin-top: 10px;
-}
-
-center{
-border-bottom: 1px solid white;
-padding-bottom: 15px;
-}
-
-a{
-color: white;
-text-decoration: none;
-}
-
-a:hover{
-border-bottom: 1px dotted #1293de;
-}
-
-</style>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="estilo.css">
 </head>
 <body>
 
-<div>
+<form action="index.html" method="post">
 
-<h6>Formulário de Login</h6>
+<h3>Formulário de Login</h3>
 
-<input id="user" type="text" placeholder="Digite seu usuário">
-<input id="pswd" type="password" placeholder="Digite sua senha">
-<input type="button" value="Logar">
+<input type="text" placeholder="Digite seu usuário">
 
-<center>
-<a href="#">Ainda não tem uma conta?</a><br>
-<a href="#">Esqueceu a senha?</a><br>
-<a href="#">Voltar para a Página Principal</a>
-</center>
+<input type="password" placeholder="Digite sua senha">
 
-</div>
+<input type="submit" value="Entrar">
+
+<span>
+<a href="../dev-2/index.html">Ainda não tem uma conta?</a>
+<a href="#">Esqueceu a senha?</a>
+<a href="#">Voltar para a Página Inicial</a>
+</span>
+
+</form>
 
 </body>
 </html>
