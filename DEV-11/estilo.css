@@ -2,10 +2,7 @@
 margin: 0;
 padding: 0;
 font-family: "Century Gothic", sans-serif;
-/*border: 1px solid;*/
-text-align: justify;
 }
-
 
 body{
 position: fixed;
@@ -21,73 +18,57 @@ left: 0;
 
 nav{
 width: 320px;
-background-color: #000;
 height: 100%;
+background-color: #000;
+color: #888;
 float: left;
 }
 
-nav>a{
-float: right;
-margin: 15px 15px 0 0;
-font-weight: bold;
-text-decoration: none;
-font-size: 29px;
-color: #999;
-transition: ease-in-out 100ms;
+i{
+position: fixed;
+float: left;
+background-color: #000;
+color: #888;
+width: 50px;
+height: 100%;
+display: block;
+margin: 0 0 0 0;
+padding: 20px 0 0 15px;
+cursor: pointer;
 }
 
-nav>a:active{
+i:active{
 color: #fff;
 }
 
 nav img{
-width: 180px;
+width: 150px;
+margin: 15px auto;
 display: block;
-margin: 0 auto;
-padding-top: 15px;
 opacity: .7;
 }
 
 nav ul li a{
 display: block;
-margin: 2px 0;
-padding: 20px 0 20px 10px;
-color: #999;
+padding: 10px 10px;
 text-decoration: none;
-transition: all ease-in-out 200ms;
+color: #888;
+transition: ease-in-out 100ms;
 }
 
 nav ul li a:hover{
+color: #fff;
 padding-left: 20px;
-color: #000;
 background-color: #888;
 }
 
 section{
-max-width: 100%;
-margin: 0 20px 0 340px;
+width: 80%;
+margin: 0 20px 0 410px;
+text-align: justify;
 }
 
 section h2{
 margin: 20px 0;
 }
 
-section p{
-display: block;
-}
-
-section input[type="button"]{
-border: none;
-background-color: #000;
-color: #999;
-padding: 10px 40px;
-margin: 20px 0;
-cursor: pointer;
-font-size: 19px;
-transition: ease-in-out 100ms;
-}
-
-section input[type="button"]:active{
-color: #fff;
-opacity: .7;
-}
