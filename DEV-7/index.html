@@ -10,10 +10,9 @@
 <body>
 
 <header>
-<h1>Site Código Profundo</h1>
-</header>
+<h1>Site CódigoProfundo</h1>
 
-<nav class="esconder-lista-menu">
+<nav>
 <ul>
 <li><a href="#">Página Inicial</a></li>
 <li><a href="#">Sobre Nós</a></li>
@@ -26,13 +25,15 @@
 </nav>
 
 <div>
-<i class="fa-solid fa-bars fa-2x"></i> Menu
+<i class="fa fa-bars fa-2x"></i>
 </div>
 
-<script type="text/javascript">
+</header>
 
-$('div').on('click', function(){
-$('nav').toggleClass('exibir-lista-menu');
+<script>
+
+$('div>i').on('click', function(){
+$('nav').toggleClass('exibir_menu');
 });
 
 </script>
