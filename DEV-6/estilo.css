@@ -1,68 +1,58 @@
 *{
-font-family: "Century Gothic";
+margin: 0;
+padding: 0;
+font-family: "Century Gothic", sans-serif;
+color: #444;
+text-align: center;
 }
 
 body{
-background: url("winterfell.webp") no-repeat;
+background: url(winterfell.webp) no-repeat center;
 background-size: cover;
+background-color: #f1f1f1;
 }
 
-div{
-box-shadow: 0 0 40px rgba(0,0,0,0.3);
-padding: 15px;
+section{
 width: 400px;
-margin: 0 auto;
+margin: 10px auto;
+padding: 40px 20px 15px 20px;
+border-radius: 10px;
+background-color: #fff;
+box-shadow: 0 0 40px #000;
+border-right: 10px solid dodgerblue;
+border-left: 10px solid dodgerblue;
 }
 
-img{
+section img{
+width: 150px;
 border-radius: 50%;
-width: 180px;
 display: block;
-margin: 0 auto;
+margin: auto;
+box-shadow: 0 0 30px #444;
 }
 
-h3{
-text-align: center;
-font-size: 28px;
+section h1,h2{
+margin: 20px 0;
 }
 
-h5{
-font-size: 18px;
-text-align: center;
-}
-
-p{
-color: white;
-font-weight: bold;
+section p{
 text-align: justify;
 }
 
-ul{
-display: inline-block;
+section i{
+margin: 20px 20px 0 0;
+cursor: pointer;
+transition: ease-in-out 300ms;
 }
 
-ul li{
-list-style-type: none;
-float: left;
-margin: 0 28px;
-}
-
-a{
-color: white;
-text-decoration: none;
-}
-
-a.fa-square-facebook:hover{
-transition: all ease-in-out 550ms;
+section i:nth-of-type(1):hover{
 color: dodgerblue;
 }
 
-a.fa-square-x-twitter:hover{
-transition: all ease-in-out 550ms;
+section i:nth-of-type(2):hover{
 color: mediumslateblue;
 }
 
-a.fa-square-instagram:hover{
-transition: all ease-in-out 550ms;
+section i:nth-of-type(3):hover{
 color: tomato;
 }
