@@ -1,47 +1,48 @@
 *{
 margin: 0;
 padding: 0;
-font-family: "Century Gothic", sans-serif;
-}
-
-body{
 background-color: #f1f1f1;
+font-family: "Century Gothic", sans-serif;
+text-align: center;
 }
 
 div{
-background-color: #1F53C5;
-color: #fff;
-width: 200px;
+display: block;
+width: 150px;
 margin: 80px auto;
-padding: 20px 25px 0 25px;
-text-align: center;
-font-weight: bold;
+padding: 40px 60px 0 60px;
+background-color: dodgerblue;
 border-radius: 10px;
-display: fixed;
+box-shadow: 0 0 5px #444;
 overflow: hidden;
 cursor: pointer;
-box-shadow: 0 0 5px #000;
 }
 
-div:hover{
-box-shadow: 0 0 15px rgba(0,0,0,0.3);
-}
-
-div:hover>p{
+div p{
+color: #fff;
+text-shadow: 0 0 5px #000;
+font-size: 18px;
+background-color: dodgerblue;
 position: relative;
-transition: all ease-in-out 550ms;
-transform: translate(0%,-250%);
+font-weight: bold;
+transition: 1s;
+top: 0;
 }
 
-i{
+div:hover p{
+transition: 1s;
+top: -70px;
+}
+
+span{
+background-color: dodgerblue;
+position: relative;
 color: tomato;
-font-size: 32px;
-position: relative;
-bottom: -60px;
+bottom: -70px;
+transition: 1s;
 }
 
-div:hover>i{
-position: relative;
-transition: all ease-in-out 550ms;
-transform: translate(0%,-250%);
+div:hover span{
+bottom: 20px;
+transition: 1s;
 }
