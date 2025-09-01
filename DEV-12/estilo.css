@@ -1,0 +1,217 @@
+*{
+margin: 0;
+padding: 0;
+font-family: "Ionicons";
+color: #fff;
+}
+
+body{
+background-color: #f1f1f1;
+}
+
+nav{
+width: 50%;
+margin: 10% auto;
+text-align: center;
+}
+
+nav ul{
+display: inline-block;
+}
+
+nav ul li{
+list-style-type: none;
+float: left;
+padding: 0 10px;
+}
+
+nav ul li a{
+overflow: hidden;
+}
+
+/*=============BOTÃO DO RELÓGIO=============*/
+
+nav ul li a#relogio{
+display: inline-block;
+width: 70px;
+height: 70px;
+border-radius: 50%;
+background-color: tomato;
+text-align: center;
+font-size: 40px;
+text-decoration: none;
+}
+
+nav ul li a#relogio:before{
+position: relative;
+content: '\f35a';
+top: 10px;
+transition: 500ms;
+}
+
+nav ul li a#relogio:hover:before{
+top: -40px;
+}
+
+nav ul li a#relogio:after{
+display: block;
+position: relative;
+content: '\f35a';
+top: 25px;
+transition: 500ms;
+}
+
+nav ul li a#relogio:hover:after{
+top: -32px;
+}
+
+/*=============BOTÃO DA CÂMERA=============*/
+
+nav ul li a#camera{
+display: inline-block;
+width: 70px;
+height: 70px;
+border-radius: 50%;
+background-color: #87b645;
+text-align: center;
+font-size: 40px;
+text-decoration: none;
+}
+
+nav ul li a#camera:before{
+position: relative;
+content: '\f2d3';
+top: 10px;
+transition: 500ms;
+}
+
+nav ul li a#camera:hover:before{
+top: -40px;
+}
+
+nav ul li a#camera:after{
+display: block;
+position: relative;
+content: '\f2d3';
+top: 25px;
+transition: 500ms;
+}
+
+nav ul li a#camera:hover:after{
+top: -32px;
+}
+
+
+/*=============BOTÃO DE DOWNLOAD=============*/
+
+nav ul li a#download{
+display: inline-block;
+width: 70px;
+height: 70px;
+border-radius: 50%;
+background-color: #5B7A8C;
+text-align: center;
+font-size: 40px;
+text-decoration: none;
+}
+
+nav ul li a#download:before{
+position: relative;
+content: '\f2dd';
+top: 10px;
+transition: 500ms;
+}
+
+nav ul li a#download:hover:before{
+top: -40px;
+}
+
+nav ul li a#download:after{
+display: block;
+position: relative;
+content: '\f2dd';
+top: 25px;
+transition: 500ms;
+}
+
+nav ul li a#download:hover:after{
+top: -32px;
+}
+
+/*=============BOTÃO DE FAVORITO=============*/
+
+nav ul li a#favorito{
+display: inline-block;
+width: 70px;
+height: 70px;
+border-radius: 50%;
+background-color: #FB3663;
+text-align: center;
+font-size: 40px;
+text-decoration: none;
+}
+
+nav ul li a#favorito:before{
+position: relative;
+content: '\f388';
+top: 10px;
+transition: 500ms;
+}
+
+nav ul li a#favorito:hover:before{
+top: -40px;
+}
+
+nav ul li a#favorito:after{
+display: block;
+position: relative;
+content: '\f388';
+top: 25px;
+transition: 500ms;
+}
+
+nav ul li a#favorito:hover:after{
+top: -32px;
+}
+
+/*=============BOTÃO DE PASTA=============*/
+
+nav ul li a#pasta{
+display: inline-block;
+width: 70px;
+height: 70px;
+border-radius: 50%;
+background-color: #FFBB00;
+text-align: center;
+font-size: 40px;
+text-decoration: none;
+}
+
+nav ul li a#pasta:before{
+position: relative;
+content: '\f2e0';
+top: 10px;
+transition: 500ms;
+}
+
+nav ul li a#pasta:hover:before{
+top: -40px;
+}
+
+nav ul li a#pasta:after{
+display: block;
+position: relative;
+content: '\f2e0';
+top: 25px;
+transition: 500ms;
+}
+
+nav ul li a#pasta:hover:after{
+top: -32px;
+}
+
+@media screen and (max-width: 900px){
+nav ul li{
+width: 100%;
+}
+}
