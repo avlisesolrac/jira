@@ -10,208 +10,243 @@ background-color: #f1f1f1;
 }
 
 nav{
+/*border: 1px solid;*/
 width: 50%;
 margin: 10% auto;
-text-align: center;
 }
 
 nav ul{
-display: inline-block;
+/*border: 1px solid;*/
+width: 90%;
+margin: auto;
 }
 
 nav ul li{
-list-style-type: none;
 float: left;
 padding: 0 10px;
+list-style-type: none;
 }
-
-nav ul li a{
-overflow: hidden;
-}
-
-/*=============BOTÃO DO RELÓGIO=============*/
 
 nav ul li a#relogio{
-display: inline-block;
+/*border: 1px solid;*/
+display: block;
 width: 70px;
 height: 70px;
 border-radius: 50%;
 background-color: tomato;
 text-align: center;
-font-size: 40px;
+font-size: 45px;
 text-decoration: none;
+overflow: hidden;
 }
 
 nav ul li a#relogio:before{
 position: relative;
-content: '\f35a';
+content: "\f35a";
+display: inline-block;
 top: 10px;
 transition: 500ms;
 }
 
 nav ul li a#relogio:hover:before{
-top: -40px;
+content: "\f35a";
+display: inline-block;
+top: -50px;
 }
 
 nav ul li a#relogio:after{
-display: block;
 position: relative;
-content: '\f35a';
-top: 25px;
+content: "\f35a";
+display: inline-block;
+bottom: -20px;
 transition: 500ms;
 }
 
 nav ul li a#relogio:hover:after{
-top: -32px;
+content: "\f35a";
+display: inline-block;
+bottom: 40px;
 }
 
-/*=============BOTÃO DA CÂMERA=============*/
+/*CAMERA*/
+
 
 nav ul li a#camera{
-display: inline-block;
+/*border: 1px solid;*/
+display: block;
 width: 70px;
 height: 70px;
 border-radius: 50%;
 background-color: #87b645;
 text-align: center;
-font-size: 40px;
+font-size: 45px;
 text-decoration: none;
+overflow: hidden;
 }
 
 nav ul li a#camera:before{
 position: relative;
-content: '\f2d3';
+content: "\f2d3";
+display: inline-block;
 top: 10px;
 transition: 500ms;
 }
 
 nav ul li a#camera:hover:before{
-top: -40px;
+content: "\f2d3";
+display: inline-block;
+top: -50px;
 }
 
 nav ul li a#camera:after{
-display: block;
 position: relative;
-content: '\f2d3';
-top: 25px;
+content: "\f2d3";
+display: inline-block;
+bottom: -20px;
 transition: 500ms;
 }
 
 nav ul li a#camera:hover:after{
-top: -32px;
+content: "\f2d3";
+display: inline-block;
+bottom: 40px;
 }
 
-
-/*=============BOTÃO DE DOWNLOAD=============*/
+/*DOWNLOAD*/
 
 nav ul li a#download{
-display: inline-block;
+/*border: 1px solid;*/
+display: block;
 width: 70px;
 height: 70px;
 border-radius: 50%;
 background-color: #5B7A8C;
 text-align: center;
-font-size: 40px;
+font-size: 45px;
 text-decoration: none;
+overflow: hidden;
 }
 
 nav ul li a#download:before{
 position: relative;
-content: '\f2dd';
+content: "\f2dd";
+display: inline-block;
 top: 10px;
 transition: 500ms;
 }
 
 nav ul li a#download:hover:before{
-top: -40px;
+content: "\f2dd";
+display: inline-block;
+top: -50px;
 }
 
 nav ul li a#download:after{
-display: block;
 position: relative;
-content: '\f2dd';
-top: 25px;
+content: "\f2dd";
+display: inline-block;
+bottom: -20px;
 transition: 500ms;
 }
 
 nav ul li a#download:hover:after{
-top: -32px;
+content: "\f2dd";
+display: inline-block;
+bottom: 40px;
 }
 
-/*=============BOTÃO DE FAVORITO=============*/
+
+/*FAVORITO*/
 
 nav ul li a#favorito{
-display: inline-block;
+/*border: 1px solid;*/
+display: block;
 width: 70px;
 height: 70px;
 border-radius: 50%;
 background-color: #FB3663;
 text-align: center;
-font-size: 40px;
+font-size: 45px;
 text-decoration: none;
+overflow: hidden;
 }
 
 nav ul li a#favorito:before{
 position: relative;
-content: '\f388';
+content: "\f388";
+display: inline-block;
 top: 10px;
 transition: 500ms;
 }
 
 nav ul li a#favorito:hover:before{
-top: -40px;
+content: "\f388";
+display: inline-block;
+top: -50px;
 }
 
 nav ul li a#favorito:after{
-display: block;
 position: relative;
-content: '\f388';
-top: 25px;
+content: "\f388";
+display: inline-block;
+bottom: -20px;
 transition: 500ms;
 }
 
 nav ul li a#favorito:hover:after{
-top: -32px;
+content: "\f388";
+display: inline-block;
+bottom: 40px;
 }
 
-/*=============BOTÃO DE PASTA=============*/
+/*PASTA*/
 
 nav ul li a#pasta{
-display: inline-block;
+/*border: 1px solid;*/
+display: block;
 width: 70px;
 height: 70px;
 border-radius: 50%;
 background-color: #FFBB00;
 text-align: center;
-font-size: 40px;
+font-size: 45px;
 text-decoration: none;
+overflow: hidden;
 }
 
 nav ul li a#pasta:before{
 position: relative;
-content: '\f2e0';
+content: "\f2e0";
+display: inline-block;
 top: 10px;
 transition: 500ms;
 }
 
 nav ul li a#pasta:hover:before{
-top: -40px;
+content: "\f2e0";
+display: inline-block;
+top: -50px;
 }
 
 nav ul li a#pasta:after{
-display: block;
 position: relative;
-content: '\f2e0';
-top: 25px;
+content: "\f2e0";
+display: inline-block;
+bottom: -20px;
 transition: 500ms;
 }
 
 nav ul li a#pasta:hover:after{
-top: -32px;
+content: "\f2e0";
+display: inline-block;
+bottom: 40px;
 }
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 1000px){
+
 nav ul li{
 width: 100%;
+padding: 10px 0px;
 }
+
 }
