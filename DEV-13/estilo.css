@@ -2,27 +2,51 @@
 margin: 0;
 padding: 0;
 font-family: "Century Gothic", sans-serif;
+text-align: justify;
 /*border: 1px solid;*/
 }
 
-section p{
-overflow: hidden;
-height: 0em;
-text-align: justify;
-font-family: intro;
-background-color: #e4e4e4;
-transition: .5s;
+body{
+background-color: #f1f1f1;
 }
 
-section a{
-text-decoration: none;
+nav{
+width: 50%;
+margin: 40px auto;
+}
+
+nav ul li{
+list-style-type: none;
+}
+
+nav ul li a{
 display: block;
 padding: 10px;
-background-color: black;
-border-bottom: 2px solid gray;
-color: white;
+background-color: tomato;
+text-decoration: none;
+border-bottom: 2px solid #000;
+color: #fff;
+font-weight: bold;
+}
+
+nav ul li p{
+position: relative;
+top: 10px;
+overflow: hidden;
+height: 0em;
+padding: 0 30px;
+transition: 500ms;
+background-color: #f1f1f1;
 }
 
 :target p{
-height: 20em;
+height: 23em;
+}
+
+@media screen and (max-width: 800px){
+
+nav{
+width: 90%;
+}
+
 }
