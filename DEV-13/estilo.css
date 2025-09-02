@@ -1,0 +1,28 @@
+*{
+margin: 0;
+padding: 0;
+font-family: "Century Gothic", sans-serif;
+/*border: 1px solid;*/
+}
+
+section p{
+overflow: hidden;
+height: 0em;
+text-align: justify;
+font-family: intro;
+background-color: #e4e4e4;
+transition: .5s;
+}
+
+section a{
+text-decoration: none;
+display: block;
+padding: 10px;
+background-color: black;
+border-bottom: 2px solid gray;
+color: white;
+}
+
+:target p{
+height: 20em;
+}
