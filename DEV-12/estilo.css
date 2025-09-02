@@ -1,0 +1,241 @@
+*{
+margin: 0;
+padding: 0;
+font-family: "Ionicons";
+color: #fff;
+}
+
+body{
+background-color: #f1f1f1;
+}
+
+nav{
+width: 90%;
+margin: 10% auto;
+text-align: center;
+}
+
+nav ul li{
+display: inline-block;
+list-style-type: none;
+}
+
+/*==================BOTÃO DO RELÓGIO==================*/
+
+nav ul li a#relogio{
+display: block;
+margin-right: 10px;
+width: 70px;
+height: 70px;
+border-radius: 50%;
+background-color: tomato;
+text-align: center;
+font-size: 45px;
+text-decoration: none;
+overflow: hidden;
+box-shadow: 0 0 20px #444;
+}
+
+nav ul li a#relogio:before{
+position: relative;
+content: '\f35a';
+top: 10px;
+transition: .5s;
+}
+
+nav ul li a#relogio:hover:before{
+position: relative;
+content: '\f35a';
+top: -50px;
+}
+
+nav ul li a#relogio:after{
+display: block;
+position: relative;
+content: '\f35a';
+bottom: -25px;
+transition: .5s;
+}
+
+nav ul li a#relogio:hover:after{
+display: block;
+position: relative;
+content: '\f35a';
+bottom: 40px;
+}
+
+/*==================BOTÃO DA CÂMERA==================*/
+
+nav ul li a#camera{
+display: block;
+margin-right: 10px;
+width: 70px;
+height: 70px;
+border-radius: 50%;
+background-color: #87b645;
+text-align: center;
+font-size: 45px;
+text-decoration: none;
+overflow: hidden;
+box-shadow: 0 0 20px #444;
+}
+
+nav ul li a#camera:before{
+position: relative;
+content: '\f2d3';
+top: 10px;
+transition: .5s;
+}
+
+nav ul li a#camera:hover:before{
+position: relative;
+content: '\f2d3';
+top: -50px;
+}
+
+nav ul li a#camera:after{
+display: block;
+position: relative;
+content: '\f2d3';
+bottom: -25px;
+transition: .5s;
+}
+
+nav ul li a#camera:hover:after{
+display: block;
+position: relative;
+content: '\f2d3';
+bottom: 40px;
+}
+
+/*==================BOTÃO DE DOWNLOAD==================*/
+
+nav ul li a#download{
+display: block;
+margin-right: 10px;
+width: 70px;
+height: 70px;
+border-radius: 50%;
+background-color: #5B7A8C;
+text-align: center;
+font-size: 45px;
+text-decoration: none;
+overflow: hidden;
+box-shadow: 0 0 20px #444;
+}
+
+nav ul li a#download:before{
+position: relative;
+content: '\f2dd';
+top: 10px;
+transition: .5s;
+}
+
+nav ul li a#download:hover:before{
+position: relative;
+content: '\f2dd';
+top: -50px;
+}
+
+nav ul li a#download:after{
+display: block;
+position: relative;
+content: '\f2dd';
+bottom: -25px;
+transition: .5s;
+}
+
+nav ul li a#download:hover:after{
+display: block;
+position: relative;
+content: '\f2dd';
+bottom: 40px;
+}
+
+/*==================BOTÃO DE FAVORITO==================*/
+
+nav ul li a#favorito{
+display: block;
+margin-right: 10px;
+width: 70px;
+height: 70px;
+border-radius: 50%;
+background-color: #FB3663;
+text-align: center;
+font-size: 45px;
+text-decoration: none;
+overflow: hidden;
+box-shadow: 0 0 20px #444;
+}
+
+nav ul li a#favorito:before{
+position: relative;
+content: '\f388';
+top: 10px;
+transition: .5s;
+}
+
+nav ul li a#favorito:hover:before{
+position: relative;
+content: '\f388';
+top: -50px;
+}
+
+nav ul li a#favorito:after{
+display: block;
+position: relative;
+content: '\f388';
+bottom: -25px;
+transition: .5s;
+}
+
+nav ul li a#favorito:hover:after{
+display: block;
+position: relative;
+content: '\f388';
+bottom: 40px;
+}
+
+/*==================BOTÃO DE PASTA==================*/
+
+nav ul li a#pasta{
+display: block;
+margin-right: 10px;
+width: 70px;
+height: 70px;
+border-radius: 50%;
+background-color: #FFBB00;
+text-align: center;
+font-size: 45px;
+text-decoration: none;
+overflow: hidden;
+box-shadow: 0 0 20px #444;
+}
+
+nav ul li a#pasta:before{
+position: relative;
+content: '\f2e0';
+top: 10px;
+transition: .5s;
+}
+
+nav ul li a#pasta:hover:before{
+position: relative;
+content: '\f2e0';
+top: -50px;
+}
+
+nav ul li a#pasta:after{
+display: block;
+position: relative;
+content: '\f2e0';
+bottom: -25px;
+transition: .5s;
+}
+
+nav ul li a#pasta:hover:after{
+display: block;
+position: relative;
+content: '\f2e0';
+bottom: 40px;
+}
