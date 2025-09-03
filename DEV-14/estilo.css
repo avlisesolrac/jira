@@ -1,0 +1,33 @@
+*{
+margin: 0;
+padding: 0;
+color: #000;
+background-color: #f1f1f1;
+}
+
+nav ul{
+max-width: 700px;
+margin: 20px auto;
+justify-content: space-around;
+display: flex;
+}
+
+nav ul li{
+list-style-type: none;
+}
+
+nav ul li a{
+text-decoration: none;
+font-size: 25px;
+background-color: #314652;
+padding: 20px;
+line-height: 58px;
+border-radius: 50%;
+color: #f1f1f1;
+transition: all .4s;
+}
+
+nav ul li a:hover{
+box-shadow: 0 0 10px #444;
+transform: scale(1.2);
+}
