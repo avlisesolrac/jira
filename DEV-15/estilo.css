@@ -1,8 +1,9 @@
 *{
 margin: 0;
 padding: 0;
-font-family: "Century Gothic", sans-serif;
+font-family: 'Montserrat', sans-serif;
 color: #444;
+text-align: justify;
 }
 
 body{
@@ -10,80 +11,100 @@ background-color: #f1f1f1;
 }
 
 div{
-width: 380px;
+width: 350px;
 margin: 20px auto;
-overflow: hidden;
 background-color: #fff;
-text-align: center;
-box-shadow: 0 0 10px #444;
-border-radius: 10px;
+overflow: hidden;
+}
+
+div header{
+position: relative;
 }
 
 div header img{
-width: 380px;
-height: 200px;
+width: 100%;
+height: 400px;
 }
 
-header{
-position: relative;
-}
-
-header:before{
+div header:before{
 content: '';
-border-top: 30px solid transparent;
-border-left: 380px solid #fff;
-bottom: 0px;
-padding: 3px;
+border-top: 45px solid transparent;
+border-left: 350px solid #fff;
+padding: 2px;
 position: absolute;
+bottom: 0px;
 }
 
-div h2, h3, p, ul{
-margin: 10px 10px;
+div section, footer{
+padding: 10px 30px;
 }
 
-div ul{
-justify-content: space-evenly;
+div section h2, h3{
+display: block;
+margin-bottom: 15px;
+}
+
+div section ul{
 display: flex;
+justify-content: space-around;
+list-style-type: none;
 margin: 20px 0;
 }
 
-div ul li{
-list-style-type: none;
-}
-
-div ul li a{
+div section ul li a{
+text-align: center;
 text-decoration: none;
-color: #fff;
 background-color: #314652;
+color: #fff;
 width: 30px;
 height: 30px;
-border-radius: 50%;
 font-size: 30px;
-padding: 10px;
+border-radius: 50%;
+padding: 5px;
 }
 
-div ul li a:hover{
-transition: .5s;
+li:nth-child(1) a{
+background: #000;
+}
+
+li:nth-child(2) a{
+background: #0073B2;
+}
+
+li:nth-child(3) a{
+background: #ff0033;
+}
+
+li:nth-child(4) a{
+background: #0866FF;
+}
+
+li:nth-child(5) a{
+background: tomato;
+}
+
+div section ul li a:hover{
+transition: 500ms;
 transform: scale(1.2);
 }
 
-span{
-display: block;
-width: 380px;
-border: 1p solid black;
-height: 60px;
+div footer{
 background-color: #314652;
-color: #fff;
-padding-top: 30px;
+height: 10px;
+padding: 60px 10px;
 position: relative;
-padding-left: -20px;
 }
 
-span:before{
+div footer p{
+color: #fff;
+font-weight: 500;
+}
+
+div footer:before{
 content: '';
-border-bottom: 30px solid transparent;
-border-right: 380px solid #fff;
-bottom: 45px;
-margin: 0px;
-position: relative;
+position: absolute;
+border-top: 45px solid #fff;
+border-left: 350px solid #314652;
+left: 0;
+top: 0;
 }
