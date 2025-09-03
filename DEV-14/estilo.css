@@ -2,6 +2,9 @@
 margin: 0;
 padding: 0;
 color: #000;
+}
+
+body{
 background-color: #f1f1f1;
 }
 
@@ -18,16 +21,50 @@ list-style-type: none;
 
 nav ul li a{
 text-decoration: none;
-font-size: 25px;
-background-color: #314652;
+color: #fff;
+font-size: 30px;
 padding: 20px;
-line-height: 58px;
+background-color: #314652;
 border-radius: 50%;
-color: #f1f1f1;
 transition: all .4s;
 }
 
-nav ul li a:hover{
+/*==========BOTÃO DO FACEBOOK==========*/
+
+nav ul li:nth-of-type(1):hover a{
+background-color: #0866FF;
+box-shadow: 0 0 10px #444;
+transform: scale(1.2);
+}
+
+/*==========BOTÃO DO X - ANTIGO TWITTER==========*/
+
+nav ul li:nth-of-type(2):hover a{
+background-color: #000;
+box-shadow: 0 0 10px #444;
+transform: scale(1.2);
+}
+
+/*==========BOTÃO DA BLUESKY==========*/
+
+nav ul li:nth-of-type(3):hover a{
+background-color: #1185FE;
+box-shadow: 0 0 10px #444;
+transform: scale(1.2);
+}
+
+/*==========BOTÃO DO YOUTUBE==========*/
+
+nav ul li:nth-of-type(4):hover a{
+background-color: #ff0033;
+box-shadow: 0 0 10px #444;
+transform: scale(1.2);
+}
+
+/*==========BOTÃO DO LINKEDIN==========*/
+
+nav ul li:nth-of-type(5):hover a{
+background-color: #0073B2;
 box-shadow: 0 0 10px #444;
 transform: scale(1.2);
 }
