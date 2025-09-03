@@ -1,0 +1,103 @@
+*{
+margin: 0;
+padding: 0;
+font-family: "Montserrat", sans-serif;
+color: #444;
+text-align: justify;
+}
+
+body{
+background-color: #f1f1f1;
+}
+
+div{
+width: 400px;
+margin: 20px auto;
+border-radius: 20px;
+background-color: #fff;
+overflow: hidden;
+box-shadow: 0 0 10px #444;
+}
+
+div header{
+position: relative;
+}
+
+div header img{
+width: 100%;
+border-radius: 20px 20px 0 0;
+}
+
+div header:before{
+position: absolute;
+content: '';
+border-top: 40px solid transparent;
+border-left: 400px solid #fff;
+bottom: 0;
+padding: 2px;
+}
+
+div section{
+margin: 10px 30px;
+}
+
+div section h2, h3, p, ul{
+margin-bottom: 20px;
+}
+
+div section ul{
+display: flex;
+justify-content: space-around;
+list-style-type: none;
+}
+
+div section ul li a{
+text-decoration: none;
+font-size: 30px;
+}
+
+div section ul li a:hover{
+transition: .5s;
+transform: scale(1.5);
+}
+
+/*======BOTÃO DO GITHUB======*/
+
+div section ul li:nth-child(1) a{
+color: #000;
+}
+
+/*======BOTÃO DO LINKEDIN======*/
+div section ul li:nth-child(2) a{
+color: #0073B2;
+}
+
+/*======BOTÃO DO YOUTUBE======*/
+div section ul li:nth-child(3) a{
+color: #ff0033;
+}
+
+/*======BOTÃO DO INSTAGRAM======*/
+div section ul li:nth-child(4) a{
+color: #FF226C;
+}
+
+div footer{
+background-color: #314652;
+border-radius: 0 0 20px 20px;
+height: 100px;
+position: relative;
+}
+
+div footer:before{
+content: '';
+position: absolute;
+border-bottom: 30px solid transparent;
+border-right: 400px solid #fff;
+top: 0;
+}
+
+div footer p{
+padding: 35px 20px;
+color: #fff;
+}
