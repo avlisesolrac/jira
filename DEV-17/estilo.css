@@ -1,0 +1,64 @@
+@import 'http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css';
+
+*{
+margin: 0;
+padding: 0;
+font-family: 'Century Gothic', sans-serif;
+color: #fff;
+}
+
+body{
+background-color: #444;
+}
+
+nav{
+width: 80%;
+margin: 50px auto;
+}
+
+nav ul{
+display: flex;
+justify-content: space-around;
+list-style-type: none;
+}
+
+nav ul li a{
+width: 60px;
+height: 60px;
+display: flex;
+text-decoration: none;
+align-items: center;
+justify-content: center;
+border-radius: 50%;
+font-size: 35px;
+}
+
+nav ul li a:hover{
+box-shadow: 0 0 30px #cddc39;
+color: #cddc39;
+}
+
+/*======BOTÃO DE FREEBSD-DEVIL======*/
+nav ul li:nth-child(1) a{
+background-color: #f44336;
+}
+
+/*======BOTÃO DE ANDROID-TRAIN======*/
+nav ul li:nth-child(2) a{
+background-color: #2196f3;
+}
+
+/*======BOTÃO DE ANDROID-CLOUD-CIRCLE======*/
+nav ul li:nth-child(3) a{
+background-color: #4caf50;
+}
+
+/*======BOTÃO DE ANDROID-PLAYSTORE======*/
+nav ul li:nth-child(4) a{
+background-color: #ff9800;
+}
+
+/*======BOTÃO DE ANDROID-FOLDER======*/
+nav ul li:nth-child(5) a{
+background-color: #795548;
+}
