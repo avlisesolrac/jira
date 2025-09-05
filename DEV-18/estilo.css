@@ -5,66 +5,51 @@ font-family: 'Century Gothic', sans-serif;
 color: #fff;
 }
 
-html,body{
+html, body, header, section, footer{
 height: 100%;
+position: relative;
 }
 
 header{
-position: relative;
-background-image: url(1.webp);
-background-repeat: no-repeat;
+background: url(1.webp) no-repeat center;
 background-size: cover;
-height: 100%;
+overflow: hidden;
 }
 
-header a{
-color: #fff;
-padding: 10px 30px;
+header article{
+position: absolute;
+max-width: 600px;
 display: block;
-position: absolute;
-top: 80%;
-left: 55%;
-font-size: 22px;
-background-color: #f44336;
-cursor: pointer;
-border: none;
-text-decoration: none;
-border-radius: 20px;
-}
-
-header a,ion-icon{
-display: flex;
-justify-content: space-around;
-margin: 0 10px;
-}
-
-header a:hover{
-box-shadow: 0 0 10px #f1f1f1;
-opacity: .9;
-}
-
-header p{
-position: absolute;
+right: 5%;
 top: 50%;
-left: 55%;
-right: 150px;
-display: block;
 text-align: justify;
-margin: 10px;
+}
+
+header article a{
+margin: 20px 0;
+display: flex;
+padding: 15px 30px;
+width: 170px;
+justify-content: space-evenly;
+align-items: center;
+font-size: 18px;
+background-color: #f44336;
+text-decoration: none;
+font-weight: bold;
+transition: .3s;
+}
+
+header article a:hover{
+box-shadow: 0 0 30px #444;
+color: #000;
 }
 
 section{
-position: relative;
-background-image: url(2.webp);
-background-repeat: no-repeat;
+background: url(2.webp) no-repeat center;
 background-size: cover;
-height: 100%;
 }
 
 footer{
-position: relative;
-background-image: url(3.jpg);
-background-repeat: no-repeat;
+background: url(3.jpg) no-repeat center;
 background-size: cover;
-height: 100%;
 }
