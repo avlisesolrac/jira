@@ -1,0 +1,74 @@
+@import 'http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css';
+
+*{
+margin: 0;
+padding: 0;
+font-family: 'Century Gothic', sans-serif;
+color: #fff;
+}
+
+body{
+background-color: #444;
+}
+
+nav{
+/*width: 90%;
+margin: 20px auto;*/
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+
+}
+
+nav ul{
+display: flex;
+justify-content: space-around;
+list-style-type: none;
+}
+
+nav ul li a{
+display: block;
+width: 60px;
+height: 60px;
+font-size: 30px;
+text-align: center;
+line-height: 60px;
+margin-left: 30px;
+transition: .4s;
+}
+
+nav ul li a:hover{
+box-shadow: 0 0 30px #cddc39;
+color: #cddc39;
+}
+
+/*=======================BOTÃO FREEBSD-DEVIL=======================*/
+nav ul li:nth-child(1) a{
+border-radius: 50%;
+background-color: #f44336;
+}
+
+/*=======================BOTÃO ANDROID-TRAIN=======================*/
+nav ul li:nth-child(2) a{
+border-radius: 50%;
+background-color: #2196f3;
+}
+
+/*=======================BOTÃO ANDROID-CLOUD-CIRCLE=======================*/
+nav ul li:nth-child(3) a{
+border-radius: 50%;
+background-color: #4caf50;
+}
+
+/*=======================BOTÃO ANDROID-PLAYSTORE=======================*/
+nav ul li:nth-child(4) a{
+border-radius: 50%;
+background-color: #ff9800;
+}
+
+/*=======================BOTÃO ANDROID-FOLDER=======================*/
+nav ul li:nth-child(5) a{
+border-radius: 50%;
+background-color: #795548;
+}
