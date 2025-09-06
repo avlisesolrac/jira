@@ -1,38 +1,41 @@
 *{
 margin: 0;
 padding: 0;
-font-family: 'Century Gothic', sans-serif;
+font-family: "Century Gothic", sans-serif;
 color: #fff;
 }
 
-#slide{
-width: 600px;
-position: absolute;
-}
-
 img{
+display: block;
 width: 600px;
-position: absolute;
+cursor: pointer;
 }
 
-#sobrepor{
-background-color: rgba(175,82,74,0.8);
+section{
+width: 600px;
+}
+
+div{
+display: block;
 width: 0px;
-height: 397px;
+background-color: rgba(250,128,114,0.9);
+height: 398px;
 top: 0;
-position: relative;
+position: absolute;
+transition: .7s;
 display: flex;
 justify-content: center;
 align-items: center;
-transition: .7s ease;
 overflow: hidden;
+cursor: pointer;
 }
 
-#sobrepor h2{
-border: 4px solid #fff;
+div h2{
+border: 4px solid;
 padding: 10px 30px;
+border-radius: 10px;
 }
 
-#slide:hover #sobrepor{
+section:hover div{
 width: 600px;
 }
