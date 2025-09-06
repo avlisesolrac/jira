@@ -1,15 +1,18 @@
 *{
 margin: 0;
 padding: 0;
-font-family: "Century Gothic", sans-serif;
+font-family: 'Century Gothic', sans-serif;
+color: #fff;
+text-decoration: none;
 }
 
-body{
-position: fixed;
+html, body{
+position: absolute;
+background-color: #f1f1f1;
 width: 100%;
 height: 100%;
-left: -320px;
-transition: ease-in-out 300ms;
+left: -112px;
+transition: .7s;
 }
 
 .exibir_menu{
@@ -17,58 +20,59 @@ left: 0;
 }
 
 nav{
-width: 320px;
+width: 280px;
 height: 100%;
 background-color: #000;
-color: #888;
-float: left;
+position: absolute;
 }
 
-i{
-position: fixed;
-float: left;
-background-color: #000;
-color: #888;
-width: 50px;
-height: 100%;
-display: block;
-margin: 0 0 0 0;
-padding: 20px 0 0 15px;
+nav #menu_hamburguer{
+position: absolute;
+top: 0;
+right: 0;
+font-size: 38px;
+padding: 5px;
+margin: 5px;
+border-radius: 50%;
+opacity: .7;
+}
+
+nav #menu_hamburguer:hover{
 cursor: pointer;
-}
-
-i:active{
-color: #fff;
+background-color: rgba(255,255,255,0.3);
 }
 
 nav img{
 width: 150px;
-margin: 15px auto;
-display: block;
+margin: 20px 50px;
 opacity: .7;
 }
 
 nav ul li a{
 display: block;
-padding: 10px 10px;
-text-decoration: none;
-color: #888;
-transition: ease-in-out 100ms;
+padding: 10px 0;
+font-size: 20px;
+opacity: .5;
 }
 
 nav ul li a:hover{
-color: #fff;
-padding-left: 20px;
-background-color: #888;
+transition: .5s;
+padding-left: 5px;
+background-color: #444;
+}
+
+nav ul li ion-icon{
+margin: 0 10px;
 }
 
 section{
-width: 80%;
-margin: 0 20px 0 410px;
+display: block;
+padding: 20px 0 0 300px;
+padding-right: 20px;
+}
+
+section article h1, p{
+color: #000;
+padding-bottom: 20px;
 text-align: justify;
 }
-
-section h2{
-margin: 20px 0;
-}
-
