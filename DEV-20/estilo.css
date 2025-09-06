@@ -1,0 +1,42 @@
+*{
+margin: 0;
+padding: 0;
+font-family: 'Century Gothic', sans-serif;
+color: #444;
+font-weight: bold;
+font-size: 30px;
+}
+
+body{
+background-color: #f1f1f1;
+}
+
+nav ul{
+display: flex;
+justify-content: space-around;
+list-style-type: none;
+margin: 50px auto;
+}
+
+nav ul li a{
+display: block;
+text-decoration: none;
+padding: 10px 15px;
+position: relative;
+position: relative;
+overflow: hidden;
+}
+
+nav ul li a:before{
+content: '';
+border-bottom: 8px solid;
+position: absolute;
+bottom: 0;
+width: 60px;
+right: 150px;
+}
+
+nav ul li a:hover:before{
+transition: .7s;
+right: 0;
+}
