@@ -1,7 +1,9 @@
+@import 'http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css';
+
 *{
 margin: 0;
 padding: 0;
-font-family: "Century Gothic", sans-serif;
+font-family: 'Ionicons', 'Century Gothic', sans-serif;
 }
 
 body{
@@ -9,47 +11,35 @@ background-color: #f1f1f1;
 }
 
 nav{
-max-width: 50%;
-margin: 20px auto;
+width: 480px;
+margin: auto;
 }
 
-nav ul li{
+nav ul{
 list-style-type: none;
-background-color: #fff;
 }
 
 nav ul li a{
-text-decoration: none;
-border-bottom: 2px solid #444;
+border: 1px solid;
 display: block;
-padding: 15px 10px;
+padding: 10px 0;
+text-decoration: none;
 background-color: tomato;
 color: #fff;
+padding-left: 15px;
 font-weight: bold;
 }
 
-nav ul li a ion-icon{
-position: relative;
-top: 7px;
-font-size: 25px;
-}
-
 nav ul li p{
-margin: 0 30px;
+padding: 0px 15px;
+text-align: justify;
 height: 0em;
 overflow: hidden;
-transition: 500ms;
+display: block;
+transition: .8s;
 }
 
 :target p{
+height: 20em;
 padding-top: 10px;
-height: 25em;
-}
-
-@media screen and (max-width: 800px){
-
-nav{
-max-width: 90%;
-}
-
 }
