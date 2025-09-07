@@ -1,7 +1,9 @@
+@import 'http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css';
+
 *{
 margin: 0;
 padding: 0;
-font-family: "Century Gothic", sans-serif;
+font-family: 'Century Gothic', sans-serif;
 color: #444;
 }
 
@@ -10,64 +12,87 @@ background-color: #f1f1f1;
 }
 
 form{
-max-width: 450px;
+width: 500px;
 margin: 20px auto;
-background-color: #fff;
 box-shadow: 0 0 10px #444;
-border-radius: 10px;
+background-color: #fff;
+overflow: hidden;
 }
 
 form header{
 background-color: dodgerblue;
-text-align: center;
+font-size: 150px;
+color: #fff;
 padding: 20px;
+text-align: center;
 position: relative;
-border-radius: 10px 10px 0 0;
 }
 
-form header:before{
+form header:after{
 content: '';
 position: absolute;
-border-top: 50px solid transparent;
-border-right: 450px solid #fff;
-left: 0;
 bottom: 0;
+left: 0;
+border-top: 50px solid transparent;
+border-right: 500px solid #fff;
 }
 
-form header ion-icon{
-color: #fff;
-font-size: 150px;
+form section{
+margin: 20px auto;
+width: 480px;
 }
 
-form section, footer{
-padding: 5px 20px;
-width: 390px;
-}
-
-form section input, textarea{
-width: 100%;
-padding: 10px 10px;
-margin: 10px 0;
+form section input{
+box-sizing: content-box;
+width: 455px;
+padding: 15px 10px;
+margin: 15px 0;
+outline: none;
 border: none;
 border-bottom: 1px solid dodgerblue;
-outline: none;
 }
 
 form section textarea{
-height: 120px;
-}
-
-form footer input[type="submit"]{
-width: 410px;
-padding: 10px 0;
-background-color: dodgerblue;
+width: 455px;
+height: 100px;
+padding: 15px 10px;
+margin: 15px 0;
+outline: none;
 border: none;
-color: white;
-font-weight: bold;
-font-size: 16px;
-cursor: pointer;
+border-bottom: 1px solid dodgerblue;
 }
 
-form footer input[type="submit"]:hover{
+form footer{
+position: relative;
+}
+
+form footer input{
+width: 100%;
+background-color: dodgerblue;
+color: #fff;
+font-size: 18px;
+padding: 15px 10px;
+margin: 0 auto;
+outline: none;
+border: none;
+border: 1px solid dodgerblue;
+margin-bottom: 50px;
+}
+
+form footer input:hover{
+cursor: pointer;
 opacity: .7;
+}
+
+form footer:after{
+content: '';
+position: absolute;
+bottom: 0;
+left: 0;
+border-bottom: 30px solid dodgerblue;
+border-left: 500px solid #fff;
+}
+
+form{
+border-bottom: 60px solid dodgerblue;
 }
