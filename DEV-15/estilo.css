@@ -1,103 +1,100 @@
+@import 'http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css';
+
 *{
 margin: 0;
 padding: 0;
-font-family: "Montserrat", sans-serif;
+font-family: 'Century Gothic', sans-serif;
 color: #444;
-text-align: justify;
-}
-
-body{
-background-color: #f1f1f1;
 }
 
 div{
-width: 400px;
+width: 450px;
 margin: 20px auto;
-border-radius: 20px;
-background-color: #fff;
-overflow: hidden;
-box-shadow: 0 0 10px #444;
-}
-
-div header{
+display: block;
 position: relative;
+box-shadow: 0 0 10px #444;
+overflow: hidden;
+position: relative;
+border-radius: 20px;
 }
 
 div header img{
 width: 100%;
-border-radius: 20px 20px 0 0;
+}
+
+div header {
+position: relative;
+width: 100%;
 }
 
 div header:before{
-position: absolute;
 content: '';
-border-top: 40px solid transparent;
-border-left: 400px solid #fff;
+position: absolute;
+border-top: 50px solid transparent;
+border-left: 500px solid #fff;
 bottom: 0;
-padding: 2px;
+left: 0;
+display: block;
 }
 
-div section{
+div article{
 margin: 10px 30px;
+text-align: justify;
 }
 
-div section h2, h3, p, ul{
-margin-bottom: 20px;
+div article h3{
+margin: 20px 0;
 }
 
-div section ul{
+div article ul{
 display: flex;
-justify-content: space-around;
+justify-content: space-evenly;
 list-style-type: none;
+margin: 20px 0 60px 0;
+font-size: 45px;
 }
 
-div section ul li a{
-text-decoration: none;
-font-size: 30px;
-}
-
-div section ul li a:hover{
-transition: .5s;
-transform: scale(1.5);
-}
-
-/*======BOTÃO DO GITHUB======*/
-
-div section ul li:nth-child(1) a{
+div article ul li:nth-child(1) a{
 color: #000;
 }
 
-/*======BOTÃO DO LINKEDIN======*/
-div section ul li:nth-child(2) a{
-color: #0073B2;
+div article ul li:nth-child(2) a{
+color: #2FB256;
 }
 
-/*======BOTÃO DO YOUTUBE======*/
-div section ul li:nth-child(3) a{
-color: #ff0033;
+div article ul li:nth-child(3) a{
+color: #2196f3;
 }
 
-/*======BOTÃO DO INSTAGRAM======*/
-div section ul li:nth-child(4) a{
-color: #FF226C;
+div article ul li:nth-child(4) a{
+color: #000;
 }
 
-div footer{
-background-color: #314652;
-border-radius: 0 0 20px 20px;
-height: 100px;
-position: relative;
+div article ul li{
+transition: .5s;
 }
 
-div footer:before{
+div article ul li:hover{
+transform: scale(1.2);
+}
+
+div{
+border-bottom: 50px solid #1D2A35;
+}
+
+article:after{
+content:'Codado por CódigoFonte';
+position: absolute;
+bottom: 0px;
+left: 10px;
+font-size: 18px;
+color: #fff;
+}
+
+div:before{
 content: '';
 position: absolute;
-border-bottom: 30px solid transparent;
-border-right: 400px solid #fff;
-top: 0;
-}
-
-div footer p{
-padding: 35px 20px;
-color: #fff;
+bottom: 0px;
+border-bottom: 50px solid #1D2A35;
+border-right: 500px solid #fff;
 }
