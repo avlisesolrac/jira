@@ -1,241 +1,187 @@
 *{
 margin: 0;
 padding: 0;
-font-family: "Ionicons";
-color: #fff;
+font-family: 'Ionicons', sans-serif;
+color: #000;
 }
 
 body{
 background-color: #f1f1f1;
 }
 
-nav{
-width: 90%;
-margin: 10% auto;
-text-align: center;
-}
-
-nav ul li{
-display: inline-block;
+nav ul{
+display: flex;
+justify-content: space-around;
 list-style-type: none;
+margin: 50px auto;
+width: 500px;
 }
 
-/*==================BOTÃO DO RELÓGIO==================*/
-
-nav ul li a#relogio{
+nav ul li a{
 display: block;
-margin-right: 10px;
-width: 70px;
-height: 70px;
 border-radius: 50%;
-background-color: tomato;
-text-align: center;
-font-size: 45px;
+width: 60px;
+height: 60px;
 text-decoration: none;
+font-size: 50px;
+color: #fff;
+transition: 500ms;
+padding: 10px;
 overflow: hidden;
-box-shadow: 0 0 20px #444;
+box-shadow: 0 0 10px #444;
 }
 
-nav ul li a#relogio:before{
+/*=======================Botão do Relógio=======================*/
+
+nav ul li:nth-child(1) a{
+background-color: #2196f3;
+}
+
+nav ul li:nth-child(1) a:before{
+content: '\f26e';
 position: relative;
-content: '\f35a';
-top: 10px;
+top: 0;
+transition: .5s;
+left: 10px;
+
+}
+
+nav ul li:nth-child(1) a:hover:before{
+top: -60px;
+}
+
+nav ul li:nth-child(1) a:after{
+content: '\f26e';
+position: relative;
+top: 70px;
+left: -35px;
 transition: .5s;
 }
 
-nav ul li a#relogio:hover:before{
-position: relative;
-content: '\f35a';
-top: -50px;
+nav ul li:nth-child(1) a:hover:after{
+top:0px;
 }
 
-nav ul li a#relogio:after{
-display: block;
+/*=======================Botão da Núvem=======================*/
+
+nav ul li:nth-child(2) a{
+background-color: #4caf50;
+}
+
+nav ul li:nth-child(2) a:before{
+content: '\f37a';
 position: relative;
-content: '\f35a';
-bottom: -25px;
+top: 0;
+transition: .5s;
+left: 10px;
+
+}
+
+nav ul li:nth-child(2) a:hover:before{
+top: -60px;
+}
+
+nav ul li:nth-child(2) a:after{
+content: '\f37a';
+position: relative;
+top: 70px;
+left: -35px;
 transition: .5s;
 }
 
-nav ul li a#relogio:hover:after{
-display: block;
-position: relative;
-content: '\f35a';
-bottom: 40px;
+nav ul li:nth-child(2) a:hover:after{
+top:0px;
 }
 
-/*==================BOTÃO DA CÂMERA==================*/
+/*=======================Botão da Bússola=======================*/
 
-nav ul li a#camera{
-display: block;
-margin-right: 10px;
-width: 70px;
-height: 70px;
-border-radius: 50%;
-background-color: #87b645;
-text-align: center;
-font-size: 45px;
-text-decoration: none;
-overflow: hidden;
-box-shadow: 0 0 20px #444;
+nav ul li:nth-child(3) a{
+background-color: #ff9800;
 }
 
-nav ul li a#camera:before{
+nav ul li:nth-child(3) a:before{
+content: '\f37c';
 position: relative;
-content: '\f2d3';
-top: 10px;
+top: 0;
+transition: .5s;
+left: 10px;
+
+}
+
+nav ul li:nth-child(3) a:hover:before{
+top: -60px;
+}
+
+nav ul li:nth-child(3) a:after{
+content: '\f37c';
+position: relative;
+top: 70px;
+left: -35px;
 transition: .5s;
 }
 
-nav ul li a#camera:hover:before{
-position: relative;
-content: '\f2d3';
-top: -50px;
+nav ul li:nth-child(3) a:hover:after{
+top:0px;
 }
 
-nav ul li a#camera:after{
-display: block;
+/*=======================Botão do PC=======================*/
+
+nav ul li:nth-child(4) a{
+background-color: #795548;
+}
+
+nav ul li:nth-child(4) a:before{
+content: '\f380';
 position: relative;
-content: '\f2d3';
-bottom: -25px;
+top: 0;
+transition: .5s;
+left: 10px;
+
+}
+
+nav ul li:nth-child(4) a:hover:before{
+top: -60px;
+}
+
+nav ul li:nth-child(4) a:after{
+content: '\f380';
+position: relative;
+top: 70px;
+left: -35px;
 transition: .5s;
 }
 
-nav ul li a#camera:hover:after{
-display: block;
-position: relative;
-content: '\f2d3';
-bottom: 40px;
+nav ul li:nth-child(4) a:hover:after{
+top:0px;
 }
 
-/*==================BOTÃO DE DOWNLOAD==================*/
+/*=======================Botão do Coração=======================*/
 
-nav ul li a#download{
-display: block;
-margin-right: 10px;
-width: 70px;
-height: 70px;
-border-radius: 50%;
-background-color: #5B7A8C;
-text-align: center;
-font-size: 45px;
-text-decoration: none;
-overflow: hidden;
-box-shadow: 0 0 20px #444;
+nav ul li:nth-child(5) a{
+background-color: #cddc39;
 }
 
-nav ul li a#download:before{
+nav ul li:nth-child(5) a:before{
+content: '\f387';
 position: relative;
-content: '\f2dd';
-top: 10px;
+top: 0;
+transition: .5s;
+left: 10px;
+
+}
+
+nav ul li:nth-child(5) a:hover:before{
+top: -60px;
+}
+
+nav ul li:nth-child(5) a:after{
+content: '\f387';
+position: relative;
+top: 70px;
+left: -35px;
 transition: .5s;
 }
 
-nav ul li a#download:hover:before{
-position: relative;
-content: '\f2dd';
-top: -50px;
-}
-
-nav ul li a#download:after{
-display: block;
-position: relative;
-content: '\f2dd';
-bottom: -25px;
-transition: .5s;
-}
-
-nav ul li a#download:hover:after{
-display: block;
-position: relative;
-content: '\f2dd';
-bottom: 40px;
-}
-
-/*==================BOTÃO DE FAVORITO==================*/
-
-nav ul li a#favorito{
-display: block;
-margin-right: 10px;
-width: 70px;
-height: 70px;
-border-radius: 50%;
-background-color: #FB3663;
-text-align: center;
-font-size: 45px;
-text-decoration: none;
-overflow: hidden;
-box-shadow: 0 0 20px #444;
-}
-
-nav ul li a#favorito:before{
-position: relative;
-content: '\f388';
-top: 10px;
-transition: .5s;
-}
-
-nav ul li a#favorito:hover:before{
-position: relative;
-content: '\f388';
-top: -50px;
-}
-
-nav ul li a#favorito:after{
-display: block;
-position: relative;
-content: '\f388';
-bottom: -25px;
-transition: .5s;
-}
-
-nav ul li a#favorito:hover:after{
-display: block;
-position: relative;
-content: '\f388';
-bottom: 40px;
-}
-
-/*==================BOTÃO DE PASTA==================*/
-
-nav ul li a#pasta{
-display: block;
-margin-right: 10px;
-width: 70px;
-height: 70px;
-border-radius: 50%;
-background-color: #FFBB00;
-text-align: center;
-font-size: 45px;
-text-decoration: none;
-overflow: hidden;
-box-shadow: 0 0 20px #444;
-}
-
-nav ul li a#pasta:before{
-position: relative;
-content: '\f2e0';
-top: 10px;
-transition: .5s;
-}
-
-nav ul li a#pasta:hover:before{
-position: relative;
-content: '\f2e0';
-top: -50px;
-}
-
-nav ul li a#pasta:after{
-display: block;
-position: relative;
-content: '\f2e0';
-bottom: -25px;
-transition: .5s;
-}
-
-nav ul li a#pasta:hover:after{
-display: block;
-position: relative;
-content: '\f2e0';
-bottom: 40px;
+nav ul li:nth-child(5) a:hover:after{
+top:0px;
 }
