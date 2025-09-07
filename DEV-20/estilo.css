@@ -3,46 +3,44 @@ margin: 0;
 padding: 0;
 font-family: 'Century Gothic', sans-serif;
 color: #444;
-font-size: 17px;
-text-decoration: none;
-font-weight: 700;
+}
+
+body{
+background-color: #f1f1f1;
 }
 
 nav{
-display: flex;
-width: 95%;
-margin: 80px auto;
-justify-content: center;
-
+width: 500px;
+margin: auto;
 }
 
 nav ul{
 display: flex;
-justify-content: space-evenly;
-align-items: center;
+justify-content: space-around;
 list-style-type: none;
+padding: 30px 0;
 }
 
 nav ul li a{
-padding: 5px 30px;
-margin: 0 10px;
+display: block;
+text-decoration: none;
+padding: 30px 0 5px 0;
 position: relative;
 overflow: hidden;
-display: block;
+font-weight: bold;
 }
 
 nav ul li a:before{
-content: '';
+content:'';
+border-bottom: 5px solid #444;
 position: absolute;
-border-bottom: 4px solid;
-width: 30px;
 bottom: 0;
-right: 180px;
+left: -10px;
+width: 0px;
 transition: .7s;
-
 }
 
 nav ul li a:hover:before{
-right: 0px;
+left: 75px;
+width: 30px;
 }
-
