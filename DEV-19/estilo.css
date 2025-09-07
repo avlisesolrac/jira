@@ -1,41 +1,49 @@
 *{
 margin: 0;
 padding: 0;
-font-family: "Century Gothic", sans-serif;
+font-family: 'Century Gothic', sans-serif;
 color: #fff;
 }
 
-img{
-display: block;
-width: 600px;
-cursor: pointer;
-}
-
-section{
-width: 600px;
-}
-
 div{
-display: block;
-width: 0px;
-background-color: rgba(250,128,114,0.9);
-height: 398px;
-top: 0;
-position: absolute;
-transition: .7s;
+background-image: url(1.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+width: 500px;
+height: 330px;
 display: flex;
 justify-content: center;
 align-items: center;
-overflow: hidden;
 cursor: pointer;
 }
 
-div h2{
-border: 4px solid;
-padding: 10px 30px;
-border-radius: 10px;
+div:before{
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 0px;
+height: 330px;
+background-color: rgba(255,99,71,0.7);
+transition: .7s;
 }
 
-section:hover div{
-width: 600px;
+div:hover:before{
+width: 500px;
+}
+
+div:after{
+content: 'Sobreposição';
+border: 4px solid;
+border-radius: 10px;
+padding: 10px 30px;
+position: absolute;
+font-weight: bold;
+font-size: 25px;
+left: -236px;
+transition: .7s;
+}
+
+div:hover:after{
+left: 130px;
 }
