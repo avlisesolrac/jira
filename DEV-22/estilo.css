@@ -1,3 +1,5 @@
+@import 'http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css';
+
 *{
 margin: 0;
 padding: 0;
@@ -6,138 +8,57 @@ text-decoration: none;
 list-style-type: none;
 }
 
-label{
-display: inline-block;
-margin: 20px;
-position: relative;
+nav{
+border-top: 1px solid dodgerblue;
+width: 480px;
+margin: 20px auto;
 }
 
-label input{
+nav ul li{
+border-bottom: 1px solid dodgerblue;
+padding: 15px 10px;
+}
+
+nav ul li i{
+text-align: left;
+}
+
+nav ul li label{
+float: right;
+position: relative;
+border-radius: 10px;
+}
+
+nav ul li label input{
 display: none;
 }
 
-label span{
+nav ul li label span{
+width: 50px;
+height: 25px;
 display: block;
-width: 100px;
-height: 40px;
-background-color: #ccc;
-transition: .4s;
+background-color: #f1f1f1;
+border-radius: 20px;
 cursor: pointer;
-}
-
-label span:before{
-content:'';
-position: absolute;
-width: 32px;
-height: 32px;
-background-color: #fff;
-left: 4px;
-bottom: 4px;
 transition: .4s;
 }
 
-label input:checked + span{
-background-color: dodgerblue;
-}
-
-label input:checked + span:before{
-left: 64px;
-}
-
-/*==========BOTÃO COM DIV==========*/
-
-div{
-display: inline-block;
-margin: 20px;
-position: relative;
-}
-
-div input{
-display: none;
-}
-
-div span{
-display: block;
-background-color: #ccc;
-width: 100px;
-height: 40px;
-}
-
-div span:before{
-content: '';
-position: absolute;
-background-color: #fff;
-width: 32px;
-height: 32px;
-left: 4px;
-bottom: 4px;
-}
-
-div input:checked + span{
-background-color: dodgerblue;
-}
-
-/*==========BOTÃO COM UL/LI==========*/
-
-ul li{
-margin: 20px;
-position: relative;
-}
-
-ul li input{
-display: none;
-}
-
-ul li span{
-width: 100px;
-height: 40px;
-display: block;
-background-color: #ccc;
-}
-
-ul li span:before{
-content:'';
-width: 32px;
-height: 32px;
-background-color: #fff;
-position: absolute;
-left: 4px;
-bottom: 4px;
-}
-
-ul li input:checked + span{
-background-color: dodgerblue;
-}
-
-/*==========BOTÃO COM FORM==========*/
-
-
-form{
-margin: 20px;
-position: relative;
-}
-
-form input{
-display: none;
-}
-
-form span{
-width: 100px;
-height: 40px;
-background-color: #ccc;
-display: block;
-}
-
-form span:before{
+nav ul li label span:before{
 content:'';
 position: absolute;
-width: 32px;
-height: 32px;
 background-color: #fff;
-left: 4px;
-bottom: 4px;
+width: 20px;
+height: 20px;
+left: 3px;
+bottom: 3px;
+border-radius: 50%;
+transition: .4s;
 }
 
-form input:checked + span{
-background-color: dodgerblue;
+nav ul li label input:checked + span{
+background-color: #34c85a;
+}
+
+nav ul li label input:checked + span:before{
+left: 28px;
 }

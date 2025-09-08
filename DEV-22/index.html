@@ -1,38 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Botão Checkbox Alternando</title>
 <meta charset="utf-8">
 <link rel="stylesheet" type="text/css" href="estilo.css">
+<title>Botão Checkbox com Span Animado</title>
 </head>
 <body>
 
-<p>Botão com Label</p>
-<label>
-<input type="checkbox">
-<span></span>
-</label>
-
-<p>Botão com DIV - O input não funciona</p>
-<div for="teste">
-<input id="teste" type="checkbox">
-<span></span>
-</div>
-
-
-<p>Botão com UL/LI - O input não funciona</p>
-<ul>
-<li>
-<input type="checkbox">
-<span></span>
-</li>
-</ul>
-
-<p>Botão com form - O input não funciona</p>
-<form>
-<input type="checkbox">
-<span></span>
-</form>
+<nav>
+	<ul>
+		<li><i class="ion-android-phone-portrait"> Mensagens no Telefone</i><label><input type="checkbox"><span></span></label></li>
+		<li><i class="ion-email-unread"> Leitura de E-mail<label><input type="checkbox"><span></span></label></i></li>
+		<li><i class="ion-android-cart"> Compras no Supermercado</i><label><input type="checkbox"><span></span></label></li>
+		<li><i class="ion-model-s"> Abastecer o carro</i><label><input type="checkbox"><span></span></label></li>
+	</ul>
+</nav>
 
 </body>
 </html>
