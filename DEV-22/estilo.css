@@ -1,0 +1,86 @@
+*{
+margin: 0;
+bottom: 0;
+font-family: 'Century Gothic', sans-serif;
+text-decoration: none;
+}
+
+label#retangulo{
+display: inline-block;
+margin: 10px;
+position: relative;
+}
+
+label#retangulo input{
+display: none;
+}
+
+label#retangulo span#quadrado{
+display: block;
+width: 100px;
+height: 40px;
+background-color: #ccc;
+cursor: pointer;
+transition: .4s;
+}
+
+label#retangulo span#quadrado:before{
+content: '';
+position: absolute;
+width: 32px;
+height: 32px;
+left: 4px;
+bottom: 4px;
+background-color: #fff;
+transition: .4s;
+}
+
+label#retangulo input:checked + span#quadrado{
+background-color: dodgerblue;
+}
+
+label#retangulo input:checked + span#quadrado:before{
+left: 64px;
+}
+
+/*============BOTÃO ARREDONDADO============*/
+
+label#redondo{
+margin: 0 10px;
+display: inline-block;
+position: relative;
+}
+
+label#redondo input{
+display: none;
+}
+
+label#redondo span#circulo{
+display: block;
+width: 100px;
+height: 40px;
+border-radius: 20px;
+background-color: #ccc;
+cursor: pointer;
+transition: .4s;
+}
+
+label#redondo span#circulo:before{
+content: '';
+position: absolute;
+background-color: #fff;
+width: 32px;
+height: 32px;
+border-radius: 50%;
+left: 4px;
+bottom: 4px;
+transition: .4s;
+}
+
+label#redondo input:checked + span#circulo{
+background-color: dodgerblue;
+}
+
+label#redondo input:checked + span#circulo:before{
+left: 64px;
+}
