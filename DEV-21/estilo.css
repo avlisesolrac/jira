@@ -8,36 +8,34 @@ color: #444;
 text-decoration: none;
 }
 
-nav{
-width: 550px;
-margin: 20px auto;
-}
-
 nav ul{
 display: flex;
 justify-content: space-around;
 list-style-type: none;
+width: 90%;
+margin: 50px auto;
 }
 
 nav ul li a{
-padding: 10px 10px 5px 10px;
-position: relative;
+font-weight: bold;
+padding-bottom: 10px;
 overflow: hidden;
-display: block;
-font-weight: 700;
 font-size: 20px;
+position: relative;
+display: block;
 }
 
 nav ul li a:before{
 content: '';
-border: 1px solid #444;
-width: 100%;
+border: 2px solid #444;
 position: absolute;
-left: -125px;
 bottom: 0;
+left: -5px;
+width: 0px;
 transition: .7s;
 }
 
 nav ul li a:hover:before{
-left: 70px;
+left: 0px;
+width: 100%;
 }
