@@ -1,86 +1,74 @@
+@import 'http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css';
+
 *{
 margin: 0;
-bottom: 0;
+padding: 0;
 font-family: 'Century Gothic', sans-serif;
 text-decoration: none;
+list-style-type: none;
 }
 
-label#retangulo{
-display: inline-block;
-margin: 10px;
-position: relative;
+body{
+background-color: #f1f1f1;
 }
 
-label#retangulo input{
-display: none;
-}
-
-label#retangulo span#quadrado{
+nav{
 display: block;
-width: 100px;
-height: 40px;
-background-color: #ccc;
-cursor: pointer;
-transition: .4s;
-}
-
-label#retangulo span#quadrado:before{
-content: '';
-position: absolute;
-width: 32px;
-height: 32px;
-left: 4px;
-bottom: 4px;
+width: 480px;
+margin: 20px auto;
 background-color: #fff;
-transition: .4s;
+box-shadow: 0 0 10px #444;
+position: relative;
 }
 
-label#retangulo input:checked + span#quadrado{
-background-color: dodgerblue;
+nav ul li{
+padding: 10px 10px;
+border-bottom: 1px solid #444;
+display: flex;
+justify-content: right;
 }
 
-label#retangulo input:checked + span#quadrado:before{
-left: 64px;
+nav ul li input{
+display: none;
 }
 
-/*============BOTÃO ARREDONDADO============*/
+nav ul li i{
+display: inline-block;
+position: absolute;
+left: 20px;
+}
 
-label#redondo{
-margin: 0 10px;
+nav ul li label{
 display: inline-block;
 position: relative;
 }
 
-label#redondo input{
-display: none;
-}
-
-label#redondo span#circulo{
+nav ul li label span{
 display: block;
-width: 100px;
-height: 40px;
+width: 50px;
+height: 30px;
 border-radius: 20px;
-background-color: #ccc;
+background-color: #F3F2F7;
 cursor: pointer;
 transition: .4s;
 }
 
-label#redondo span#circulo:before{
-content: '';
+nav ul li label span:before{
+content:'';
 position: absolute;
 background-color: #fff;
-width: 32px;
-height: 32px;
+width: 25px;
+height: 25px;
 border-radius: 50%;
-left: 4px;
-bottom: 4px;
+left: 2px;
+bottom: 3px;
 transition: .4s;
 }
 
-label#redondo input:checked + span#circulo{
-background-color: dodgerblue;
+nav ul li label input:checked + span{
+background-color: #34C85A;
 }
 
-label#redondo input:checked + span#circulo:before{
-left: 64px;
+nav ul li label input:checked + span:before{
+left: 24px;
 }
