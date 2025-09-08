@@ -1,0 +1,41 @@
+@import 'http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css';
+
+*{
+margin: 0;
+padding: 0;
+font-family: 'Century Gothic', sans-serif;
+color: #444;
+text-decoration: none;
+}
+
+nav ul{
+display: flex;
+justify-content: space-around;
+list-style-type: none;
+width: 90%;
+margin: 50px auto;
+}
+
+nav ul li a{
+font-weight: bold;
+padding-bottom: 10px;
+overflow: hidden;
+font-size: 20px;
+position: relative;
+display: block;
+}
+
+nav ul li a:before{
+content: '';
+border: 2px solid #444;
+position: absolute;
+bottom: 0;
+left: -5px;
+width: 0px;
+transition: .7s;
+}
+
+nav ul li a:hover:before{
+left: 0px;
+width: 100%;
+}
