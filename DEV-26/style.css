@@ -1,0 +1,29 @@
+@import 'http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css';
+
+body{
+margin: 0;
+pading: 0;
+}
+
+ul{
+margin: 0;
+padding: 0;
+width: 100%;
+}
+
+ul a{
+text-decoration: none;
+color: white;
+font-size: 40px;
+text-align: center;
+width: 20%;
+display: block;
+background-color: #607d8b;
+padding: 8px 0;
+float: left;
+transition: 0.5s;
+}
+
+ul a:hover{
+opacity: 0.8;
+}
