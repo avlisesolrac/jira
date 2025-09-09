@@ -1,0 +1,51 @@
+body{
+margin: 0;
+padding: 0;
+background: #f1f1f1;
+}
+
+.box{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+}
+
+.btn{
+color: white;
+text-decoration: none;
+font-size: 20px;
+padding: 14px 40px;
+display: inline-block;
+text-decoration: none;
+font-family: sans-serif;
+text-align: center;
+}
+
+.btn:hover{
+opacity: 0.7;
+}
+
+.b1{
+background: #e74c3c;
+}
+
+.b2{
+background: #2980b9;
+}
+
+.b3{
+background: #e67e22;
+}
+
+.b4{
+background: #34495e;
+}
+
+.b5{
+background: #2ecc71;
+}
+
+.b6{
+background: #8e44ad;
+}
