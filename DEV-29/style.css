@@ -1,0 +1,50 @@
+body{
+margin: 0;
+padding: 0;
+background: #f1f1f1;
+font-family: sans-serif;
+}
+
+.top{
+width: 100%;
+background: #313131;
+overflow: hidden;
+}
+
+.cen{
+max-width: 1200px;
+margin: auto;
+}
+
+.top ul{
+margin: 0;
+padding: 0;
+}
+
+.top ul li{
+list-style: none;
+display: inline-block;
+}
+
+.top ul li a{
+text-decoration: none;
+color: white;
+padding: 10px;
+display: block;
+font-size: 18px;
+transition: 0.4s all;
+}
+
+.top ul li a:hover{
+opacity: 0.8;
+}
+
+@media (max-width: 600px){
+.top ul li{
+display: block;
+}
+
+.top ul li a{
+text-align: center;
+}
+}
