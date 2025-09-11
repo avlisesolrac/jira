@@ -4,7 +4,7 @@ padding: 0;
 font-family: 'Century Gothic', sans-serif;
 text-decoration: none;
 list-style-type: none;
-color: #444;
+color: #fff;
 }
 
 body{
@@ -12,50 +12,64 @@ background-color: #f1f1f1;
 }
 
 nav{
-width: 90%;
-margin: 40px auto;
+display: block;
+width: 100%;
+position: fixed;
+margin: 0 auto;
+background-color: #fff;
+box-shadow: 0 0 10px #444;
 }
 
 nav ul{
-display: flex;
-justify-content: space-evenly;
+border: 1px solid;
+width: 80%;
+margin: 0 12%;
 }
 
-nav ul li a.botao{
+nav ul li{
+text-align: center;
+float: left;
+display: block;	
+}
+
+nav ul li a{
 display: block;
-padding: 10px 30px;
-color: #fff;
-text-transform: uppercase;
+margin: 5px;
+padding: 10px 20px;
 font-weight: bold;
-transition: .4s;
+text-transform: uppercase;
 }
 
 nav ul li a:hover{
-color: #000;
 box-shadow: 0 0 10px #444;
+color: #000;
 opacity: .8;
 }
 
-nav ul li a#botao1{
-background-color: #e74c3c;
+nav ul li:nth-child(1) a{
+background-color: tomato;
 }
 
-nav ul li a#botao2{
-background-color: #2980b9;
+nav ul li:nth-child(2) a{
+background-color: dodgerblue;
 }
 
-nav ul li a#botao3{
-background-color: #e67e22;
+nav ul li:nth-child(3) a{
+background-color: orange;
 }
 
-nav ul li a#botao4{
-background-color: #34495e;
+nav ul li:nth-child(4) a{
+background-color: rgb(52, 73, 94);
 }
 
-nav ul li a#botao5{
-background-color: #2ecc71;
+nav ul li:nth-child(5) a{
+background-color: #34C85A;
 }
 
-nav ul li a#botao6{
-background-color: #8e44ad;
+nav ul li:nth-child(6) a{
+background-color: purple;
+}
+
+nav ul li:nth-child(7) a{
+background-color: #444444;
 }
