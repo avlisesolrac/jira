@@ -4,38 +4,47 @@
 margin: 0;
 padding: 0;
 font-family: 'Century Gothic', sans-serif;
-color: #444;
 text-decoration: none;
+list-style-type: none;
+color: #444;
+}
+
+body{
+background-color: #f1f1f1;
+}
+
+nav{
+background-color: #fff;
+box-shadow: 0 0 10px #444;
+min-width: 600px;
 }
 
 nav ul{
 display: flex;
 justify-content: space-around;
-list-style-type: none;
-width: 90%;
-margin: 50px auto;
 }
 
 nav ul li a{
-font-weight: bold;
-padding-bottom: 10px;
-overflow: hidden;
-font-size: 20px;
-position: relative;
 display: block;
+padding: 10px;
+margin-top: 20px;
+font-weight: bold;
+font-size: 18px;
+position: relative;
+overflow: hidden;
 }
 
 nav ul li a:before{
-content: '';
-border: 2px solid #444;
+content:'';
 position: absolute;
+color: #444;
 bottom: 0;
-left: -5px;
+left: -4px;
+border: 2px solid;
 width: 0px;
-transition: .7s;
+transition: .4s;
 }
 
 nav ul li a:hover:before{
-left: 0px;
 width: 100%;
 }
