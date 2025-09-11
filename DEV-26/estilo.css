@@ -9,29 +9,31 @@ list-style-type: none;
 color: #fff;
 }
 
+body{
+background-color: #f1f1f1;
+}
+
 nav ul{
-display: flex;
-justify-content: space-around;
+display: block;
 box-shadow: 0 0 10px #444;
+position: absolute;
+width: 100%;
 }
 
 nav ul li{
-width: 100%;
+float: left;
+width: 20%;
 text-align: center;
+background-color: #1D2A35;
+font-size: 50px;
+cursor: pointer;
+padding: 5px 0;
 }
 
-nav ul li a{
-font-size: 40px;
-display: block;
-background-color: #607d8b;
-padding: 15px;
-transition: .5s;
+nav ul li:first-child{
+background-color: orange;
 }
 
-nav ul li:first-child a{
-background-color: #f19800;
-}
-
-nav ul li a:hover{
+nav ul li:hover{
 opacity: .7;
 }
