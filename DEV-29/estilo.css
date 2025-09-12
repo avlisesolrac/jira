@@ -13,19 +13,17 @@ background-color: #f1f1f1;
 
 nav{
 background-color: #1D2A35;
+box-shadow: 0 0 10px #444;
 }
 
 nav ul{
-width: 90%;
-margin: auto;
 display: flex;
-justify-content: space-around;
-align-items: center;
+justify-content: space-evenly;
 }
 
 nav ul li a{
-padding: 10px;
 display: block;
+padding: 20px 20px;
 font-weight: bold;
 transition: .4s;
 }
@@ -34,10 +32,14 @@ nav ul li a:hover{
 background-color: rgba(255,255,255,0.3);
 }
 
-@media (max-width: 600px){
+@media (max-width: 611px){
+
 nav ul{
-width: 100%;
 display: block;
+}
+
+nav ul li a{
 text-align: center;
 }
+
 }
