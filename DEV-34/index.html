@@ -1,28 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Responsive Search</title>
-<link rel="stylesheet" type="text/css" href="style.css">
-<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<title>Campo de Busca Responsiva</title>
+<link rel="stylesheet" type="text/css" href="estilo.css">
+<script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
 </head>
 <body>
 
-<div class="search-box">
-	<a class="btn"></a>
-	<form class="form" action="index.html" method="post">
-		<input type="text" name="" value="" placeholder="Search">
-	</form>
-</div>
+<navbar>
+	<a href="#"></a>
+	<input type="text" placeholder="Campo de Busca">
+</navbar>
 
 <script type="text/javascript">
-
-	$('.btn').on('click', function(){
-	$('.btn').toggleClass('btnc');
-	$('.search-box').toggleClass('s');
-	});
-
+	$('a').on('click', function(){
+	$('a').toggleClass('fechar_menu');
+	$('navbar').toggleClass('expandir');
+	$('input').toggleClass('exibir_campo');
+});
 </script>
 
 </body>

@@ -1,0 +1,66 @@
+@import 'http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css';
+
+*{
+margin: 0;
+padding: 0;
+font-family: Ionicons, 'Century Gothic', sans-serif;
+color: #fff;
+}
+
+navbar{
+position: absolute;
+width: 70px;
+height: 70px;
+right: 0;
+background-color: dodgerblue;
+text-align: right;
+transition: .4s;
+}
+
+.expandir{
+width: 100%;
+height: 100%;
+}
+
+navbar a{
+display: block;
+width: 70px;
+height: 70px;
+position: absolute;
+right: 0;
+}
+
+navbar a:before{
+content:'\f2f5';
+position: absolute;
+top: 10%;
+left: 25%;
+font-size: 50px;
+}
+
+.fechar_menu:before{
+content:'\f2d7';
+position: absolute;
+top: 10%;
+left: 25%;
+font-size: 50px;
+}
+
+navbar input{
+display: none;
+padding: 15px 0 5px 15px;
+background-color: #fff;
+border: none;
+outline: none;
+font-size: 18px;
+font-weight: bold;
+border-bottom: 1px solid #fff;
+border-radius: 10px;
+margin: 200px auto;
+width: 90%;
+color: #000;
+}
+
+.exibir_campo{
+display: block;
+}
