@@ -1,0 +1,38 @@
+*{
+margin: 0;
+padding: 0;
+font-family: 'Century Gothic', sans-serif;
+text-decoration: none;
+list-style-type: none;
+color: #444;
+}
+
+body{
+background-color: #f1f1f1;
+}
+
+p{
+text-transform: uppercase;
+text-align: center;
+letter-spacing: 2em;
+font-weight: bold;
+font-size: 20px;
+margin: 20px auto;
+position: absolute;
+top: 100px;
+left: 50%;
+transform: translate(-50%,-50%);
+}
+
+p:before{
+content:"códigoProfundo";
+position: absolute;
+color: tomato;
+width: 0;
+overflow: hidden;
+transition: .4s;
+}
+
+p:hover:before{
+width: 100%;
+}
