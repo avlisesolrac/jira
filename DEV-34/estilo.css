@@ -4,79 +4,77 @@
 margin: 0;
 padding: 0;
 font-family: Ionicons, 'Century Gothic', sans-serif;
-color: #fff;
+color: #444;
 text-decoration: none;
 list-style-type: none;
 }
 
 body{
-background-color: #f1f1f1;
+background-color: orange;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100%;
+width: 100%;
+position: fixed;
 }
 
 navbar{
 display: block;
-width: 70px;
-height: 70px;
+width: 80px;
+height: 80px;
+position: relative;
 overflow: hidden;
-position: absolute;
-background-color: dodgerblue;
-right: 0;
-top: 0;
 border-radius: 50%;
-box-shadow: 0 0 10px #444;
+background-color: tomato;
+box-shadow: 0 0 10px #fff;
 transition: .4s;
 }
 
-navbar.expandir_tela{
+.expandir_barra_de_navegacao{
 width: 100%;
 height: 100%;
 border-radius: 0;
 }
 
-navbar a{
+navbar label{
 display: block;
-border-radius: 50%;
-width: 70px;
-height: 70px;
-position: absolute;
-right: 0;
-top: 0;
-box-shadow: 0 0 10px #fff;
-font-size: 50px;
-display: flex;
-justify-content: center;
-align-items: center;
+width: 80px;
+height: 80px;
+background-color: tomato;
+position: relative;
+cursor: pointer;
 }
 
-navbar a:before{
+navbar label span:before{
 content: '\f2f5';
+position: absolute;
+font-size: 75px;
+left: 10px;
 }
 
-navbar a.fechar_menu:before{
+navbar label input{
+display: none;
+}
+
+navbar label input:checked + span:before{
 content: '\f129';
 }
 
+
 navbar form{
+height: 50%;
 display: flex;
 justify-content: center;
 align-items: center;
-height: 50%;
-margin: 80px 5%;
+margin: 0 5%;
 }
 
 navbar form input{
-width: 100%;
 padding: 15px;
-color: #fff;
-outline: none;
+width: 100%;
 border: none;
-border-bottom: 2px solid #fff;
-background-color: dodgerblue;
-border-radius: 10px;
+outline: none;
+box-shadow: 0 0 10px #444;
 font-size: 18px;
-}
-
-navbar input::placeholder{
-color: #fff;
-text-align: center;
 }

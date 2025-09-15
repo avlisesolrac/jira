@@ -10,16 +10,19 @@
 <body>
 
 <navbar>
-	<a href="#"></a>
-	<form action="index.html" method="post">
+	<label>
+		<input type="checkbox">
+		<span></span>
+	</label>
+	
+	<form action='index.html' method="post">
 		<input type="text" placeholder="Pesquise aqui...">
 	</form>
 </navbar>
 
 <script type="text/javascript">
-	$('a').on('click', function(){
-	$('a').toggleClass('fechar_menu');
-	$('navbar').toggleClass('expandir_tela');
+	$('input[type="checkbox"]').on('click', function(){
+	$('navbar').toggleClass('expandir_barra_de_navegacao');
 });
 </script>
 
