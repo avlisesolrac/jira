@@ -3,22 +3,23 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Campo de Busca Responsiva</title>
+<title>Campo de Busca Responsivo</title>
 <link rel="stylesheet" type="text/css" href="estilo.css">
-<script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </head>
 <body>
 
 <navbar>
 	<a href="#"></a>
-	<input type="text" placeholder="Campo de Busca">
+	<form action="index.html" method="post">
+		<input type="text" placeholder="Pesquise aqui...">
+	</form>
 </navbar>
 
 <script type="text/javascript">
 	$('a').on('click', function(){
 	$('a').toggleClass('fechar_menu');
-	$('navbar').toggleClass('expandir');
-	$('input').toggleClass('exibir_campo');
+	$('navbar').toggleClass('expandir_tela');
 });
 </script>
 
