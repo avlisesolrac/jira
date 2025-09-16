@@ -1,33 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Toggle Sidebar</title>
-<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.1.js"></script>
-<link rel="stylesheet" type="text/css" href="style.css">
+<title>Menu Lateral Expansível</title>
+<link rel="stylesheet" type="text/css" href="estilo.css">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </head>
 <body>
 
+<header>
+	<a class="botao" href="#"></a>
+	<nav>
+		<ul>
+			<li><a class="ion-social-tux" href="#"></a></li>
+			<li><a class="ion-social-linkedin-outline" href="#"></a></li>
+			<li><a class="ion-social-instagram-outline" href="#"></a></li>
+			<li><a class="ion-social-facebook-outline" href="#"></a></li>
+			<li><a class="ion-android-hangout" href="#"></a></li>
+			<li><a class="ion-android-mail" href="#"></a></li>
+		</ul>
+	</nav>
+</header>
 
-<div class="sidebar">
-	<ul>
-		<li><a class="ion-social-tux" href="#"></a></li>
-		<li><a class="ion-social-wordpress" href="#"></a></li>
-		<li><a class="ion-social-instagram" href="#"></a></li>
-		<li><a class="ion-android-folder" href="#"></a></li>
-		<li><a class="ion-android-mail" href="#"></a></li>
-		<li><a class="ion-android-image" href="#"></a></li>
-		<li><a class="ion-android-cloud" href="#"></a></li>
-	</ul>
-</div>
-
-<a class="btn"></a>
+<main>
+Meu conteúdo Principal da página.
+</main>
 
 <script type="text/javascript">
-	$('.btn').on('click', function(){
-	$('.btn').toggleClass('btnc');
-	$('.sidebar').toggleClass('side');
+	$('header a.botao').on('click', function(){
+	$(this).toggleClass('menu_fechado');
+	$('header').toggleClass('exibir_menu');
 });
 </script>
 
