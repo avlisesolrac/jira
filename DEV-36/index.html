@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Toggle Sidebar</title>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.1.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+
+<div class="sidebar">
+	<ul>
+		<li><a class="ion-social-tux" href="#"></a></li>
+		<li><a class="ion-social-wordpress" href="#"></a></li>
+		<li><a class="ion-social-instagram" href="#"></a></li>
+		<li><a class="ion-android-folder" href="#"></a></li>
+		<li><a class="ion-android-mail" href="#"></a></li>
+		<li><a class="ion-android-image" href="#"></a></li>
+		<li><a class="ion-android-cloud" href="#"></a></li>
+	</ul>
+</div>
+
+<a class="btn"></a>
+
+<script type="text/javascript">
+	$('.btn').on('click', function(){
+	$('.btn').toggleClass('btnc');
+	$('.sidebar').toggleClass('side');
+});
+</script>
+
+</body>
+</html>
