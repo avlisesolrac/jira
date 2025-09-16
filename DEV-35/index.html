@@ -1,31 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-	<meta charset="utf-8">
-	<link rel="stylesheet" href="style.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
-	<script src="https://kit.fontawesome.com/ed13afc6d1.js" crossorigin="anonymous"></script>
-	<title>Full Screen Menu</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="estilo.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<title>Menu em Tela Cheia</title>
 </head>
 <body>
 
-<div class="menu">
-	<a class="btn"></a>
-
-	<ul>
-		<li><a href="#">Home</a></li>
-		<li><a href="#">My Works</a></li>
-		<li><a href="#">About</a></li>
-		<li><a href="#">Contact</a></li>
-		<li><a href="#">Blog</a></li>
-	</ul>
-</div>
+<header>
+	<nav>
+		<i></i>
+		<ul>
+			<li><a href="#">Página Inicial</a></li>
+			<li><a href="#">Meus Trabalhos</a></li>
+			<li><a href="#">Blog</a></li>
+			<li><a href="#">Contato</a></li>
+			<li><a href="#">Sobre</a></li>
+		</ul>
+	</nav>
+</header>
 
 <script type="text/javascript">
-	$(".btn").on("click", function(){
-	$(".btn").toggleClass("btnc");
-	$(".menu").toggleClass("menuc");
+	$('header nav i').on('click', function(){
+	$(this).toggleClass('alterar_icone_menu');
+	$('nav').toggleClass('menu_acionado');
 });
 </script>
 
