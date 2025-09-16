@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menu Lateral Expansível</title>
+<link rel="stylesheet" type="text/css" href="estilo.css">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header>
+	<a class="botao" href="#"></a>
+	<nav>
+		<ul>
+			<li><a class="ion-social-tux" href="#"></a></li>
+			<li><a class="ion-social-linkedin-outline" href="#"></a></li>
+			<li><a class="ion-social-instagram-outline" href="#"></a></li>
+			<li><a class="ion-social-facebook-outline" href="#"></a></li>
+			<li><a class="ion-android-hangout" href="#"></a></li>
+			<li><a class="ion-android-mail" href="#"></a></li>
+		</ul>
+	</nav>
+</header>
+
+<main>
+Meu conteúdo Principal da página.
+</main>
+
+<script type="text/javascript">
+	$('header a.botao').on('click', function(){
+	$(this).toggleClass('menu_fechado');
+	$('header').toggleClass('exibir_menu');
+});
+</script>
+
+</body>
+</html>
