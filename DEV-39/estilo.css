@@ -24,11 +24,12 @@ cursor: pointer;
 
 main article img{
 width: 100%;
-z-index:1;
+transition: .4s;
 }
 
-main article img:hover{
-transform: translate(1.2);
+
+main article:hover img{
+transform: scale(1.2);
 }
 
 main article:before{
@@ -42,6 +43,7 @@ height: 0%;
 border-radius: 50%;
 background-color: rgb(3, 174, 208,0.5);
 transition: .4s;
+z-index:1;
 }
 
 main article:hover:before{
@@ -65,6 +67,7 @@ color: #fff;
 text-transform: uppercase;
 display: none;
 text-align: center;
+z-index:2;
 }
 
 main article:hover:after{
