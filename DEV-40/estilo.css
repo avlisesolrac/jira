@@ -20,7 +20,6 @@ border-radius: 50%;
 position: relative;
 overflow: hidden;
 box-shadow: 0 0 10px #444;
-animation: carregando 4s linear infinite;
 }
 
 div:before{
@@ -30,18 +29,33 @@ width: 50px;
 height: 50px;
 background-color: #f1f1f1;
 border-radius: 50%;
-left: 70px;
+left: 25px;
+top: 20px;
 box-shadow: 0 0 2px #fff;
+animation: carregando 4s linear infinite;
+
 }
 
 @keyframes carregando{
 
-from {
-transform: rotate(0deg);
+0%{
+left: 25px;
+top: 20px;
 }
 
-to {
-transform: rotate(360deg)
+25%{
+left: 125px;
+top: 25px;
+}
+
+50%{
+left: 125px;
+top: 125px;
+}
+
+75%{
+left: 25px;
+top: 125px;
 }
 
 }
