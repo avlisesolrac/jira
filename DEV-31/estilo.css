@@ -2,107 +2,105 @@
 margin: 0;
 padding: 0;
 font-family: 'Century Gothic', sans-serif;
-color: #444;
+color: tomato;
 text-decoration: none;
 list-style-type: none;
 }
 
-body{
-background-color: #fff;
-width: 100%;
+html,body,main{
+height: 100%;
+background-color: #f1f1f1;
 }
 
-img{
-background: url(paisagem_singapura.jpg) no-repeat left;
-background-size: cover;
-width: 65%;
-height: 500px;
+main img{
+width: 864px;
+height: 100%;
 float: left;
+position: fixed;
 }
 
-form{
-background-color: #fff;
-width: 450px;
-height: 300px;
+main form{
+width: 465px;
+max-width: 500px;
+background-color: #f1f1f1;
 position: absolute;
 right: 0;
-padding: 100px 20px;
-margin-right: 10px;
+padding: 100px 17px 71px 18px;
+display: block;
 }
 
-form h1{
-color: tomato;
+main form h1{
+font-size: 50px;
 }
 
-form input{
+main form input{
 box-sizing: content-box;
 display: block;
 width: 100%;
-margin: 20px 0;
-padding: 10px 0 10px 10px;
-border: none;
+margin: 25px 0;
+padding: 15px 0;
 outline: none;
-border-bottom: 1px solid tomato;
-border-radius: 10px;
-}
-
-form label{
-display: inline-block;
-width: 30px;
-height: 20px;
-position: relative;
-cursor: pointer;
-}
-/*
-form label span{
-position: absolute;
-top: 4px;
-}*/
-
-form label input[type="checkbox"]{
-display: none;
-}
-
-form label span{
-display: block;
-width: 30px;
-height: 20px;
-border-radius: 10px;
+border: none;
+border-bottom: 2px solid tomato;
 background-color: #f1f1f1;
-transition: .4s;
-position: absolute;
-top: 4px;
+border-radius: 10px;
+color: #444;
+font-size: 18px;
+text-align: center;
 }
 
-form label span:before{
+main form label input{
+display: none;
+border: 1px solid
+}
+
+main form label span{
+width: 40px;
+height: 20px;
+margin-right: 10px;
+background-color: #ccc;
+position: relative;
+display: inline-block;
+cursor: pointer;
+box-shadow: 0 0 3px #444;
+transition: .4s;
+}
+
+main form label span:before{
 content:'';
 position: absolute;
-width: 15px;
-height: 15px;
-border-radius: 50%;
+width: 20px;
+height: 16px;
+bottom: 2px;
 left: 2px;
-bottom: 3px;
 background-color: #fff;
 transition: .4s;
 }
 
-form label input[type="checkbox"]:checked + span{
+main form label input:checked + span{
 background-color: tomato;
 }
 
-form label input[type="checkbox"]:checked + span:before{
-left: 14px;
+main form label input:checked + span:before{
+left: 18px;
 }
 
-form input[type="submit"]{
-background-color: tomato;
-color: #fff;
+main form span{
+font-size: 20px;
 font-weight: bold;
-font-size: 18px;
-cursor: pointer;
 }
 
-form input[type="submit"]:hover{
+main form input[type="submit"]{
+color: #fff;
+background-color: tomato;
+cursor: pointer;
+box-shadow: 0 0 5px #444;
+font-weight: bold;
+position: relative;
+}
+
+main form input[type="submit"]:hover{
+background-color: #ff63479c;
+border: none;
 color: #444;
-box-shadow: 0 0 10px #444;
 }
