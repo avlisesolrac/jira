@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" type="text/css" href="estilo.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-<title>Menu em Tela Cheia</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Menu em Tela Cheia</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous">
+	</script>
 </head>
 <body>
 
 <header>
 	<nav>
-		<i></i>
+		<a class="botao_menu" href="#"></a>
 		<ul>
 			<li><a href="#">Página Inicial</a></li>
 			<li><a href="#">Meus Trabalhos</a></li>
@@ -23,10 +24,10 @@
 </header>
 
 <script type="text/javascript">
-	$('header nav i').on('click', function(){
-	$(this).toggleClass('alterar_icone_menu');
-	$('nav').toggleClass('menu_acionado');
-});
+	$('.botao_menu').on('click', function(){
+	$(this).toggleClass('botao_menu_acionado');
+	$('header').toggleClass('expandido');
+	});
 </script>
 
 </body>
