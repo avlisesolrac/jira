@@ -1,37 +1,39 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Menu Lateral Expansível</title>
-<link rel="stylesheet" type="text/css" href="estilo.css">
-<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Menu Lateral Expansível</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<script src="https://code.jquery.com/jquery-3.7.1.slim.js" integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
 </head>
 <body>
 
 <header>
-	<a class="botao" href="#"></a>
+	<a href="#" class="botao_menu ion-android-menu"></a>
 	<nav>
 		<ul>
-			<li><a class="ion-social-tux" href="#"></a></li>
-			<li><a class="ion-social-linkedin-outline" href="#"></a></li>
-			<li><a class="ion-social-instagram-outline" href="#"></a></li>
-			<li><a class="ion-social-facebook-outline" href="#"></a></li>
-			<li><a class="ion-android-hangout" href="#"></a></li>
-			<li><a class="ion-android-mail" href="#"></a></li>
+			<li><a href="#" class="ion-social-tux"></a></li>
+			<li><a href="#" class="ion-social-android"></a></li>
+			<li><a href="#" class="ion-social-windows"></a></li>
+			<li><a href="#" class="ion-social-twitch"></a></li>
+			<li><a href="#" class="ion-social-google-outline"></a></li>
+			<li><a href="#" class="ion-android-hangout"></a></li>
 		</ul>
 	</nav>
+
 </header>
 
 <main>
-Meu conteúdo Principal da página.
+	<h1>Assunto da página Principal</h1>
+	<p>E aqui deve ser inserido o contexto do tema que será abordado.</p>
 </main>
 
 <script type="text/javascript">
-	$('header a.botao').on('click', function(){
-	$(this).toggleClass('menu_fechado');
-	$('header').toggleClass('exibir_menu');
-});
+	$('header a.botao_menu').on('click', function(){
+		$('header').toggleClass('menu_aberto');
+		$('header a.botao_menu').toggleClass('ion-close-round');
+	});
 </script>
 
 </body>
