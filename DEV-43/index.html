@@ -1,45 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Images Categories Filter</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Filtro de Categorias de Imagens</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
 </head>
 <body>
 
-<ul>
-	<a href="#all">All Images</a>
-	<a href="#animals">Animals</a>
-	<a href="#cars">Cars</a>
-	<a href="#food">Food</a>
-	<a href="#nature">Nature</a>
-</ul>
+<header>
+	<nav>
+		<ul>
+			<li><a href="#tudo">Todas as Imagens</a></li>
+			<li><a href="#animais">Animais</a></li>
+			<li><a href="#carros">Carros</a></li>
+			<li><a href="#comidas">Comidas</a></li>
+			<li><a href="#naturezas">Naturezas</a></li>
+			<li><a href="#outros">Outros</a></li>
+		</ul>
+	</nav>
+</header>
 
-<section id="all">
-	<section id="animals">
-		<img src="images/2.jpg" alt="">
-		<img src="images/6.jpg" alt="">
-		<img src="images/8.jpg" alt="">
-		<img src="images/10.webp" alt="">
+<main>
+
+	<section id="tudo">
+		<article id="animais">
+			<ul>
+				<li>
+					<picture><img src="images\2.jpg"></picture>
+				</li>
+				<li>
+					<picture><img src="images\6.jpg"></picture>
+				</li>
+				<li>
+					<picture><img src="images\8.jpg"></picture>
+				</li>
+				<li>
+					<picture><img src="images\10.webp"></picture>
+				</li>
+			</ul>
+		</article>
+
+		<article id="carros">
+			<ul>
+				<li>
+					<picture><img src="images\1.jpg"></picture>
+				</li>
+			</ul>
+		</article>
+
+		<article id="comidas">
+			<ul>
+				<li>
+					<picture><img src="images\5.jpg"></picture>
+				</li>
+				<li>
+					<picture><img src="images\9.jpg"></picture>
+				</li>
+				<li>
+					<picture><img src="images\11.jpg"></picture>
+				</li>
+			</ul>
+		</article>
+
+		<article id="naturezas">
+			<ul>
+				<li>
+					<picture><img src="images\3.jpg"></picture>
+				</li>
+				<li>
+					<picture><img src="images\7.jpg"></picture>
+				</li>
+			</ul>
+		</article>
+
+		<article id="outros">
+			<ul>
+				<li>
+					<picture><img src="images\4.jpg"></picture>
+				</li>
+				<li>
+					<picture><img src="images\12.jpg"></picture>
+				</li>
+			</ul>
+		</article>
 	</section>
 
-	<section id="cars">
-		<img src="images/1.jpg" alt="">
-	</section>
-
-	<section id="food">
-		<img src="images/5.jpg" alt="">
-		<img src="images/9.jpg" alt="">
-		<img src="images/11.jpg" alt="">
-	</section>
-
-	<section id="nature">
-		<img src="images/3.jpg" alt="">
-		<img src="images/7.jpg" alt="">
-	</section>
-
-</section>
+</main>
 
 </body>
 </html>
