@@ -1,0 +1,98 @@
+@import 'http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css';
+
+*{
+margin: 0;
+padding: 0;
+font-family: 'Century Gothic', sans-serif;
+color: #444;
+font-style: normal;
+text-decoration: none;
+list-style-type: none;
+}
+
+body{
+background-color: #f1f1f1;
+}
+
+article{
+width: 480px;
+box-shadow: 0 0 10px #444;
+margin: 20px auto;
+border-radius: 10px;
+background-color: #fff;
+}
+
+article header{
+position: relative;
+transition: .3s height;
+overflow: hidden;
+height: 269px;
+}
+
+article:hover header{
+height: 180px;
+}
+
+article header img{
+width: 100%;
+border-radius: 10px 10px 0 0;
+box-shadow: 0 0 10px #444;
+}
+
+article header span{
+background-color: rgba(0,0,0,0.6);
+color: #fff;
+padding: 5px;
+font-weight: bold;
+position: absolute;
+}
+
+article header span i{
+color: #fff;
+}
+
+article header span#data{
+top: 10px;
+right: 10px;
+}
+
+article header span#perfil{
+bottom: 10px;
+left: 10px;
+}
+
+article main{
+padding: 10px 20px;
+text-align: justify;
+height: 125px;
+overflow: hidden;
+transition: .3s;
+}
+
+article:hover main{
+height: 304px;
+}
+
+article main h1{
+font-size: 26px;
+text-transform: uppercase;
+}
+
+article main a{
+display: block;
+padding: 10px 0;
+background-color: rgba(162,74,61,0.9);
+color: #fff;
+text-align: center;
+font-size: 18px;
+font-weight: bold;
+margin: 15px 0;
+}
+
+article footer{
+padding: 10px 20px;
+}
+
+article footer i.ion-android-favorite{
+color: tomato;
+}
