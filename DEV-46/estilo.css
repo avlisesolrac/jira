@@ -5,9 +5,9 @@ margin: 0;
 padding: 0;
 font-family: 'Century Gothic', sans-serif;
 color: #444;
+font-style: normal;
 text-decoration: none;
 list-style-type: none;
-font-style: normal;
 }
 
 body{
@@ -16,87 +16,83 @@ background-color: #f1f1f1;
 
 article{
 width: 480px;
-margin: 25px auto;
-text-align: justify;
 box-shadow: 0 0 10px #444;
+margin: 20px auto;
 border-radius: 10px;
-overflow: hidden;
 background-color: #fff;
-position: relative;
 }
 
 article header{
 position: relative;
-height: 270px;
-overflow: hidden;
 transition: .3s height;
+overflow: hidden;
+height: 269px;
 }
 
 article:hover header{
-height: 150px;
+height: 180px;
 }
 
 article header img{
 width: 100%;
+border-radius: 10px 10px 0 0;
 box-shadow: 0 0 10px #444;
 }
 
-article header span, i{
-background-color: rgba(68,68,68,0.7);
+article header span{
+background-color: rgba(0,0,0,0.6);
 color: #fff;
 padding: 5px;
-text-transform: uppercase;
 font-weight: bold;
+position: absolute;
+}
+
+article header span i{
+color: #fff;
 }
 
 article header span#data{
-display: block;
-position: absolute;
 top: 10px;
 right: 10px;
 }
 
-article header span#nome{
-display: block;
-position: absolute;
+article header span#perfil{
 bottom: 10px;
 left: 10px;
 }
 
 article main{
-margin: 20px 20px;
-height: 130px;
+padding: 10px 20px;
+text-align: justify;
+height: 125px;
 overflow: hidden;
 transition: .3s;
-cursor: pointer;
 }
 
 article:hover main{
-height: 320px;
+height: 304px;
 }
 
 article main h1{
-font-size: 30px;
+font-size: 26px;
+text-transform: uppercase;
 }
 
 article main a{
 display: block;
-margin: 10px 0;
-text-transform: uppercase;
-color: tomato;
-font-weight: bold;
-background-color: #f1f1f1;
-text-align: center;
 padding: 10px 0;
+background-color: rgba(162,74,61,0.9);
+color: #fff;
+text-align: center;
+font-size: 18px;
+font-weight: bold;
+margin: 15px 0;
 }
 
 article footer{
-text-align: center;
-padding: 10px 0;
-font-weight: bold;
+padding: 10px 20px;
 }
 
-article footer i{
-background-color: #fff;
-color: #444;
+article footer i.ion-android-favorite{
+color: tomato;
 }
