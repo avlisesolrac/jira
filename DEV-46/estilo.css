@@ -3,96 +3,99 @@
 *{
 margin: 0;
 padding: 0;
-font-family: 'Century Gothic', sans-serif;
-color: #444;
+font-family: Ionicons, 'Century Gothic', sans-serif;
 font-style: normal;
-text-decoration: none;
 list-style-type: none;
+text-decoration: none;
+color: #444;
 }
 
 body{
 background-color: #f1f1f1;
 }
 
-article{
-width: 480px;
+main article{
+width: 440px;
+margin: 50px auto;
 box-shadow: 0 0 10px #444;
-margin: 20px auto;
 border-radius: 10px;
-background-color: #fff;
-}
-
-article header{
-position: relative;
-transition: .3s height;
 overflow: hidden;
-height: 269px;
+text-align: justify;
 }
 
-article:hover header{
-height: 180px;
-}
-
-article header img{
-width: 100%;
-border-radius: 10px 10px 0 0;
+main article header{
+background: url(fundo.jpg) no-repeat center;
+background-size: cover;
+height: 200px;
 box-shadow: 0 0 10px #444;
+position: relative;
+transition: .4s;
 }
 
-article header span{
+main article:hover header{
+height: 120px;
+}
+
+main article header span{
+display: block;
+}
+
+main article header span:first-child{
 background-color: rgba(0,0,0,0.6);
 color: #fff;
-padding: 5px;
 font-weight: bold;
+padding: 10px;
 position: absolute;
+right: 0px;
+top: 10px;
 }
 
-article header span i{
+main article header span:last-child{
+background-color: rgba(0,0,0,0.6);
+color: #fff;
+font-weight: bold;
+padding: 10px;
+position: absolute;
+left: 0px;
+bottom: 10px;
+}
+
+main article header span i.ion-android-folder{
 color: #fff;
 }
 
-article header span#data{
-top: 10px;
-right: 10px;
-}
-
-article header span#perfil{
-bottom: 10px;
-left: 10px;
-}
-
-article main{
-padding: 10px 20px;
-text-align: justify;
+main article main{
+padding: 10px;
 height: 125px;
 overflow: hidden;
-transition: .3s;
+transition: .4s;
 }
 
-article:hover main{
-height: 304px;
+main article:hover main{
+height: 300px;
 }
 
-article main h1{
-font-size: 26px;
-text-transform: uppercase;
+main article main h1{
+font-size: 29px;
 }
 
-article main a{
+main article main a{
+background-color: tomato;
+width: height: 200px;
 display: block;
 padding: 10px 0;
-background-color: rgba(162,74,61,0.9);
-color: #fff;
 text-align: center;
 font-size: 18px;
-font-weight: bold;
-margin: 15px 0;
+color: #fff;
+margin: 10px 0;
+cursor: pointer;
 }
 
-article footer{
-padding: 10px 20px;
+main article footer{
+text-align: center;
+padding: 10px 0;
 }
 
-article footer i.ion-android-favorite{
+main article footer span i:first-child{
 color: tomato;
 }
