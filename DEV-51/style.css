@@ -1,0 +1,51 @@
+@import 'http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css';
+
+body{
+background: #f1f1f1;
+font-family: sans-serif;
+}
+
+.check{
+position: relative;
+display: block;
+font-size: 28px;
+color: #313131;
+margin-bottom: 10px;
+padding-left: 36px;
+cursor: pointer;
+}
+
+.check input{
+opacity: 0;
+position: absolute;
+}
+
+.check span{
+position: absolute;
+left: 0;
+top: 0;
+height: 30px;
+width: 30px;
+background: #313113;
+color: white;
+text-align: center;
+transition: 0.5s all;
+}
+
+.check span:before{
+content:'\f122';
+font-family: Ionicons;
+display: none;
+}
+
+.check:hover > span{
+opacity: 0.8;
+}
+
+.check input:checked ~ span{
+background: #3498db;
+}
+
+.check input:checked ~ span:before{
+display: block;
+}
