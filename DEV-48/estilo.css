@@ -2,13 +2,13 @@
 margin: 0;
 padding: 0;
 font-family: 'Century Gothic', sans-serif;
-color: #fff;
 font-style: normal;
-text-decoration: none;
 list-style-type: none;
+text-decoration: none;
+color: tomato;
 }
 
-html,body{
+body{
 background-color: #f1f1f1;
 }
 
@@ -16,34 +16,37 @@ main{
 background: url(bg.jpg) no-repeat center;
 background-size: cover;
 text-align: center;
-padding: 100px 0;
-text-transform: uppercase;
-box-shadow: 0 0 30px #444;
-height: 100%;
+box-shadow: 0 0 10px #444;
+padding-bottom: 20px;
 }
 
 main h1{
-border: 10px solid #fff;
+font-size: 80px;
+border: 10px solid tomato;
 display: inline-block;
-padding: 10px 20px;
-letter-spacing: .2em;
-font-size: 50px;
-}
-
-main p{
-margin: 20px 0 50px 0;
-font-weight: bold;
-font-size: 25px;
+margin: 50px 0;
+padding: 20px;
+color: #fff;
 text-shadow: 0 0 10px #000;
 }
 
+main h2{
+font-size: 25px;
+margin-bottom: 20px;
+color: white;
+text-shadow: 0 0 10px #000;
+
+}
+
 main a{
-background-color: #313131;
-font-weight: bold;
+background-color: tomato;
 padding: 10px 30px;
-font-size: 18px;
-border-radius: 10px;
+font-weight: bold;
+display: block;
+width: 100px;
+margin: auto;
 transition: .3s;
+color: #fff;
 }
 
 main a:hover{
