@@ -1,0 +1,63 @@
+@import 'http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css';
+
+*{
+margin: 0;
+padding: 0;
+font-family: 'Century Gothic', sans-serif;
+font-style: normal;
+list-style-type: none;
+text-decoration: none;
+color: #fff;
+}
+
+body{
+background-color: #f1f1f1;
+}
+
+main{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+main nav{
+text-align: center;
+display: inline-block;
+box-shadow: 0 0 10px #444;
+}
+
+main nav i{
+padding: 10px 0;
+}
+
+main nav i, ul li{
+background-color: dodgerblue;
+display: block;
+width: 120px;
+font-weight: bold;
+text-shadow: 0 0 10px #444;
+}
+
+main nav ul li a{
+display: block;
+padding: 10px 20px;
+}
+
+main nav ul li a:hover{
+background-color: rgba(0,0,0,0.3);
+}
+
+main nav:hover ul{
+height: 160px;
+}
+
+main nav ul{
+position: relative;
+}
+
+main nav ul{
+height: 0;
+overflow: hidden;
+transition: .3s;
+/*height: 160px;*/
+}
