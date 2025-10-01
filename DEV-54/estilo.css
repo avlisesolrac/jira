@@ -1,0 +1,56 @@
+*{
+margin: 0;
+padding: 0;
+font-family: 'Century Gothic', sans-serif;
+font-style: normal;
+list-style-type: none;
+text-decoration: none;
+color: #fff;
+}
+
+html,body,main{
+height: 100%;
+background-color: #f1f1f1;
+}
+
+main{
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+
+main input{
+padding: 10px 20px;
+font-size: 18px;
+font-weight: bold;
+background-color: dodgerblue;
+border: none;
+box-shadow: 0 0 10px #444;
+cursor: pointer;
+text-shadow: 0 0 5px #000;
+}
+
+main input:hover{
+animation: balançar .6s linear infinite;
+}
+
+@keyframes balançar{
+
+0%{
+transform: rotate(0deg);
+}
+
+25%{
+transform: rotate(2deg);
+}
+
+50%{
+transform: rotate(-2deg);
+}
+
+75%{
+transform: rotate(4deg);
+}
+
+
+}
