@@ -1,0 +1,77 @@
+@import 'http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css';
+
+*{
+margin: 0;
+padding: 0;
+font-family: Ionicons, 'Century Gothic', sans-serif;
+font-style: normal;
+list-style-type: none;
+text-decoration: none;
+color: #444;
+}
+
+html,body,main{
+height: 100%;
+background-color: #fff;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+main section div{
+background-color: #f1f1f1;
+display: inline-block;
+border-radius: 20px 0 0 20px;
+padding: 10px 0 10px 20px;
+cursor: pointer;
+position: relative;
+box-shadow: 0 0 5px #444;
+}
+
+main section div:nth-child(2){
+background-color: #f1f1f1;
+display: inline-block;
+border-radius: 0 20px 20px 0;
+cursor: pointer;
+padding: 12px 20px;
+margin-left: -4px;
+}
+
+main section div span{
+font-size: 30px;
+padding: 5px 0;
+}
+
+main section div:first-child span{
+border-right: 2px solid #ccc;
+padding-right: 15px;
+}
+
+main section div:nth-child(2) span>i{
+opacity: 0;
+}
+
+main section div:hover{
+background-color: rgba(0,0,0,0.1);
+}
+
+main section div i{
+background-color: #444;
+color: #fff;
+position: absolute;
+bottom: -70px;
+display: block;
+width: 220px;
+padding: 10px;
+border-radius: 10px;
+opacity: 0;
+text-align: center;
+font-weight: bold;
+display: none;
+}
+
+main section div:hover i{
+display: block;
+box-shadow: 0 0 5px #444;
+opacity: .7;
+}
