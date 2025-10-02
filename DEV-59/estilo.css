@@ -1,0 +1,66 @@
+*{
+margin: 0;
+padding: 0;
+font-family: 'Century Gothic', sans-serif;
+font-style: normal;
+list-style-type: none;
+text-decoration: none;
+color: #444;
+}
+
+html,body,main,section{
+height: 100%;
+background-color: #f1f1f1;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+main section ul{
+display: flex;
+justify-content: space-evenly;
+}
+
+main section ul li{
+width: 40px;
+height: 40px;
+border-radius: 50%;
+box-shadow: 0 0 10px;
+margin-right: 20px;
+}
+
+main section ul li:first-child{
+background-color: tomato;
+animation: primeiro 1s linear infinite;
+}
+
+main section ul li:nth-child(2){
+background-color: orange;
+animation: segundo 1s linear infinite;
+}
+
+main section ul li:last-child{
+background-color: dodgerblue;
+animation: terceiro 1s linear infinite;
+}
+
+@keyframes primeiro{
+25%{transform: scale(1);}
+50%{transform: scale(1.2);}
+75%{transform: scale(1);}
+100%{transform: scale(1);}
+}
+
+@keyframes segundo{
+25%{transform: scale(1);}
+50%{transform: scale(1);}
+75%{transform: scale(1.2);}
+100%{transform: scale(1);}
+}
+
+@keyframes terceiro{
+25%{transform: scale(1);}
+50%{transform: scale(1);}
+75%{transform: scale(1);}
+100%{transform: scale(1.2);}
+}
