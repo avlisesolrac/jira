@@ -1,35 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Centering with CSS</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Alinhamento de Elementos</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
 </head>
 <body>
+	<main>
+		<section>
+			<div><p>text-align:center;</p></div>
+		</section>
 
-	<div id="text-align" class="container">
-		<h1>1 - text-align:center; com div interna em display: inline-block;</h1>
-		<div class="box"></div>
-	</div>
+		<section>
+			<div>margin: 0 auto</div>
+			<div>margin-left: auto e margin-right: auto;</div>
+		</section>
 
-	<div id="margin-auto" class="container">
-		<h1>2 - margin: 0 auto;</h1>
-		<div id="margin-auto-box" class="box"></div>
+		<section>
+			<div>display: flex; justify-content: center e align-items:center;</div>
+		</section>
 
-		<h1>2 - margin-left: auto; e margin-right: auto;</h1>
-		<div id="margin-left-right-auto-box" class="box"></div>
-	</div>
-		<h1>3 - display: flex; justify-content: center;</h1>
-
-	<div id="display-flex" class="container">
-		<div class="box"></div>
-	</div>
-
-	<div id="position-absolute" class="container">
-		<p>4 - position:absolute;position:relative;left:50%,top:50%;transform:translate(-50%,-50%);</p>
-		<div class="box"></div>
-	</div>
-
+		<section>
+			<div>position: relative e absolute e top:50%;left:50%;transform: translate(-50%,-50%);</div>
+		</section>
+	</main>
 </body>
 </html>
