@@ -1,0 +1,113 @@
+@import 'http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css';
+
+*{
+margin: 0;
+padding: 0;
+font-family: 'Century Gothic', sans-serif;
+font-style: normal;
+list-style-type: none;
+text-decoration: none;
+color: #444;
+}
+
+html,body,main,section{
+height: 100%;
+background-color: #f1f1f1;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+main section article{
+width: 100%;
+box-shadow: 0 0 10px;
+background: #fff;
+display: flex;
+}
+
+main section article picture{
+width: 200px;
+height: 100%;
+padding-top: 50px;
+overflow: hidden;
+}
+
+main section article picture:hover img{
+transform: scale(1.3);
+}
+
+main section article picture img{
+width: 100%;
+transition: .4s;
+}
+
+main section article div{
+padding: 10px 20px;
+text-transform: uppercase;
+text-align: justify;
+}
+
+main section article div h1{
+text-align: left;
+font-size: 28px;
+}
+
+/*Subtítulo do Produto*/
+main section article div span:nth-of-type(1){
+display: block;
+color: #ccc;
+font-weight: bold;
+font-size: 20px;
+}
+
+/*Preço do Produto*/
+main section article div span:nth-of-type(2){
+color: tomato;
+font-size: 50px;
+font-weight: bold;
+}
+
+main section article div span i{
+font-size: 18px;
+color: tomato;
+}
+
+main section article div h2{
+margin: 5px 0;
+}
+
+main section article div ul{
+display: flex;
+justify-content: left;
+margin: 10px 0;
+}
+
+/*Lista de Tamanhos e Cores do Produto*/
+main section article div ul li a{
+color: tomato;
+font-weight: bold;
+border: 2px solid;
+padding: 2px 4px;
+border-radius: 8px;
+margin: 0 5px 0 0;
+}
+
+main section article div ul li a:hover{
+box-shadow: 0 0 5px;
+}
+
+main section article div a#adicionar_carrinho{
+display: inline-block;
+border: none;
+background-color: tomato;
+color: #fff;
+padding: 10px 20px;
+position: relative;
+margin: 10px 0;
+cursor: pointer;
+font-size: 15px;
+}
+
+main section article div a#adicionar_carrinho:hover{
+background-color: coral;
+}
