@@ -1,42 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Product Card</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Produto de Venda</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
 </head>
 <body>
+	<main>
+		<section>
+			<article>
+				<picture>
+					<img src="camiseta.webp">
+				</picture>
 
-	<div class="prod-card">
-		<div class="img">
-			<img src="camiseta.webp" alt="">
-		</div>
-		
-		<div class="prod-info">
-			<h2>Original T-Shirt From DarkCode</h2>
-			<span class="desc">Awesome T-Shirt For Men</span>
-			<span class="price"><i class="ion-social-usd"></i> 449</span>
+				<div>
+					<h1>Camiseta Original do CódigoProfundo</h1>
+					<span>Camiseta Incrível para Homens</span>
+					<span class="ion-social-usd-outline">199<i>,00</i></span>
+					<h2>Tamanhos:</h2>
+					<ul>
+						<li><a href="#">P</a></li>
+						<li><a href="#">M</a></li>
+						<li><a href="#">G</a></li>
+						<li><a href="#">EG</a></li>
+					</ul>
 
-			<h3>Sizes</h3>
-			<span>
-				<a href="#">X</a>
-				<a href="#">L</a>
-				<a href="#">XL</a>
-				<a href="#">XXL</a>
-			</span>
-
-			<h3>Colors</h3>
-			<span>
-				<a href="#">Black</a>
-				<a href="#">White</a>
-				<a href="#">Red</a>
-				<a href="#">Blue</a>
-			</span>
-
-			<a class="addbtn" href="#"><i class="ion-ios-cart"></i> Add to Cart</a>
-		</div>
-	</div>
-
+					<h2>Cores:</h2>
+					<ul>
+						<li><a href="#">Azul</a></li>
+						<li><a href="#">Vermelho</a></li>
+						<li><a href="#">Amarelo</a></li>
+						<li><a href="#">Preto</a></li>
+					</ul>
+					
+					<a id="adicionar_carrinho" href="#" class="ion-ios-cart"> Adicionar ao Carrinho</a>
+				</div>
+			</article>
+		</section>
+	</main>
 </body>
 </html>
