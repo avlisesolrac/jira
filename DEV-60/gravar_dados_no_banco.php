@@ -1,19 +1,20 @@
 <?php
 
-include 'conectar_no_banco.php';
+include 'conectar_e_selecionar_banco.php';
 
-if(isset($_POST["dados_inseridos"])){
-	$nome_usuario = $_POST["nome_usuario"];
-	$email_usuario = $_POST["email_usuario"];
-	$senha_usuario = $_POST["senha_usuario"];
+if(isset($_POST["dados_do_formulario"])){
+	$nome = $_POST["nome"];
+	$email = $_POST["email"];
+	$senha = $_POST["senha"];
 
-	if(empty($nome_usuario) || empty($email_usuario) || empty($senha_usuario)){
-		echo "Não houve o preencimento completo do formulário de cadastro de usuário, por favor retorne <a href='index.html'>AQUI</a>.";
+	if(empty($nome) || empty($email) || empty($senha)){
+		echo "Não houve o preenchimento completo do formulário, realizar o cadastro completo <a href='index.html'>AQUI</a>";
 	} else {
-		$gravar_dados_inseridos = mysqli_query($conectar_no_banco,"INSERT INTO `usuarios` (`nome_usuario`, `email_usuario`, `senha_usuario`) VALUES ('$nome_usuario', '$email_usuario', '$senha_usuario')");
+		$gravar_dados_no_banco = mysqli_query($conectar_no_servidor_de_banco,"INSERT INTO `usuarios` (`nome`, `email`, `senha`) VALUES ('$nome', '$email', '$senha')");
 		
-		echo "Dados gravados com sucesso! <a href='index.html'>Criar novo usuário?</a>";
+		echo "Os dados foram gravados com sucesso no banco, <a href='index.html'>criar novo cadastro?</a>";
 	}
+
 }
 
 ?>
