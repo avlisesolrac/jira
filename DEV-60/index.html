@@ -3,34 +3,20 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Cadastro de Usuário</title>
+	<title>Cadastrar Usuário</title>
 	<link rel="stylesheet" type="text/css" href="estilo.css">
 </head>
 <body>
 
 	<main>
 		<section>
-			<form action="cadastrar_usuario_no_banco.php" method="post">
-				<header>
-					<h1>Criar Conta</h1>
-				</header>
-				
-				<main>
-					<input type="text" name="primeiro_nome" placeholder="Primeiro Nome">
-					<input type="text" name="sobrenome" placeholder="Sobrenome">
-					<input type="date" name="nascimento" placeholder="Data de Nascimento - DD/MM/AAAA">
-					<input type="text" name="sexo" placeholder="Orientação Sexual">
-					<input type="text" name="telefone" placeholder="Telefone">
-					<input type="text" name="cep" placeholder="CEP">
-					<input type="text" name="rua" placeholder="Rua ou Avenida">
-					<input type="text" name="numero_rua" placeholder="Número">
-					<input type="text" name="complemento_rua" placeholder="Complemento">
-					<input type="text" name="cidade" placeholder="Cidade">
-				</main>
+			<form action="gravar_dados_no_banco.php" method="post">
+				<h1>Criar conta</h1>
 
-				<footer>				
-					<input type="submit" name="cadastrar" value="Cadastrar">
-				</footer>
+				<input type="text" name="nome_usuario" autocomplete="name" placeholder="Nome Completo">
+				<input type="email" name="email_usuario" autocomplete="email" placeholder="E-mail">
+				<input type="password" name="senha_usuario" autocomplete="password" placeholder="Nova Senha">
+				<input type="submit" name="dados_inseridos" value="Cadastrar">
 			</form>
 		</section>
 	</main>

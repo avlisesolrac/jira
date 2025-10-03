@@ -1,0 +1,2 @@
+--CRIAR TABELA USUARIOS COM OS CAMPOS DO FORMULARIO:
+CREATE TABLE `dev60`.`usuarios` (`id_usuario` INT(10) NOT NULL AUTO_INCREMENT , `nome_usuario` VARCHAR(255) NOT NULL , `email_usuario` VARCHAR(255) NOT NULL , `senha_usuario` VARCHAR(255) NOT NULL , PRIMARY KEY (`id_usuario`)) ENGINE = InnoDB;
