@@ -1,0 +1,60 @@
+*{
+margin: 0;
+padding: 0;
+font-family: 'Century Gothic', sans-serif;
+font-style: normal;
+list-style-type: none;
+text-decoration: none;
+color: #444;
+}
+
+html,body,main{
+height: 100%;
+background-color: #f1f1f1;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+form{
+width: 460px;
+box-shadow: 0 0 10px;
+padding: 20px 10px;
+background-color: #fff;
+border-top: 4px solid dodgerblue;
+border-radius: 10px;
+text-align: center;
+}
+
+form h1{
+font-size: 50px;
+text-align: center;
+text-shadow: 0 0 5px #fff;
+color: dodgerblue;
+}
+
+form input{
+box-sizing: content-box;
+display: inline-block;
+width: 90%;
+padding: 10px 5px;
+margin: 15px 0;
+text-align: center;
+font-size: 18px;
+outline: none;
+border: none;
+border-bottom: 2px solid dodgerblue;
+}
+
+form input[type="submit"]{
+background-color: dodgerblue;
+color: #fff;
+font-weight: bold;
+border-bottom: 2px solid #444;
+cursor: pointer;
+}
+
+form input[type="submit"]:hover{
+box-shadow: 0 0 10px #444;
+color: #444;
+}
