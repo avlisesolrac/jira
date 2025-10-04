@@ -3,49 +3,50 @@
 *{
 margin: 0;
 padding: 0;
-font-family: 'Century Gothic', sans-serif;
-font-style: normal;;
+font-family: Ionicons, 'Century Gothic', sans-serif;
+font-style: normal;
 list-style-type: none;
 text-decoration: none;
 color: #444;
 }
 
-html,body{
+html, body, main{
+background-color: #f1f1f1;
 height: 100%;
 display: flex;
 justify-content: center;
 align-items: center;
-background-color: #f1f1f1;
 }
 
-main section ul{
+main ul{
 display: flex;
-justify-content: space-around;
+justify-content: space-evenly;
 direction: rtl;
 }
 
-main section ul li a{
-padding: 0 20px;
+main ul li{
 font-size: 50px;
-text-shadow: 0 0 5px #444;
+margin: 0 10px;
+cursor: pointer;
 }
 
-main section ul li a:hover{
+main ul li:hover{
+text-shadow: 0 0 10px #444;
 color: gold;
 }
 
-main section ul li:first-child:hover ~ li>a{
+main ul li:nth-child(1):hover ~ li{
 color: gold;
 }
 
-main section ul li:nth-child(2):hover ~ li>a{
+main ul li:nth-child(2):hover ~ li{
 color: gold;
 }
 
-main section ul li:nth-child(3):hover ~ li>a{
+main ul li:nth-child(3):hover ~ li{
 color: gold;
 }
 
-main section ul li:nth-child(4):hover ~ li>a{
+main ul li:nth-child(4):hover ~ li{
 color: gold;
 }
