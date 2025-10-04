@@ -1,0 +1,1 @@
+CREATE TABLE `dev51`.`preferencias_estudos` (`identificador` INT(10) NOT NULL AUTO_INCREMENT , `html` VARCHAR(10) NOT NULL , `css` VARCHAR(10) NOT NULL , `javascript` VARCHAR(10) NOT NULL , `php` VARCHAR(10) NOT NULL , `mysql` VARCHAR(10) NOT NULL , PRIMARY KEY (`identificador`)) ENGINE = InnoDB;

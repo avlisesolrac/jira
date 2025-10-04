@@ -9,24 +9,29 @@
 <body>
 
 	<main>
-		<ul>
-			<li>O que você gostaria de aprender?</li>
-			<li>
-				<label><input type="checkbox"><span></span> HTML</label>
-			</li>
-			<li>
-				<label><input type="checkbox"><span></span> CSS</label>
-			</li>
-			<li>
-				<label><input type="checkbox"><span></span> JavaScript</label>
-			</li>
-			<li>
-				<label><input type="checkbox"><span></span> PHP</label>
-			</li>
-			<li>
-				<label><input type="checkbox"><span></span> MySQL</label>
-			</li>
-		</ul>
+		<form action="gravar_no_banco.php" method="post">
+			<ul>
+				<li>O que você gostaria de aprender?</li>
+				<li>
+					<label><input type="checkbox" name="preferencias[]" value="HTML"><span></span> HTML</label>
+				</li>
+				<li>
+					<label><input type="checkbox" name="preferencias[]" value="CSS"><span></span> CSS</label>
+				</li>
+				<li>
+					<label><input type="checkbox" name="preferencias[]" value="JAVASCRIPT"><span></span> JavaScript</label>
+				</li>
+				<li>
+					<label><input type="checkbox" name="preferencias[]" value="PHP"><span></span> PHP</label>
+				</li>
+				<li>
+					<label><input type="checkbox" name="preferencias[]" value="MYSQL"><span></span> MySQL</label>
+				</li>
+				
+				<input type="submit" value="Enviar">
+				
+			</ul>
+		</form>
 	</main>
 
 </body>
