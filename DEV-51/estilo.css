@@ -10,25 +10,44 @@ text-decoration: none;
 color: #444;
 }
 
-body{
+html, body, main{
 background-color: #f1f1f1;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
-main{
-width: 480px;
-margin: 20px auto;
-}
-
-main h1, ul li{
-margin: 5px 0;
+main ul{
+box-shadow: 0 0 10px;
 padding: 20px;
-box-shadow: 0 0 10px #444;
-cursor: pointer;
+background-color: #fff;
+border-radius: 10px;
+}
+
+main ul li{
+margin: 10px 0;
+}
+
+main ul li:first-child{
+font-size: 20px;
+font-weight: bold;
+text-transform: uppercase;
+}
+
+main ul li:first-child:hover{
+box-shadow: none;
 }
 
 main ul li:hover{
-border: none;
-box-shadow: none;
+box-shadow: 0 0 5px;
+}
+
+main ul li label{
+display: block;
+padding: 20px 30px;
+cursor: pointer;
+position: relative;
 }
 
 main ul li label input{
@@ -36,28 +55,26 @@ display: none;
 }
 
 main ul li label span{
-display: inline-block;
-width: 30px;
-height: 30px;
-background-color: #444;
-position: relative;
-margin-right: 10px;
-top: 8px;
-transition: .3s;
-text-align: center;
-}
-
-main ul li label span:before{
-content:'\f122';
-color: #fff;
 position: absolute;
+width: 20px;
+height: 20px;
+background-color: #444;
 left: 5px;
-font-size: 25px;
-display: none;
+transition: .4s;
 }
 
 main ul li label input:checked + span{
 background-color: dodgerblue;
+}
+
+main ul li label span:before{
+content:'\f122';
+position: absolute;
+color: #fff;
+left: 3px;
+top: 2px;
+display: none;
+transition: .4s;
 }
 
 main ul li label input:checked + span:before{
