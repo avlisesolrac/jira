@@ -8,49 +8,38 @@ text-decoration: none;
 color: #fff;
 }
 
-html,body,main{
-height: 100%;
+html, body{
 background-color: #f1f1f1;
-}
-
-main{
+height: 100%;
 display: flex;
-justify-content: space-around;
+justify-content: center;
 align-items: center;
 }
 
-main input{
+main button{
+font-size: 20px;
 padding: 10px 20px;
-font-size: 18px;
-font-weight: bold;
-background-color: dodgerblue;
-border: none;
-box-shadow: 0 0 10px #444;
 cursor: pointer;
+background-color: tomato;
+border: none;
+font-weight: bold;
 text-shadow: 0 0 5px #000;
+box-shadow: 0 0 10px #000;
+border-radius: 10px;
 }
 
-main input:hover{
-animation: balançar .6s linear infinite;
+main button:hover{
+text-shadow: none;
+box-shadow: none;
+animation: balançar .5s linear infinite;
 }
 
 @keyframes balançar{
 
-0%{
-transform: rotate(0deg);
-}
+0%{transform: rotate(0deg);}
 
-25%{
-transform: rotate(2deg);
-}
+30%{transform: rotate(-2deg);}
 
-50%{
-transform: rotate(-2deg);
-}
-
-75%{
-transform: rotate(4deg);
-}
-
+60%{transform: rotate(2deg);}
 
 }
