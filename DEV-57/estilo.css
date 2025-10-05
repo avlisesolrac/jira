@@ -10,39 +10,28 @@ color: #fff;
 
 html,body,main,section{
 height: 100%;
-background-color: #f1f1f1;
 }
 
 main section div{
-width: 200px;
-height: 200px;
-box-shadow: 0 0 10px #fff;
-display: flex;
-justify-content: center;
-align-items: center;
+box-shadow: 0 0 10px #444;
 text-align: center;
+padding: 100px;
+width: 50%;
+font-weight: bold;
+font-size: 20px;
 }
 
 main section:first-child{
+background-color: gold;
 text-align: center;
-background-color: tomato;
 }
 
 main section:first-child div{
 display: inline-block;
 }
 
-main section:first-child div p{
-display: flex;
-justify-content: center;
-align-items: center;
-height: 100%;
-}
-
-
 main section:nth-child(2){
-background-color: orange;
-padding-top: 50px;
+background-color: dodgerblue;
 }
 
 main section:nth-child(2) div:first-child{
@@ -50,33 +39,26 @@ margin: 0 auto;
 }
 
 main section:nth-child(2) div:last-child{
+margin-top: 20px;
 margin-left: auto;
 margin-right: auto;
-margin-top: 50px;
 }
 
 main section:nth-child(3){
-background-color: dodgerblue;
-display: flex;
-justify-content: center;
-align-items: center;
-}
-
-main section:nth-child(3) div{
-display: flex;
-}
-
-
-main section:last-child{
-text-align: center;
-background-color: green;
+background-color: tomato;
 position: relative;
 }
 
-main section:last-child div{
+main section:nth-child(3) div{
 position: absolute;
 top: 50%;
 left: 50%;
 transform: translate(-50%,-50%);
-padding: 10px;
+}
+
+main section:nth-child(4){
+background-color: orange;
+display: flex;
+justify-content: center;
+align-items: center;
 }
