@@ -8,22 +8,17 @@ text-decoration: none;
 color: #444;
 }
 
-html, body, main{
+body{
 background-color: #f1f1f1;
-height: 100%;
 display: flex;
 justify-content: center;
 align-items: center;
 }
 
-main section{
-display: flex;
-}
-
 main section article{
 width: 400px;
 box-shadow: 0 0 10px;
-margin: 0 50px;
+margin: 25px auto;
 padding: 30px 20px;
 text-align: justify;
 position: relative;
