@@ -18,49 +18,102 @@ align-items: center;
 
 main section ul{
 display: flex;
-justify-content: space-evenly;
+justify-content: center;
+align-items: center;
 }
 
 main section ul li{
-width: 40px;
-height: 40px;
+width: 50px;
+height: 50px;
 border-radius: 50%;
-box-shadow: 0 0 10px;
 margin-right: 20px;
+box-shadow: 0 0 10px;
+transition: .3s;
 }
 
 main section ul li:first-child{
-background-color: tomato;
-animation: primeiro 1s linear infinite;
+animation: carregandoL1 1s linear infinite;
+background-color: gold;
 }
 
 main section ul li:nth-child(2){
-background-color: orange;
-animation: segundo 1s linear infinite;
+animation: carregandoL2 1s linear infinite;
+background-color: dodgerblue;
 }
 
 main section ul li:last-child{
-background-color: dodgerblue;
-animation: terceiro 1s linear infinite;
+animation: carregandoL3 1s linear infinite;
+background-color: tomato;
 }
 
-@keyframes primeiro{
-25%{transform: scale(1);}
-50%{transform: scale(1.2);}
-75%{transform: scale(1);}
-100%{transform: scale(1);}
+@keyframes carregandoL1 {
+
+0%{
+transform: scale(1);
 }
 
-@keyframes segundo{
-25%{transform: scale(1);}
-50%{transform: scale(1);}
-75%{transform: scale(1.2);}
-100%{transform: scale(1);}
+25%{
+transform: scale(1.2);
 }
 
-@keyframes terceiro{
-25%{transform: scale(1);}
-50%{transform: scale(1);}
-75%{transform: scale(1);}
-100%{transform: scale(1.2);}
+50%{
+transform: scale(1);
+}
+
+75%{
+transform: scale(1);
+}
+
+100%{
+transform: scale(1);
+}
+
+}
+
+@keyframes carregandoL2 {
+
+0%{
+transform: scale(1);
+}
+
+25%{
+transform: scale(1);
+}
+
+50%{
+transform: scale(1.2);
+}
+
+75%{
+transform: scale(1);
+}
+
+100%{
+transform: scale(1);
+}
+
+}
+
+@keyframes carregandoL3 {
+
+0%{
+transform: scale(1);
+}
+
+25%{
+transform: scale(1);
+}
+
+50%{
+transform: scale(1);
+}
+
+75%{
+transform: scale(1.2);
+}
+
+100%{
+transform: scale(1);
+}
+
 }
