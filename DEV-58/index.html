@@ -7,37 +7,65 @@
 	<link rel="stylesheet" type="text/css" href="estilo.css">
 </head>
 <body>
+
 	<main>
 		<section>
 			<article>
 				<picture>
-					<img src="camiseta.webp">
+					<div id="imagem"></div>
 				</picture>
 
-				<div>
+				<form action="gravar_venda_produto.php" method="POST">
 					<h1>Camiseta Original do CódigoProfundo</h1>
-					<span>Camiseta Incrível para Homens</span>
-					<span class="ion-social-usd-outline">199<i>,00</i></span>
-					<h2>Tamanhos:</h2>
+					<h2>Camiseta Incrível para Homens</h2>
+
+					<p>R<i class="ion-social-usd"></i> 99<span> ,00</span></p>
+					<h3>Tamanhos:</h3>
 					<ul>
-						<li><a href="#">P</a></li>
-						<li><a href="#">M</a></li>
-						<li><a href="#">G</a></li>
-						<li><a href="#">EG</a></li>
+						<li><label><input type="radio" name="tamanho" value="P"> P</label></li>
+						<li><label><input type="radio" name="tamanho" value="M"> M</label></li>
+						<li><label><input type="radio" name="tamanho" value="G"> G</label></li>
+						<li><label><input type="radio" name="tamanho" value="EG"> EG</label></li>
 					</ul>
 
-					<h2>Cores:</h2>
-					<ul>
-						<li><a href="#">Azul</a></li>
-						<li><a href="#">Vermelho</a></li>
-						<li><a href="#">Amarelo</a></li>
-						<li><a href="#">Preto</a></li>
+					<h3>Cores:</h3>
+
+					<ul id="cores">
+						<li><label><input type="radio" name="cor" value="Branco"> Branco</label></li>
+						<li><label><input type="radio" name="cor" value="Azul"> Azul</label></li>
+						<li><label><input type="radio" name="cor" value="Amarelo"> Amarelo</label></li>
+						<li><label><input type="radio" name="cor" value="Preto"> Preto</label></li>
 					</ul>
-					
-					<a id="adicionar_carrinho" href="#" class="ion-ios-cart"> Adicionar ao Carrinho</a>
-				</div>
+
+					<button class="ion-bag" name="carrinho"> Adicionar a Sacola</button>
+				</form>
 			</article>
 		</section>
 	</main>
+
+<script type="text/javascript">
+// Seleciona todos os inputs de rádio com o nome 'cor'
+const radios = document.querySelectorAll('input[type="radio"][name="cor"]');
+
+// Adiciona um 'event listener' de 'change' para cada input
+radios.forEach(radio => {
+  radio.addEventListener('change', function() {
+    // 'this.value' pega o valor do rádio selecionado (ex: 'green', 'blue', 'yellow')
+    document.body.style.backgroundColor = this.value;
+
+    const imagem_da_camiseta = document.querySelector('#imagem');
+
+    if (this.value == 'Azul') {
+        imagem_da_camiseta.style.backgroundImage = 'url("camiseta_azul.jpg")'; 
+    } else if (this.value == 'Branco'){
+        imagem_da_camiseta.style.backgroundImage = 'url("camiseta.webp")'; 
+    } else if (this.value == 'Amarelo'){
+	imagem_da_camiseta.style.backgroundImage = 'url("camiseta_amarela.webp")';
+	} else if(this.value == 'Preto'){
+		imagem_da_camiseta.style.backgroundImage = 'url("camiseta_preta.webp")';
+	}
+  });
+});
+</script>
 </body>
 </html>
