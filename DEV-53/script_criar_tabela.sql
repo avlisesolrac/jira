@@ -1,0 +1,1 @@
+CREATE TABLE `dev53`.`avaliacoes` (`pontuacao` INT NOT NULL ) ENGINE = InnoDB;
