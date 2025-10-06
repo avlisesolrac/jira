@@ -1,1 +1,1 @@
-CREATE TABLE `dev61`.`users` (`u_id` INT(10) NOT NULL AUTO_INCREMENT , `u_name` VARCHAR(255) NOT NULL , `u_email` VARCHAR(255) NOT NULL , `u_pass` VARCHAR(255) NOT NULL , PRIMARY KEY (`u_id`)) ENGINE = InnoDB;
+CREATE TABLE `dev61`.`usuarios` (`id_usuario` INT(10) NOT NULL AUTO_INCREMENT , `primeiro_nome` VARCHAR(255) NOT NULL , `sobrenome` VARCHAR(255) NOT NULL , `email` VARCHAR(255) NOT NULL , `senha` VARCHAR(255) NOT NULL , PRIMARY KEY (`id_usuario`)) ENGINE = InnoDB;
