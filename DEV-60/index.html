@@ -10,13 +10,22 @@
 
 	<main>
 		<section>
-			<form action="gravar_dados_no_banco.php" method="post">
-				<h1>Cadastre-se</h1>
+			<form action="cadastrar_usuario.php" method="POST">
+				<header>
+					<h1 class="ion-android-contact"> Cadastro de Usuário</h1>
+				</header>
+				
+				<main>
+					<input type="text" name="nome" placeholder="Nome Completo">					
+					<input type="email" name="email" placeholder="E-mail">						
+					<label>Data de Nascimento </label>
+					<input type="date" name="nascimento" placeholder="Data de Nascimento">
+					<input type="password" name="senha" placeholder="Nova Senha">
+				</main>
 
-				<input type="text" name="nome" autocomplete="name" placeholder="Seu nome completo">
-				<input type="email" name="email" autocomplete="email" placeholder="Seu E-mail">
-				<input type="password" name="senha" autocomplete="password" placeholder="Sua nova senha">
-				<input type="submit" name="dados_do_formulario" value="Cadastrar">
+				<footer>
+					<button name="dados_do_usuario" class="ion-person-add"> Criar Conta</button>
+				</footer>
 			</form>
 		</section>
 	</main>

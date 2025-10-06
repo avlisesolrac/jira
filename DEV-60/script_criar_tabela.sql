@@ -1,0 +1,1 @@
+CREATE TABLE `dev60`.`usuarios` (`id_usuarios` INT(10) NOT NULL AUTO_INCREMENT , `nome` VARCHAR(255) NOT NULL , `email` VARCHAR(255) NOT NULL , `nascimento` DATE NOT NULL , `senha` VARCHAR(255) NOT NULL , PRIMARY KEY (`id_usuarios`)) ENGINE = InnoDB;
