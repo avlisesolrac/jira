@@ -1,0 +1,142 @@
+@import 'http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css';
+
+*{
+margin: 0;
+padding: 0;
+font-family: 'Century Gothic', sans-serif;
+font-style: normal;
+list-style-type: none;
+text-decoration: none;
+color: #fff;
+text-transform: uppercase;
+}
+
+body{
+background-color: #f1f1f1;
+position: relative;
+}
+
+header{
+background-color: #4caf50;
+box-shadow: 0 0 10px #444;
+display: flex;
+justify-content: space-around;
+}
+
+header#cabecalho_titulo{
+padding: 30px 0;
+}
+
+header#cabecalho_titulo h1{
+border: 10px solid;
+padding: 10px 20px;
+}
+
+header span{
+font-weight: bold;
+padding-left: 5px;
+margin: 15px 0;
+text-shadow: 0 0 10px #444;
+}
+
+header nav ul{
+display: flex;
+justify-content: center;
+}
+
+header nav ul li a{
+padding: 10px 15px;
+font-size: 25px;
+display: block;
+}
+
+header nav ul li a:hover{
+background-color: #94ce96;
+color: #444;
+}
+
+main{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+main form{
+width: 480px;
+}
+
+main form#entrar{
+padding-top: 100px;
+}
+
+main form#profile label{
+display: block;
+margin: 30px 0;
+}
+
+main form input{
+display: block;
+width: 95%;
+padding: 10px;
+color: #444;
+margin: 20px 0;
+box-sizing: content-box;
+border: none;
+outline: none;
+background-color: #f1f1f1;
+border-bottom: 1px solid #ccc;
+}
+
+main form input::placeholder{
+font-weight: bold;
+text-align: center;
+}
+
+main form label{
+color: #444;
+font-weight: bold;
+}
+
+main form input[type="date"]{
+width: 50%;
+display: inline-block;
+}
+
+main form button{
+background-color: #4caf50;
+padding: 10px 20px;
+border: none;
+font-size: 20px;
+margin: 30px auto 70px;
+display: block;
+cursor: pointer;
+box-shadow: 0 0 10px #444;
+}
+
+main form button:hover{
+background-color: #94ce96;
+color: #444;
+}
+
+footer{
+background-color: #4caf50;
+box-shadow: 0 0 10px #444;
+position: fixed;
+bottom: 0;
+width: 100%;
+}
+
+footer nav ul{
+display: flex;
+justify-content: space-around;
+}
+
+footer nav ul li a{
+display: block;
+padding: 10px 15px;
+}
+
+footer nav ul li a:hover{
+background-color: #94ce96;
+color: #444;
+}
