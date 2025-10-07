@@ -1,3 +1,5 @@
+@import 'http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css';
+
 *{
 margin: 0;
 padding: 0;
@@ -12,82 +14,100 @@ body{
 background-color: #f1f1f1;
 }
 
-main form h1,input[type="submit"],a{
-text-transform: uppercase;
+header#cabecalho_menu_principal{
+background-color: dodgerblue;
+box-shadow: 0 0 10px #444;
+}
+
+header#cabecalho_menu_principal nav ul{
+display: flex;
+justify-content: space-evenly;
+}
+
+header#cabecalho_menu_principal nav ul li a{
+display: block;
+padding: 10px 30px;
+font-size: 20px;
+font-weight: bold;
+}
+
+header#cabecalho_menu_principal nav ul li a:hover{
+background-color: #abd0f2;
+color: #444;
 }
 
 main form{
-background-color: dodgerblue;
-box-shadow: 0 0 10px #444;
+background-color: tomato;
 max-width: 480px;
 margin: 20px auto;
-text-align: center;
 box-shadow: 0 0 10px #444;
 border-radius: 10px;
-border: 2px solid #ccc;
 }
 
-main form h1{
+main form header{
+padding: 25px 0;
 text-align: center;
-margin: 20px 0;
-border: 10px solid;
+}
+
+main form header h1{
 display: inline-block;
+border: 10px solid;
 padding: 10px 30px;
 box-shadow: 0 0 10px #444;
-text-shadow: 0 0 10px #444;
+text-shadow: 0 0 8px #444;
+border-radius: 10px;
+
 }
 
-main form input{
-display: inline-block;
-width: 90%;
-margin: 0 auto;
-box-sizing: content-box;
-padding: 10px;
-color: #fff;
+main form main{
+background-color: dodgerblue;
+text-align: center;
+padding: 10px 0;
+}
+
+main form main input{
+width: 80%;
 margin: 10px 0;
-outline: none;
+padding: 10px;
 background-color: dodgerblue;
 border: none;
+outline: none;
 border-bottom: 1px solid;
-text-align: center;
 font-size: 15px;
 }
 
-main form input::placeholder{
-color: #444;
-text-align: center;
-text-transform: uppercase;
-font-weight: bold;
+main form main input::placeholder{
+color: #fff;
 }
 
-main form input[type="submit"]{
-font-weight: bold;
+main form main button{
+background-color: tomato;
 font-size: 20px;
+padding: 10px 30px;
+margin: 20px 0;
 border: none;
 cursor: pointer;
-background-color: tomato;
-text-shadow: 0 0 10px #444;
-display: block;
-margin: 20px auto;
+border-radius: 10px;
+font-weight: bold;
+text-shadow: 0 0 5px #444;
 }
 
-main form input[type="submit"]:hover{
-border: none;
+main form main button:hover{
 box-shadow: 0 0 10px #444;
 }
 
 main form footer{
-padding-right: 10px;
 text-align: right;
+padding: 20px;
+font-weight: bold;
+position: relative;
 }
 
-main form footer a{
-display: inline-block;
-margin: 0 0 20px;
-font-size: 15px;
+main form footer a:first-child{
+position: absolute;
+left: 20px;
 }
 
 main form footer a:hover{
-color: #444;
-border-bottom: 1px solid #444;
+border-bottom: 1px solid;
 }
