@@ -1,15 +1,15 @@
 <?php
 
-include "conectar_no_banco_e_controlar_sessao.php";
+include "conectar_no_banco_e_validar_sessao_do_usuario.php";
 
-if($statusDoLogin == 1){
+if($usuarioLogado){
 	echo "<meta http-equiv='refresh' content='0; url=perfil.php'>";
 } else {
 
 ?>
 
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,31 +18,41 @@ if($statusDoLogin == 1){
 </head>
 <body>
 
-	<header id="cabecalho_titulo">
-		<h1>Cadastro de usuário</h1>
+	<header>
+		<span>&lt\CódigoProfundo&gt</span>
+		<nav>
+			<ul>
+				<li><a href="index.php">Principal</a></li>
+				<li><a href="entrar.php">Entrar</a></li>
+			</ul>
+		</nav>	
 	</header>
 
 	<main>
-		<form action="cadastrar_usuario_no_banco.php" method="POST">
-			<input type="text" name="primeiro_nome" placeholder="Digite seu Primeiro Nome">
-			<input type="text" name="sobrenome" placeholder="Digite seu Sobrenome">
-			<label>Data de Nascimento: </label>
-			<input type="date" name="data_nascimento" placeholder="Digite seu Primeiro Nome">
-			<input type="email" name="email" placeholder="Digite seu E-mail">
-			<input type="password" name="senha" placeholder="Digite sua senha nova">
-			<button class="ion-ios-personadd-outline" name="cadastrar"> Cadastrar</button>
+		<form action="gravar_usuario_no_banco.php" method="POST">
+			<h1>Cadastre-se</h1>
+			
+			<label>Primeiro Nome</label>
+			<input type="text" name="primeiro_nome">
 
+			<label>Sobrenome</label>
+			<input type="text" name="sobrenome">
+
+			<label>Data de Nascimento</label>
+			<input type="date" name="data_nascimento">
+
+			<label>E-mail</label>
+			<input type="email" name="email">
+
+			<label>Senha</label>
+			<input type="password" name="senha">
+
+			<input type="submit" value="Cadastrar" name="cadastrar">
 		</form>
 	</main>
 
 	<footer>
-		<nav>
-			<ul>
-				<li><a href="index.php">Página Inicial</a></li>
-				<li><a href="entrar.php">Entrar</a></li>
-
-			</ul>
-		</nav>
+		<p>Todos os diretios reservados @CÓDIGOPROFUNDO 2025</p>
 	</footer>
 
 </body>

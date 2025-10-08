@@ -1,14 +1,14 @@
 <?php
 
-include "conectar_no_banco_e_controlar_sessao.php";
+include "conectar_no_banco_e_validar_sessao_do_usuario.php";
 
-if($statusDoLogin == 1){
+if($usuarioLogado){
 	echo "<meta http-equiv='refresh' content='0; url=perfil.php'>";
 } else {
 
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
