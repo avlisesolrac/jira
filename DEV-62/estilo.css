@@ -1,0 +1,148 @@
+*{
+margin: 0;
+padding: 0;
+font-family: 'Century Gothic', sans-serif;
+font-style: normal;
+list-style-type: none;
+text-decoration: none;
+color: #fff;
+}
+
+html,body{
+height: 100%;
+width: 100%;
+background-color: #f1f1f1;
+}
+
+header{
+background-color: dodgerblue;
+display: flex;
+justify-content: right;
+box-shadow: 0 0 10px #444;
+}
+
+header nav ul{
+display: flex;
+}
+
+header nav ul li a{
+display: block;
+padding: 20px 40px;
+font-weight: bold;
+border-bottom: 5px solid transparent;
+transition: .4s;
+text-shadow: 0 0 2px #444;
+}
+
+header nav ul li a:hover{
+background-color: rgba(255,255,255,0.3);
+color: #444;
+border-bottom: 5px solid #fff;
+text-shadow: 0 0 2px #fff;
+}
+
+main{
+box-shadow: 0 0 10px #444;
+background-color: #fff;
+padding: 20px 0;
+}
+
+main#principal{
+height: 77%;
+}
+
+main#entrar{
+display: flex;
+height: 77%;
+}
+
+main section{
+box-shadow: 0 0 10px #444;
+width: 95%;
+max-width: 600px;
+margin: auto;
+padding: 5px;
+background-color: dodgerblue;
+}
+
+main#entrar section form{
+padding: 80px 0;
+}
+
+main section form *{
+color: dodgerblue;
+}
+
+main section form{
+box-shadow: 0 0 10px #444;
+background-color: #fff;
+text-align: center;
+padding: 20px 0;
+}
+
+main section form h1{
+text-transform: uppercase;
+text-align: center;
+border: 10px solid;
+display: inline-block;
+padding: 10px 20px;
+}
+
+main section form ul li{
+text-align: center;
+padding: 15px 0;
+}
+
+main section form ul li label{
+font-weight: bold;
+}
+
+
+main section form ul li input{
+padding: 10px;
+width: 90%;
+box-sizing: content-box;
+color: #444;
+outline: none;
+border: none;
+border-bottom: 1px solid;
+border-radius: 5px;
+}
+
+main section form ul li#nascimento{
+text-align: left;
+padding-left: 15px;
+}
+
+main section form ul li#nascimento input{
+width: 50%;
+}
+
+main section form ul li input[type="submit"]{
+background-color: dodgerblue;
+color: #fff;
+font-weight: bold;
+border: none;
+text-shadow: 0 0 2px #444;
+cursor: pointer;
+}
+
+main section form ul li input[type="submit"]:hover{
+box-shadow: 0 0 10px #444;
+color: #444;
+text-shadow: 0 0 2px #fff;
+}
+
+
+footer{
+position: absolute;
+width: 100%;
+text-align: center;
+background-color: dodgerblue;
+font-weight: bold;
+}
+
+footer p{
+text-shadow: 0 0 2px #444;
+padding: 10px;
+}
