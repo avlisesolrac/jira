@@ -1,63 +1,70 @@
 <?php
 
-include "conectar_no_banco_e_validar_sessao_do_usuario.php";
+include "conectar_no_banco_e_controlar_sessao_do_usuario.php";
 
-if($usuarioLogado){
+if($usuarioLogado == 1){
 	echo "<meta http-equiv='refresh' content='0; url=perfil.php'>";
 } else {
-
 ?>
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Cadastrar Usuário</title>
+	<title>Página de Cadastro</title>
 	<link rel="stylesheet" type="text/css" href="estilo.css">
 </head>
 <body>
 
 	<header>
-		<span>&lt\CódigoProfundo&gt</span>
 		<nav>
 			<ul>
 				<li><a href="index.php">Principal</a></li>
 				<li><a href="entrar.php">Entrar</a></li>
 			</ul>
-		</nav>	
+		</nav>
 	</header>
 
 	<main>
-		<form action="gravar_usuario_no_banco.php" method="POST">
-			<h1>Cadastre-se</h1>
-			
-			<label>Primeiro Nome</label>
-			<input type="text" name="primeiro_nome">
+		<section>
+			<form action="gravar_usuario_no_banco.php" method="POST">
+				<h1>Cadastre-se</h1>
+				<ul>
+					<li>
+						<input type="text" name="primeiro_nome" placeholder="Primeiro Nome">
+					</li>
 
-			<label>Sobrenome</label>
-			<input type="text" name="sobrenome">
+					<li>
+						<input type="text" name="sobrenome" placeholder="Sobrenome">
+					</li>
 
-			<label>Data de Nascimento</label>
-			<input type="date" name="data_nascimento">
+					<li id="nascimento">
+						<label>Data de Nascimento: </label>
+						<input type="date" name="data_nascimento">
+					</li>
 
-			<label>E-mail</label>
-			<input type="email" name="email">
+					<li>
+						<input type="email" name="email" placeholder="E-mail">
+					</li>
 
-			<label>Senha</label>
-			<input type="password" name="senha">
+					<li>
+						<input type="password" name="senha" placeholder="Nova Senha">
+					</li>
 
-			<input type="submit" value="Cadastrar" name="cadastrar">
-		</form>
+					<li>
+						<input type="submit" name="cadastrar" value="CADASTRAR">
+					</li>
+				</ul>
+			</form>
+		</section>
 	</main>
 
 	<footer>
-		<p>Todos os diretios reservados @CÓDIGOPROFUNDO 2025</p>
+		<p>Todos os direitos reservados. 2025</p>
 	</footer>
 
 </body>
 </html>
-
 <?php
 }
 ?>
