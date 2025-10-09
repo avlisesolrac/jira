@@ -1,0 +1,84 @@
+@import 'http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css';
+
+*{
+margin: 0;
+padding: 0;
+font-family: 'Century Gothic', sans-serif;
+font-style: normal;
+list-style-type: none;
+text-decoration: none;
+color: #fff;
+}
+
+html, body, main{
+background-color: #444;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+main section ul li{
+box-shadow: 0 0 10px #000;
+margin: 20px 0;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+height: 60px;
+position: relative;
+overflow: hidden;
+transition: .3s;
+cursor: pointer;
+}
+
+main section ul li:hover{
+transform: scale(1.03);
+}
+
+main section ul li span{
+position: absolute;
+height: 100%;
+width: 40px;
+display: flex;
+justify-content: center;
+align-items: center;
+left: 0;
+font-size: 30px;
+}
+
+main section ul li p{
+padding: 0 60px;
+font-weight: bold;
+}
+
+main section ul li:first-child{
+background-color: #3498db;
+}
+
+main section ul li:first-child span{
+background-color: #2980b9;
+}
+
+main section ul li:nth-child(2){
+background-color: #2ecc71;
+}
+
+main section ul li:nth-child(2) span{
+background-color: #27ae60;
+}
+
+main section ul li:nth-child(3){
+background-color: #f1c40f;
+}
+
+main section ul li:nth-child(3) span{
+background-color: #f39c12;
+}
+
+main section ul li:last-child{
+background-color: #e74c3c;
+}
+
+main section ul li:last-child span{
+background-color: #c0392b;
+}
