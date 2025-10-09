@@ -1,0 +1,70 @@
+@import 'http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css';
+
+*{
+margin: 0;
+padding: 0;
+font-family: 'Century Gothic', sans-serif;
+font-style: normal;
+list-style-type: none;
+text-decoration: none;
+color: #fff;
+}
+
+html,body{
+height: 100%;
+
+background-color: #f1f1f1;
+}
+
+footer{
+position: absolute;
+bottom: 0;
+background-color: #fff;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100px;
+box-shadow: 0 0 10px #444;
+}
+
+footer nav ul li{
+display: inline-flex;
+}
+
+footer nav ul li a{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 60px;
+height: 60px;
+font-size: 40px;
+border-radius: 10px;
+border-bottom: 4px solid #1d3326;
+transition: .3s;
+}
+
+footer nav ul li a:hover{
+border-bottom: 2px solid #1d3326;
+opacity: .8;
+}
+
+footer nav ul li a.ion-social-facebook{
+background-color: #2980b9;
+}
+
+footer nav ul li a.ion-social-twitter{
+background-color: #3498db;
+}
+
+footer nav ul li a.ion-social-youtube{
+background-color: #e74c3c;
+}
+
+footer nav ul li a.ion-social-whatsapp{
+background-color: #27ae60;
+}
+
+footer nav ul li a.ion-social-instagram{
+background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
