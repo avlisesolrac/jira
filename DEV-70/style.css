@@ -1,0 +1,56 @@
+@import 'http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css';
+
+body{
+margin: 0;
+padding: 0;
+font-family: sans-serif;
+}
+
+.note{
+position: fixed;
+width: 100%;
+overflow: hidden;
+background: #313131;
+/*O número 1 indica que vai executar a animação 1 vez*/
+animation: note 4s 1;
+}
+
+.hide{
+height: 0px;
+}
+
+.center{
+width: 1000px;
+margin: auto;
+overflow: hidden;
+height: 80px;
+color: #f1f1f1;
+}
+
+.note h1{
+text-transform: uppercase;
+font-size: 20px;
+margin: 0;
+line-height: 80px;
+float: left;
+}
+
+.btn{
+font-size: 22px;
+text-decoration: none;
+color: #f1f1f1;
+line-height: 80px;
+float: right;
+}
+
+@keyframes note{
+
+0% {
+height: 0;
+}
+
+100% {
+height: auto;
+}
+
+}
