@@ -1,0 +1,82 @@
+@import 'http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css';
+
+*{
+margin: 0;
+padding: 0;
+font-family: 'Century Gothic', sans-serif;
+font-style: normal;
+list-style-type: none;
+text-decoration: none;
+color: #444;
+}
+
+html, body{
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #313131;
+}
+
+main form{
+max-width: 660px;
+background-color: #fff;
+padding: 20px 10px;
+box-shadow: 0 0 10px #000;
+text-align: center;
+text-transform: uppercase;
+border-radius: 10px;
+position: relative;
+}
+
+main form i{
+font-size: 80px;
+}
+
+main form h1{
+letter-spacing: .2em;
+}
+
+main form p{
+margin: 20px 0;
+font-weight: bold;
+text-align: justify;
+}
+
+main form input{
+width: 80%;
+padding: 20px;
+background-color: #313131;
+border: none;
+outline: none;
+border-radius: 40px;
+color: #fff;
+font-size: 18px;
+}
+
+main form input::placeholder{
+color: #fff;
+font-size: 18px;
+font-weight: bold;
+text-align: center;
+}
+
+main form button{
+background-color: dodgerblue;
+border: none;
+color: #fff;
+font-size: 30px;
+position: absolute;
+right: 56px;
+top: 237px;
+padding: 13px 60px;
+border-radius: 40px;
+box-shadow: 0 0 10px #444;
+cursor: pointer;
+text-shadow: 0 0 5px #444;
+transition: .4s;
+}
+
+main form button:hover{
+opacity: .8;
+}
