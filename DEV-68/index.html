@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Menu de Navegação Inferior</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+
+	<main>
+		<section>
+			<article>
+				<h1>Menu Navegação Inferior Animado</h1>
+				<p>O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem vindo a ser o texto padrão usado por estas indústrias desde o ano de 1500, quando uma misturou os caracteres de um texto para criar um espécime de livro. Este texto não só sobreviveu 5 séculos</p>
+			</article>
+		</section>
+	</main>
+
+	<footer>
+		<nav>
+
+			<a href="#" id="menu_hamburguer">
+				<span></span>
+				<span></span>
+				<span></span>
+			</a>
+
+			<ul>
+				<li><a href="#" class="ion-document"></a></li>
+				<li><a href="#" class="ion-folder"></a></li>
+				<li><a href="#" class="ion-image"></a></li>
+				<li><a href="#" class="ion-pie-graph"></a></li>
+				<li><a href="#" class="ion-person"></a></li>
+				<li><a href="#" class="ion-calendar"></a></li>
+			</ul>
+		</nav>
+	</footer>
+
+	<script type="text/javascript">
+		$('#menu_hamburguer').on('click', function(){
+			$('footer').toggleClass('exibir');
+		});
+
+	</script>
+
+</body>
+</html>
