@@ -1,10 +1,12 @@
 <?php
 
-include "conectar_no_banco_e_controlar_sessao_do_usuario.php";
-	
-	setcookie('usuarioLogado',0,time()+3600*24);
-	setcookie('identificadorCookie',' ',time()+3600*24);
+if(isset($_COOKIE["sessaoDoUsuario"])){
+	if($_COOKIE["sessaoDoUsuario"]){
+		setcookie('sessaoDoUsuario',0,time() + 3600*24);
+		setcookie('identificadorDoUsuario','',time() + 3600*24);
+	}
+}
 
-	echo "<meta http-equiv='refresh' content='0; url=index.php'>";
+echo "<meta http-equiv='refresh' content='0; url=index.php'>";
 
 ?>

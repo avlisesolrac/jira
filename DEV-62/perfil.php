@@ -1,71 +1,61 @@
 <?php
 
-include "conectar_no_banco_e_controlar_sessao_do_usuario.php";
+include 'conectar_no_banco_e_validar_sessao_do_usuario.php';
 
-if($usuarioLogado == 1){
-	$identificador = $_COOKIE["identificadorCookie"];
+if(isset($sessaoDoUsuario) && $sessaoDoUsuario == 1){
+
+	$identificador = $_COOKIE["identificadorDoUsuario"];
 
 	$selectNoBanco = mysqli_query($conectarNoBanco,"SELECT * FROM usuarios WHERE identificador = '$identificador'");
 
 	$registroDoUsuario = mysqli_fetch_array($selectNoBanco);
+
 ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-	<meta charset="utf-8">
+	<meta charset=""utf-8>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Página de Perfil</title>
+	<title>Perfil</title>
 	<link rel="stylesheet" type="text/css" href="estilo.css">
 </head>
 <body>
 
 	<header>
-		<nav>
-			<ul>
-				<li><a href="sair.php">SAIR</a></li>
-			</ul>
-		</nav>
+		<h1 class="ion-android-person"> Perfil</h1>
 	</header>
 
 	<main>
-		<section>
-			<form action="alterar_usuario_no_banco.php" method="POST">
-				<h1>Perfil de <?php echo $registroDoUsuario["primeiro_nome"]?></h1>
-				<ul>
-					<li>
-						<input type="text" name="identificador" value="<?php echo $registroDoUsuario["identificador"]?>" disabled>
-					</li>
-					<li>
-						<input type="text" name="primeiro_nome" value="<?php echo $registroDoUsuario["primeiro_nome"]?>" placeholder="Primeiro Nome">
-					</li>
+		<form action="atualizar_usuario_no_banco.php" method="POST">
 
-					<li>
-						<input type="text" name="sobrenome" value="<?php echo $registroDoUsuario["sobrenome"]?>" placeholder="Sobrenome">
-					</li>
+			<label>Identificador: </label>
+			<input type="text" name="identificador" value="<?php echo $registroDoUsuario["identificador"]?>" disabled>
 
-					<li id="nascimento">
-						<label>Data de Nascimento: </label>
-						<input type="date" name="data_nascimento" value="<?php echo $registroDoUsuario["data_nascimento"]?>">
-					</li>
+			<label>Primeiro Nome: </label>
+			<input type="text" name="primeiro_nome" value="<?php echo $registroDoUsuario["primeiro_nome"]?>">
 
-					<li>
-						<input type="email" name="email" value="<?php echo $registroDoUsuario["email"]?>" placeholder="Email">
-					</li>
+			<label>Sobrenome: </label>
+			<input type="text" name="sobrenome" value="<?php echo $registroDoUsuario["sobrenome"]?>">
 
-					<li>
-						<input type="text" name="senha" value="<?php echo $registroDoUsuario["senha"]?>" placeholder="Senha">
-					</li>
+			<label>Data de Nascimento: </label>
+			<input type="date" name="data_nascimento" value="<?php echo $registroDoUsuario["data_nascimento"]?>">
 
-					<li>
-						<input type="submit" name="alterar" value="ALTERAR">
-					</li>
-				</ul>
-			</form>
-		</section>
+			<label>E-mail: </label>
+			<input type="email" name="email" value="<?php echo $registroDoUsuario["email"]?>">
+
+			<label>Senha: </label>
+			<input type="text" name="senha" value="<?php echo $registroDoUsuario["senha"]?>">
+
+			<button class="ion-edit" name="atualizar"> Atualizar</button>
+		</form>
 	</main>
 
 	<footer>
-		<p>Todos os direitos reservados. 2025</p>
+		<nav>
+			<ul>
+				<li><a href="sair.php"> Sair</a></li>
+			</ul>
+		</nav>
 	</footer>
 
 </body>

@@ -1,3 +1,5 @@
+@import 'http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css';
+
 *{
 margin: 0;
 padding: 0;
@@ -6,143 +8,99 @@ font-style: normal;
 list-style-type: none;
 text-decoration: none;
 color: #fff;
-}
-
-html,body{
-height: 100%;
-width: 100%;
-background-color: #f1f1f1;
+text-transform: uppercase;
 }
 
 header{
-background-color: dodgerblue;
-display: flex;
-justify-content: right;
-box-shadow: 0 0 10px #444;
-}
-
-header nav ul{
-display: flex;
-}
-
-header nav ul li a{
-display: block;
-padding: 20px 40px;
-font-weight: bold;
-border-bottom: 5px solid transparent;
-transition: .4s;
-text-shadow: 0 0 2px #444;
-}
-
-header nav ul li a:hover{
-background-color: rgba(255,255,255,0.3);
-color: #444;
-border-bottom: 5px solid #fff;
-text-shadow: 0 0 2px #fff;
-}
-
-main{
-box-shadow: 0 0 10px #444;
-background-color: #fff;
-padding: 20px 0;
-}
-
-main#principal{
-height: 77%;
-}
-
-main#entrar{
-display: flex;
-height: 77%;
-}
-
-main section{
-box-shadow: 0 0 10px #444;
-width: 95%;
-max-width: 600px;
-margin: auto;
-padding: 5px;
-background-color: dodgerblue;
-}
-
-main#entrar section form{
-padding: 80px 0;
-}
-
-main section form *{
-color: dodgerblue;
-}
-
-main section form{
-box-shadow: 0 0 10px #444;
-background-color: #fff;
 text-align: center;
-padding: 20px 0;
+background-color: dodgerblue;
+padding: 30px 0;
+box-shadow: 0 0 10px #444;
 }
 
-main section form h1{
-text-transform: uppercase;
-text-align: center;
-border: 10px solid;
+header h1{
 display: inline-block;
-padding: 10px 20px;
+border: 10px solid;
+padding: 20px;
+box-shadow: 0 0 10px #444;
+text-shadow: 0 0 10px #444;
 }
 
-main section form ul li{
-text-align: center;
-padding: 15px 0;
+main form{
+max-width: 500px;
+margin: 40px auto 80px;
+padding-left: 10px;
 }
 
-main section form ul li label{
+main form label,input,button{
+width: 90%;
+color: #444;
+box-sizing: content-box;
+margin: 10px 0;
+display: block;
+}
+
+main form label{
 font-weight: bold;
 }
 
-
-main section form ul li input{
+main form input,button{
 padding: 10px;
-width: 90%;
-box-sizing: content-box;
-color: #444;
+text-transform: none;
+}
+
+main form button{
+background-color: dodgerblue;
 outline: none;
 border: none;
-border-bottom: 1px solid;
-border-radius: 5px;
-}
-
-main section form ul li#nascimento{
-text-align: left;
-padding-left: 15px;
-}
-
-main section form ul li#nascimento input{
-width: 50%;
-}
-
-main section form ul li input[type="submit"]{
-background-color: dodgerblue;
-color: #fff;
 font-weight: bold;
-border: none;
+font-size: 18px;
+color: #fff;
 text-shadow: 0 0 2px #444;
 cursor: pointer;
+margin-top: 20px;
+text-transform: uppercase;
 }
 
-main section form ul li input[type="submit"]:hover{
-box-shadow: 0 0 10px #444;
+main form button:hover{
+box-shadow: 0 0 5px #444;
 color: #444;
 text-shadow: 0 0 2px #fff;
 }
 
-
 footer{
-position: absolute;
+position: fixed;
+bottom: 0;
 width: 100%;
-text-align: center;
 background-color: dodgerblue;
-font-weight: bold;
+box-shadow: 0 0 10px #444;
 }
 
-footer p{
+footer nav ul{
+display: flex;
+}
+
+footer nav ul li{
+width: 100%;
+}
+
+footer nav ul li:first-child{
+border-right: 1px solid #444;
+}
+
+footer nav ul li a{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+height: 50px;
+font-weight: bold;
 text-shadow: 0 0 2px #444;
-padding: 10px;
+}
+
+footer nav ul li a:hover{
+background-color: rgba(255,255,255,0.3);
+color: #444;
+text-shadow: 0 0 2px #fff;
+box-shadow: 0 0 5px #444;
 }

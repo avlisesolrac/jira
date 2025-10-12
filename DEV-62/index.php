@@ -1,36 +1,36 @@
 <?php
 
-include "conectar_no_banco_e_controlar_sessao_do_usuario.php";
+include 'conectar_no_banco_e_validar_sessao_do_usuario.php';
 
-if($usuarioLogado == 1){
+if(isset($sessaoDoUsuario) && $sessaoDoUsuario == 1){
 	echo "<meta http-equiv='refresh' content='0; url=perfil.php'>";
 } else {
 ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-	<meta charset="utf-8">
+	<meta charset=""utf-8>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Página Principal</title>
+	<title>Principal</title>
 	<link rel="stylesheet" type="text/css" href="estilo.css">
 </head>
 <body>
 
 	<header>
-		<nav>
-			<ul>
-				<li><a href="entrar.php">Entrar</a></li>
-				<li><a href="cadastrar.php">Cadastrar</a></li>
-			</ul>
-		</nav>
+		<h1 class="ion-android-home"> Principal</h1>
 	</header>
 
-	<main id="principal">
-		
+	<main>
+
 	</main>
 
 	<footer>
-		<p>Todos os direitos reservados. 2025</p>
+		<nav>
+			<ul>
+				<li><a href="entrar.php"> Entrar</a></li>
+				<li><a href="cadastrar.php"> Cadastrar</a></li>
+			</ul>
+		</nav>
 	</footer>
 
 </body>

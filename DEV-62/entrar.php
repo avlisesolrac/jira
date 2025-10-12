@@ -1,53 +1,45 @@
 <?php
 
-include "conectar_no_banco_e_controlar_sessao_do_usuario.php";
+include 'conectar_no_banco_e_validar_sessao_do_usuario.php';
 
-if($usuarioLogado == 1){
+if(isset($sessaoDoUsuario) && $sessaoDoUsuario == 1){
 	echo "<meta http-equiv='refresh' content='0; url=perfil.php'>";
 } else {
 ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-	<meta charset="utf-8">
+	<meta charset=""utf-8>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Página de Entrada</title>
+	<title>Entrar</title>
 	<link rel="stylesheet" type="text/css" href="estilo.css">
 </head>
 <body>
 
 	<header>
-		<nav>
-			<ul>
-				<li><a href="index.php">Principal</a></li>
-				<li><a href="cadastrar.php">Cadastrar</a></li>
-			</ul>
-		</nav>
+		<h1 class="ion-ios-body-outline"> Entrar</h1>
 	</header>
 
-	<main id="entrar">
-		<section>
-			<form action="validar_usuario_no_banco.php" method="POST">
-				<h1>Autentique-se</h1>
-				<ul>
-					<li>
-						<input type="email" name="email" placeholder="Seu E-mail">
-					</li>
+	<main>
+		<form action="validar_usuario_no_banco.php" method="POST">
 
-					<li>
-						<input type="password" name="senha" placeholder="Sua  Senha">
-					</li>
+			<label>E-mail: </label>
+			<input type="email" name="email">
 
-					<li>
-						<input type="submit" name="entrar" value="ENTRAR">
-					</li>
-				</ul>
-			</form>
-		</section>
+			<label>Senha: </label>
+			<input type="password" name="senha">
+
+			<button class="ion-ios-person-outline" name="entrar"> Entrar</button>
+		</form>
 	</main>
 
 	<footer>
-		<p>Todos os direitos reservados. 2025</p>
+		<nav>
+			<ul>
+				<li><a href="index.php"> Principal</a></li>
+				<li><a href="cadastrar.php"> Cadastrar</a></li>
+			</ul>
+		</nav>
 	</footer>
 
 </body>
