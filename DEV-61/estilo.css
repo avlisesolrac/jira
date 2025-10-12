@@ -8,106 +8,115 @@ font-style: normal;
 list-style-type: none;
 text-decoration: none;
 color: #fff;
+text-transform: uppercase;
 }
 
-body{
+html, body{
+height: 100%;
+width: 100%;
 background-color: #f1f1f1;
 }
 
-header#cabecalho_menu_principal{
-background-color: dodgerblue;
+header{
+background-color: tomato;
 box-shadow: 0 0 10px #444;
+text-align: center;
 }
 
-header#cabecalho_menu_principal nav ul{
+header h1{
+padding: 15px 60px;
+text-shadow: 0 0 5px #444;
+border: 10px solid;
+display: inline-block;
+margin: 20px 0;
+border-radius: 10px;
+}
+
+nav ul{
 display: flex;
-justify-content: space-evenly;
+justify-content: space-around;
 }
 
-header#cabecalho_menu_principal nav ul li a{
-display: block;
-padding: 10px 30px;
-font-size: 20px;
+nav ul li{
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+nav ul li a{
+width: 100%;
+padding: 20px;
+text-align: center;
 font-weight: bold;
+text-shadow: 0 0 5px #444;
+transition: .4s;
 }
 
-header#cabecalho_menu_principal nav ul li a:hover{
-background-color: #abd0f2;
-color: #444;
+nav ul li a:hover{
+background-color: coral;
+}
+
+main{
+background-color: dodgerblue;
+height: 78%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+main#principal{
+height: 90%;
 }
 
 main form{
-background-color: tomato;
-max-width: 480px;
-margin: 20px auto;
-box-shadow: 0 0 10px #444;
-border-radius: 10px;
-}
-
-main form header{
-padding: 25px 0;
+max-width: 500px;
 text-align: center;
+margin-top: -100px;
 }
 
-main form header h1{
-display: inline-block;
-border: 10px solid;
-padding: 10px 30px;
-box-shadow: 0 0 10px #444;
-text-shadow: 0 0 8px #444;
-border-radius: 10px;
-
-}
-
-main form main{
-background-color: dodgerblue;
-text-align: center;
-padding: 10px 0;
-}
-
-main form main input{
-width: 80%;
+main form input{
+width: 90%;
+padding: 15px;
 margin: 10px 0;
-padding: 10px;
 background-color: dodgerblue;
-border: none;
 outline: none;
+border: none;
 border-bottom: 1px solid;
-font-size: 15px;
+text-transform: lowercase;
 }
 
-main form main input::placeholder{
+main form input::placeholder{
 color: #fff;
+text-align: center;
+text-transform: uppercase;
 }
 
-main form main button{
-background-color: tomato;
-font-size: 20px;
-padding: 10px 30px;
-margin: 20px 0;
+main form button{
+width: 90%;
+padding: 15px;
+margin: 30px 0 0 0;
+background-color: dodgerblue;
+outline: none;
 border: none;
 cursor: pointer;
-border-radius: 10px;
+font-size: 20px;
 font-weight: bold;
-text-shadow: 0 0 5px #444;
-}
-
-main form main button:hover{
 box-shadow: 0 0 10px #444;
+border: 1px solid transparent;
+text-shadow: 0 0 10px #444;
+transition: .4s;
 }
 
-main form footer{
-text-align: right;
-padding: 20px;
-font-weight: bold;
-position: relative;
+main form button:hover{
+box-shadow: none;
+border: 1px solid;
 }
 
-main form footer a:first-child{
-position: absolute;
-left: 20px;
-}
-
-main form footer a:hover{
-border-bottom: 1px solid;
+footer{
+background-color: tomato;
+box-shadow: 0 0 10px #444;
+position: fixed;
+bottom: 0;
+width: 100%;
 }

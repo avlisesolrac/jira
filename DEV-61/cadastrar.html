@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Cadastro</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+
+	<header>
+		<h1 class="ion-ios-people-outline"> Cadastro</h1>
+	</header>
+
+	<main>
+		
+		<form action="gravar_no_banco.php" method="POST">
+			
+			<input type="text" name="primeiro_nome" placeholder="Primeiro Nome">
+			<input type="text" name="sobrenome" placeholder="Sobrenome">
+			<input type="email" name="email" placeholder="E-mail">
+			<input type="password" name="senha" placeholder="Senha">
+			<button name="cadastro" class="ion-person-add"> Cadastrar</button>
+		</form>
+		
+	</main>
+
+	<footer>
+		<nav>
+			<ul>
+				<li><a href="index.html">Principal</a></li>
+				<li><a href="entrar.html">Entrar</a></li>
+			</ul>
+		</nav>
+	</footer>
+
+</body>
+</html>
