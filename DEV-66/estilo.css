@@ -1,79 +1,83 @@
-@import 'http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css';
-
 *{
 margin: 0;
 padding: 0;
-font-family: Ionicons, 'Century Gothic', sans-serif;
+font-family: 'Century Gothic', sans-serif;
 font-style: normal;
 list-style-type: none;
 text-decoration: none;
 color: #fff;
+text-transform: uppercase;
 }
 
 html,body,main{
 height: 100%;
-width: 600px;
-margin: auto;
 }
 
 body{
 background-color: #f1f1f1;
 background: url(bg.webp) no-repeat center;
 background-size: contant;
-background-position: top;
+background-position: top center;
 }
 
 main{
 display: flex;
-justify-content: right;
+justify-content: center;
 align-items: center;
+padding-left: 300px;
 }
 
 main form{
-width: 240px;
-margin-right: 50px;
-position: relative;
+width: 280px;
 }
 
 main form h1{
+font-size: 50px;
+border-bottom: 6px solid #27ae60;
 display: inline-block;
-border-bottom: 6px solid #4caf50;
-text-transform: uppercase;
-margin: 40px 0;
-padding: 15px 0;
+padding-bottom: 15px;
+margin-bottom: 20px;
+text-shadow: 0 0 10px #27ae60;
 }
 
 main form label{
-float: left;
-width: 100%;
+display: flex;
+align-items: center;
+margin: 20px 0;
+border-bottom: 2px solid #27ae60;
 }
 
-main form input{
-display: inline-block;
-margin: 15px 0;
+main form label:last-child{
+border: none;
+}
+
+main form label ion-icon{
+font-size: 30px;
+padding: 5px;
+}
+
+main form label input{
 padding: 10px;
-box-sizing: content-box;
-background-color: transparent;
+width: 100%;
+display: block;
+background: none;
 border: none;
 outline: none;
-border-bottom: 1px solid #4caf50;
-width: 80%;
+text-transform: none;
 }
 
-main form input::placeholder{
-color: #fff;
-}
-
-main form input[type="submit"]{
-display: block;
-border: 1px solid #4caf50;
-width: 100%;
-cursor: pointer;
-font-weight: bold;
+main form label input::placeholder{
 text-transform: uppercase;
-
+text-align: center;
 }
 
-main form input[type="submit"]:hover{
-box-shadow: 0 0 10px #4caf50;
+main form label input[type="submit"]{
+border: 2px solid #27ae60;
+font-weight: bold;
+font-size: 20px;
+}
+
+main form label input[type="submit"]:hover{
+box-shadow: 0 0 10px #27ae60;
+cursor: pointer;
 }
