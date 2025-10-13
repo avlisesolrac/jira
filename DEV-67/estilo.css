@@ -2,66 +2,66 @@
 margin: 0;
 padding: 0;
 font-family: 'Century Gothic', sans-serif;
-font-style: none;
+font-style: normal;
 list-style-type: none;
 text-decoration: none;
 color: #fff;
 }
 
-body{
+html, body, main{
+height: 100%;
 background-color: #f1f1f1;
 }
 
-header{
-height: 70px;
+main{
+position: fixed;
+right: 0;
 background-color: #313131;
+height: 100%;
+display: flex;
+align-items: center;
+width: 60px;
 box-shadow: 0 0 10px #444;
 }
 
-header nav{
-margin: 0 20%;
+main nav{
+position: fixed;
+right: 0;
 }
 
-header nav ul{
-display: flex;
-justify-content: center;
-/*margin-top: -115px;*/
-}
-
-header nav ul li{
-margin: 0 10px;
-}
-
-header nav ul li a{
-margin-top: -115px;
-writing-mode: vertical-rl;
-height: 140px;
-padding: 20px;
-font-size: 20px;
-border-radius: 0 0 10px 10px;
+main nav ul li{
+position: relative;
+right: -125px;
 transition: .6s;
+}
+
+main nav ul li a{
+display: block;
+padding: 10px 40px;
+margin: 0 0 10px 5px;
+border-radius: 10px 0 0 10px;
 font-weight: bold;
-box-shadow: 0 0 5px #000;
-text-shadow: 0 0 5px #000;
+text-shadow: 0 0 5px #444;
+box-shadow: 0 0 10px #444;
+font-size: 18px;
 }
 
-header nav ul li a:hover{
-letter-spacing: .2em;
-margin-top: 0;
+main nav ul li:hover{
+right: 0;
 }
 
-header nav ul li:first-child a{
-background-color: #27ae60;
+main nav ul li:first-child a{
+background-color: dodgerblue;
 }
 
-header nav ul li:nth-child(2) a{
-background-color: #e74c3c;
-}
-
-header nav ul li:nth-child(3) a{
+main nav ul li:nth-child(2) a{
 background-color: #2980b9;
 }
 
-header nav ul li:last-child a{
-background-color: #3498db;
+main nav ul li:nth-child(3) a{
+background-color: #27ae60;
+}
+
+main nav ul li:last-child a{
+background-color: tomato;
 }
