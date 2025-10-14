@@ -1,5 +1,3 @@
-@import 'http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css';
-
 *{
 margin: 0;
 padding: 0;
@@ -10,73 +8,63 @@ text-decoration: none;
 color: #444;
 }
 
-html, body{
-height: 100%;
-display: flex;
-justify-content: center;
-align-items: center;
-background-color: #313131;
+body{
+background-color: #f1f1f1;
 }
 
-main form{
-max-width: 660px;
+main section article{
 background-color: #fff;
+max-width: 460px;
+margin: 10% auto;
+border-radius: 10px;
 padding: 20px 10px;
-box-shadow: 0 0 10px #000;
+box-shadow: 0 0 10px;
 text-align: center;
 text-transform: uppercase;
-border-radius: 10px;
-position: relative;
 }
 
-main form i{
-font-size: 80px;
+main section article ion-icon[name="newspaper-outline"]{
+font-size: 50px;
+display: inline-block;
 }
 
-main form h1{
-letter-spacing: .2em;
+main section article h1{
+margin: 20px;
 }
 
-main form p{
-margin: 20px 0;
-font-weight: bold;
+main section article p{
+margin: 20px;
 text-align: justify;
 }
 
-main form input{
+main section article label{
+position: relative;
+}
+
+main section article label input{
+padding: 10px;
 width: 80%;
-padding: 20px;
-background-color: #313131;
-border: none;
+background-color: #444;
 outline: none;
-border-radius: 40px;
-color: #fff;
-font-size: 18px;
-}
-
-main form input::placeholder{
-color: #fff;
-font-size: 18px;
-font-weight: bold;
-text-align: center;
-}
-
-main form button{
-background-color: dodgerblue;
 border: none;
+border-radius: 20px;
+color: #fff;
+font-size: 18px;
+box-shadow: 0 0 5px #444;
+}
+
+main section article ion-icon[name="checkmark-outline"]{
+position: absolute;
+right: 0;
 color: #fff;
 font-size: 30px;
-position: absolute;
-right: 56px;
-top: 237px;
-padding: 13px 60px;
-border-radius: 40px;
+border-radius: 20px;
+background-color: dodgerblue;
+padding: 6px 30px;
 box-shadow: 0 0 10px #444;
-cursor: pointer;
-text-shadow: 0 0 5px #444;
-transition: .4s;
 }
 
-main form button:hover{
-opacity: .8;
+main section article ion-icon[name="checkmark-outline"]:hover{
+background-color: #1293DE;
+color: #444;
 }

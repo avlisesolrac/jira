@@ -3,23 +3,30 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Inscrição em Boletim Informativo</title>
+	<title>Inscrição no Boletim Informativo</title>
 	<link rel="stylesheet" type="text/css" href="estilo.css">
 </head>
 <body>
 
 	<main>
-		<form action="inscrever_no_boletim_informativo.php" method="POST">
-			<i class="ion-email"></i>
+		<section>
+			<article>
+				<ion-icon name="newspaper-outline"></ion-icon>
 
-			<h1>Inscreva-se Agora</h1>
+				<h1>Inscreva-se Agora</h1>
 
-			<p>É um facto estabelecido de que um leitor é distraído pelo conteúdo legível de uma página quando analisa a sua mancha gráfica.</p>
+				<p>É um facto estabelecido de que um leitor é distraído pelo conteúdo legível de uma página quando analisa a sua mancha gráfica.</p>
 
-			<input type="email" name="email" placeholder="Insira seu E-mail">
-			<button class="ion-checkmark" name="inscrever"></button>
-		</form>
+				<label>
+					<input type="email" name="email" placeholder="Digite seu e-mail">
+					<a href="#"><ion-icon name="checkmark-outline"></ion-icon></a>
+				</label>
+			</article>
+		</section>
 	</main>
+
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 </body>
 </html>
