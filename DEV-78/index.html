@@ -1,31 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang=pt-BR>
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Login Form</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Login</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/estilo.css">
+	<link rel="icon" type="image/svg" href="assets/img/favicon.svg">
 </head>
 <body>
 
-	<div class="container">
-		<h1>LOG IN</h1>
-		
-		<form action="index.html" method="POST">
-			<div class="tbox">
-				<input type="text" placeholder="@username" value="">
-			</div>
+	<main>
+		<form action="validar_usuario_no_banco.php" method="POST">
+			<img src="assets/img/totvs-logo-white.svg">
 
-			<div class="tbox">
-				<input type="password" placeholder="password" value="">
-			</div>
+			<h1>T-Cloud</h1>
 
-			<input class="btn" type="submit" name="" value="Log In">
+			<p>Inicie sua sessão</p>
+
+			<div>
+				<p>Acesse com seu e-mail</p>
+
+				<input type="email" name="email" placeholder="E-mail">
+
+				<input type="submit" name="login" value="Entrar">
+
+				<a href="https://ateleia-email.s3-sa-east-1.amazonaws.com/Habilitar_MFA-Fluig_Identity.pdf"><img src="assets/img/ico-login-security.svg"> Para elevar a segurança no login, configure o Múltiplo Fator de Autenticação (MFA). Clique aqui para saber como.</a>
+			</div>
 		</form>
+	</main>
 
-		<a class="b1" href="#">FORGOT PASSOWORD ?</a>
-		<a class="b2" href="#">CREATE AN ACCOUNT</a>
-	</div>
+	<footer>
+		<p>Copyright &copy TOTVS Cloud 2025</p>
+	</footer>
 
 </body>
 </html>
