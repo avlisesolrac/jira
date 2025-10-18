@@ -1,0 +1,88 @@
+*{
+margin: 0;
+padding: 0;
+font-family: 'Century Gothic', sans-serif;
+font-style: normal;
+list-style-type: none;
+text-decoration: none;
+color: #fff;
+border: none;
+outline: none;
+}
+
+html, body, main{
+height: 100%;
+width: 100%;
+}
+
+body{
+background-color: #f1f1f1;
+background: url(../img/ideas.jpeg) no-repeat;
+background-size: cover;
+background-position: top;
+backdrop-filter: brightness(60%);
+}
+
+main{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+main form{
+width: 280px;
+box-shadow: 0 0 10px #000;
+background-color: #000000A9;
+border-radius: 10px;
+padding: 30px 20px;
+text-align: center;
+text-transform: uppercase;
+}
+
+main form h1{
+margin: 20px 0;
+border: 10px solid;
+display: inline-block;
+padding: 10px 30px;
+}
+
+main form input, button{
+width: 90%;
+padding: 10px 5px;
+margin: 10px 0;
+background-color: transparent;
+border-bottom: 1px solid;
+text-align: center;
+}
+
+main form input::placeholder{
+color: #fff;
+}
+
+main form button{
+margin: 30px 0;
+border: none;
+font-weight: bold;
+text-transform: uppercase;
+background-color: dodgerblue;
+text-shadow: 0 0 10px #000;
+font-size: 15px;
+cursor: pointer;
+transition: .3s;
+}
+
+main form button:hover{
+box-shadow: 0 0 10px #000;
+background-color: royalblue;
+}
+
+main form a{
+display: inline-block;
+margin: 10px 0;
+padding: 10px 30px;
+transition: .3s;
+}
+
+main form a:hover{
+background-color: #000000A3;
+}
