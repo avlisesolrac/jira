@@ -1,0 +1,67 @@
+*{
+margin: 0;
+padding: 0;
+font-family: 'Century Gothic', sans-serif;
+font-style: normal;
+list-style-type: none;
+text-decoration: none;
+color: #444;
+border: none;
+outline: none;
+box-sizing: content-box;
+}
+
+html, body, main{
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #f1f1f1;
+}
+
+main div{
+width: 70px;
+height: 70px;
+}
+
+main div span{
+width: 20px;
+height: 20px;
+float: left;
+position: relative;
+margin: 1px;
+transform: rotate(180deg);
+}
+
+main div span:before{
+content:'';
+position: absolute;
+width: 100%;
+height: 100%;
+background-color: royalblue;
+animation: carregando 1s infinite;
+box-shadow: 0 0 5px;
+}
+
+main div span.tempo2:before{
+animation-delay: 0.1s;
+}
+
+main div span.tempo3:before{
+animation-delay: 0.2s;
+}
+
+main div span.tempo4:before{
+animation-delay: 0.3s;
+}
+
+main div span.tempo5:before{
+animation-delay: 0.4s;
+}
+
+@keyframes carregando{
+100%{
+height: 0;
+width: 0;
+}
+}
