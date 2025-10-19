@@ -1,0 +1,73 @@
+*{
+margin: 0;
+padding: 0;
+font-family: 'Century Gothic', sans-serif;
+font-style: normal;
+list-style-type: none;
+text-decoration: none;
+color: #fff;
+border: none;
+outline: none;
+box-sizing: content-box;
+}
+
+body{
+background-color: #f1f1f1;
+}
+
+header{
+background-color: tomato;
+text-align: center;
+padding: 20px 0;
+text-transform: uppercase;
+animation: oferta_do_dia 800ms 1;
+text-shadow: 0 0 10px #444;
+}
+
+header h1{
+font-size: 50px;
+}
+
+header h2{
+font-size: 30px;
+margin: 40px 0;
+}
+
+header h2 span{
+text-shadow: 0 0 5px #f1f1f1;
+font-weight: bold;
+}
+
+header a{
+font-weight: bold;
+padding: 30px;
+background-color: #333;
+box-shadow: 0 0 10px #000;
+font-size: 20px;
+transition: .3s;
+display: inline-block;
+}
+
+header a:hover{
+box-shadow: none;
+}
+
+@keyframes oferta_do_dia{
+
+0%,100%{
+transform: translateX(-50px) rotate(-5deg);
+}
+
+25%{
+transform: translateX(50px) rotate(5deg);
+}
+
+50%{
+transform: translateX(-50px) rotate(-5deg);
+}
+
+75%{
+transform: translateX(50px) rotate(5deg);
+}
+
+}
