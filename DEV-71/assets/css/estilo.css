@@ -5,41 +5,46 @@ font-family: 'Century Gothic', sans-serif;
 font-style: normal;
 list-style-type: none;
 text-decoration: none;
+border: none;
+outline: none;
 color: #444;
+box-sizing: content-box;
 }
 
-html, body,main{
+html, body, main{
 height: 100%;
-width: 100%;
 display: flex;
 justify-content: center;
 align-items: center;
-background-color: #313131;
+background-color: #333;
 }
 
-div{
+main div{
+width: 80px;
+height: 80px;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
 position: relative;
-width: 100px;
-height: 100px;
 }
 
-span{
-display: block;
-position: absolute;
+main div span{
+background-color: tomato;
 width: 100%;
 height: 100%;
-background-color: tomato;
 border-radius: 50%;
-animation: carregando 2s linear infinite;
+display: inline-block;
+position: absolute;
 opacity: .7;
+animation: carregando 2s infinite;
 }
 
-div span:nth-child(2){
+main div span:last-child{
 animation-delay: -1s;
 }
 
 @keyframes carregando{
-
 0%,100%{
 transform: scale(0);
 }
@@ -47,5 +52,4 @@ transform: scale(0);
 50%{
 transform: scale(1);
 }
-
 }
