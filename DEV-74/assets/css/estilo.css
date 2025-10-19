@@ -1,0 +1,57 @@
+*{
+margin: 0;
+padding: 0;
+font-family: 'Century Gothic', sans-serif;
+font-style: normal;
+list-style-type: none;
+text-decoration: none;
+color: #fff;
+border: none;
+outline: none;
+box-sizing: content-box;
+}
+
+html, body, main, section{
+height: 100%;
+background-color: #f1f1f1;
+}
+
+main section{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+main section:first-child{
+background: url(../img/i1.webp) no-repeat center;
+background-size: cover;
+background-attachment: fixed;
+}
+
+main section:nth-child(2){
+background: url(../img/i2.webp) no-repeat center;
+background-size: cover;
+background-attachment: fixed;
+}
+
+main section:last-child{
+background: url(../img/i3.jpg) no-repeat center;
+background-size: cover;
+background-attachment: fixed;
+}
+
+main section h1{
+background-color: tomato;
+border: 10px solid tomato;
+padding: 10px 30px;
+text-shadow: 0 0 5px #000;
+box-shadow: 0 0 10px #000;
+border-radius: 10px;
+text-transform: uppercase;
+transition: .4s;
+cursor: pointer;
+}
+
+main section h1:hover{
+transform: scale(1.08);
+}
