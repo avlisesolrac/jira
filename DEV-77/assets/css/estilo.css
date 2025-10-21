@@ -1,0 +1,78 @@
+*{
+margin: 0;
+padding: 0;
+font-family: 'Segoe Ui', sans-serif;
+font-style: normal;
+list-style-type: none;
+text-decoration: none;
+color: #fff;
+border: none;
+outline: none;
+box-sizing: content-box;
+}
+
+html,body,main{
+height: 100%;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+body{
+background: url(../img/gardens-by-the-bay_banner.jpg) no-repeat center;
+background-size: cover;
+backdrop-filter: brightness(70%);
+background-color: #f1f1f1;
+}
+
+header{
+position: fixed;
+top: 0;
+left: 0;
+}
+
+header nav{
+position: absolute;
+left: 30px;
+top: 30px;
+}
+
+header nav a{
+display: block;
+width: 60px;
+height: 60px;
+padding: 5px;
+}
+
+header nav a:hover span:nth-child(2n){
+width: 100%;
+}
+
+header nav a span{
+display: block;
+width: 100%;
+border-bottom: 8px solid;
+margin: 8px 0;
+border-radius: 5px;
+box-shadow: 0 0 10px #000;
+transition: .3s;
+}
+
+header nav a span:nth-child(2n){
+width: 70%;
+}
+
+main h1{
+text-transform: uppercase;
+font-size: 60px;
+text-shadow: 0 0 10px #000;
+letter-spacing: 3px;
+}
+
+main h1 i{
+display: block;
+background-color: #289B55;
+padding: 0 10px;
+box-shadow: 0 0 10px #000;
+}
