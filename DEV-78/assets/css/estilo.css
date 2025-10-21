@@ -5,84 +5,104 @@ font-family: 'Century Gothic', sans-serif;
 font-style: normal;
 list-style-type: none;
 text-decoration: none;
-color: #fff;
+color: #212322;
 border: none;
 outline: none;
+box-sizing: content-box;
 }
 
-html, body, main{
+html,body,main{
 height: 100%;
-width: 100%;
-}
-
-body{
-background-color: #f1f1f1;
-background: url(../img/ideas.jpeg) no-repeat;
-background-size: cover;
-background-position: top;
-backdrop-filter: brightness(60%);
-}
-
-main{
 display: flex;
 justify-content: center;
 align-items: center;
+background-color: #f1f1f1;
 }
 
 main form{
-width: 280px;
 box-shadow: 0 0 10px #000;
-background-color: #000000A9;
-border-radius: 10px;
-padding: 30px 20px;
-text-align: center;
+padding: 20px 10px;
+position: absolute;
+height: 500px;
+bottom: 0;
+border-radius: 10px 10px 0 0;
 text-transform: uppercase;
+text-align: center;
+background-color: #ffffff44;
+}
+
+main form:before{
+content:'';
+background: url(../img/mulher_apontando.png) no-repeat;
+background-size: cover;
+position: absolute;
+width: 100%;
+height: 450px;
+bottom: 0;
+right: -174px;
 }
 
 main form h1{
-margin: 20px 0;
-border: 10px solid;
+color: royalblue;
 display: inline-block;
+border: 10px solid;
 padding: 10px 30px;
+margin: 20px 0;
+box-shadow: 0 0 10px #212322;
 }
 
-main form input, button{
+main form div{
+background-color: #00000022;
+padding: 10px;
+margin: 10px 0 90px 0;
+border-radius: 10px;
+position: relative;
+z-index:1;
+}
+
+main form div input{
+display: block;
 width: 90%;
-padding: 10px 5px;
-margin: 10px 0;
-background-color: transparent;
 border-bottom: 1px solid;
-text-align: center;
+padding: 10px;
+margin: 20px 0;
+background-color: #00000000;
 }
 
-main form input::placeholder{
-color: #fff;
-}
-
-main form button{
-margin: 30px 0;
-border: none;
-font-weight: bold;
+main form div input::placeholder{
 text-transform: uppercase;
-background-color: dodgerblue;
-text-shadow: 0 0 10px #000;
-font-size: 15px;
+}
+
+main form div button{
+background-color: royalblue;
+color: #fff;
+text-transform: uppercase;
+font-size: 20px;
+padding: 10px 0;
+width: 95%;
+box-shadow: 0 0 10px #212322;
 cursor: pointer;
+text-shadow: 0 0 2px #212322;
 transition: .3s;
 }
 
-main form button:hover{
-box-shadow: 0 0 10px #000;
-background-color: royalblue;
+main form div button:hover{
+box-shadow: none;
+color: #444;
+text-shadow: 0 0 2px #fff;
 }
 
 main form a{
-display: inline-block;
-margin: 10px 0;
-padding: 10px 30px;
+display: block;
+width: 320px;
+margin: 20px 0;
+padding: 10px 0;
+position: relative;
+z-index:1;
+font-weight: bold;
 transition: .3s;
 }
 
 main form a:hover{
-background-color: #000000A3;
+background-color: #21232222;
 }
