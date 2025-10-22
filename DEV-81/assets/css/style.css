@@ -1,0 +1,21 @@
+.p{
+width: 600px;
+padding: 60px;
+font-size: 24px;
+color: #fff;
+text-align: justify;
+background: #e74c3c;
+margin: 160px auto;
+position: relative;
+}
+
+.p::before{
+content:'';
+position: absolute;
+top: 0;
+right: 0;
+border-width: 0 40px 40px 0;
+border-style: solid;
+border-color: #c0392bd3 #fff;
+transition: .3s;
+}
