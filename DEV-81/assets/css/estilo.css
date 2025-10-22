@@ -1,0 +1,47 @@
+*{
+margin: 0;
+padding: 0;
+font-family: 'Century Gothic', sans-serif;
+font-style: normal;
+list-style-type: none;
+text-decoration: none;
+color: #fff;
+border: none;
+outline: none;
+box-sizing: content-box;
+}
+
+html,body{
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #f1f1f1;
+}
+
+main section article{
+background-color: #f1c40f;
+width: 460px;
+padding: 40px;
+text-align: justify;
+line-height: 25px;
+position: relative;
+border-radius: 10px;
+}
+
+main section article:before{
+content:'';
+position: absolute;
+border-style: solid;
+border-width: 0 100px 100px 0;
+border-color: #f39c12a0 #f1f1f1;
+right: 0;
+top: 0;
+border-radius: 0 0 0 10px;
+transition: .3s;
+}
+
+main section article:hover:before{
+border-width: 0 45px 45px 0;
+
+}
