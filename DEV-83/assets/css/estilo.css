@@ -1,139 +1,117 @@
 *{
 margin: 0;
 padding: 0;
-font-family: Montserrat, 'Century Gothic', sans-serif;
+font-family: 'Montserrat', 'Century Gothic', sans-serif;
 font-style: normal;
 list-style-type: none;
 text-decoration: none;
-color: #fff;
 border: none;
 outline: none;
 box-sizing: content-box;
+color: #fff;
 }
 
 body{
 background-color: #f1f1f1;
+background-color: tomato;
 }
 
 header{
 box-shadow: 0 0 10px #444;
-background-color: #3498db;
-height: 80px;
-overflow: hidden;
+background-color: tomato;
+position: relative;
 }
 
-header nav h1{
-font-size: 20px;
-text-transform: uppercase;
-float: left;
+header h1{
 margin-left: 20px;
-line-height: 80px;
+font-size: 20px;
+float: left;
+line-height: 60px;
 }
 
-header nav h1 i{
-background-color: #1abc9c;
-color: #fff;
-padding: 5px;
-margin-right: 5px;
-}
-
-header nav ul{
+header nav{
 float: right;
-margin-right: 20px;
-}
-
-header nav ul li{
-display: inline-block;
-}
-
-header nav ul li a{
-display: block;
-height: 76px;
-width: 120px;
-display: flex;
-justify-content: center;
-align-items: center;
-font-weight: bold;
-text-transform: uppercase;
-border-bottom: 4px solid transparent;
-transition: .4s;
-}
-
-header nav ul li a:hover{
-background-color: #2980b9;
-border-bottom: 4px solid;
 }
 
 header nav a.menu_hamburguer{
 position: absolute;
-right: 0;
-margin-right: 20px;
-top: 50%;
-transform: translateY(-50%);
 width: 40px;
 height: 40px;
+right: 20px;
+top: -50px;
 display: none;
-}
-
-header nav a.menu_hamburguer:hover span{
-background-color: #1abc9c;
 }
 
 header nav a.menu_hamburguer span{
 background-color: #fff;
 width: 100%;
-height: 3px;
+height: 4px;
+margin: 7px 0;
 display: block;
-margin: 8px 0;
-}
-
-main img{
-width: 100%;
-height: 100%;
-}
-
-main p{
-width: 80%;
-margin: 20px auto;
-text-align: justify;
-color: #444;
-font-size: 20px;
-line-height: 25px;
-}
-
-@media screen and (max-width: 832px){
-
-header nav a.menu_hamburguer{
-display: block;
-top: 40px;
-}
-
-header{
-overflow: visible;
 }
 
 header nav ul{
-top: 80px;
+display: flex;
+}
+
+header nav ul li a{
 display: block;
+padding: 20px;
+background-color: tomato;
+font-weight: bold;
+}
+
+header nav ul li a:hover{
+background-color: coral;
+}
+
+header img{
+width: 100%;
+display: block;
+}
+
+main{
+max-width: 90%;
+margin: auto;
+}
+
+main p{
+padding: 20px 40px;
+}
+
+@media only screen and (max-width: 745px){
+
+
+header nav a.menu_hamburguer{
+display: block;
+}
+
+header nav {
+position: absolute;
+top: 60px;
 float: left;
 width: 100%;
-height: 0;
-transition: .4s;
-overflow: hidden;
+}
+
+header nav ul{
+display: none;
+width: 100%;
 }
 
 header nav ul.exibir_menu{
-height: 320px;
+display: block;
 }
 
 header nav ul li{
-background-color: #3498db;
 display: block;
 width: 100%;
 }
 
 header nav ul li a{
+display: block;
+padding: 20px 0;
 width: 100%;
+text-align: center;
 }
 
 }
