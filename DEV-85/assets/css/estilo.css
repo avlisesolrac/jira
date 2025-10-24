@@ -1,0 +1,97 @@
+*{
+margin: 0;
+padding: 0;
+font-family: Montserrat, 'Century Gothic', sans-serif;
+font-style: normal;
+list-style-type: none;
+text-decoration: none;
+color: #fff;
+border: none;
+outline: none;
+border-collapse: collapse;
+box-sizing: none;
+}
+
+body{
+margin: 20px 0;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #3498db;
+}
+
+main table{
+overflow: hidden;
+box-shadow: 0 0 5px #444;
+border-radius: 10px;
+}
+
+main table thead tr th{
+padding: 10px;
+}
+
+main table thead tr th h1{
+text-transform: uppercase;
+border: 10px solid;
+padding: 10px 30px;
+margin: 20px;
+box-shadow: 0 0 5px #444;
+text-shadow: 0 0 5px #444;
+border-radius: 5px;
+}
+
+main table thead tr:last-child{
+position: relative;
+}
+
+main table thead tr:last-child th i{
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+}
+
+main table thead tr th input{
+padding: 10px 0 10px 40px;
+font-size: 15px;
+width: 80%;
+background: none;
+border-bottom: 1px solid #fff;
+margin: 10px 0;
+}
+
+main table thead tr th input::placeholder{
+color: #fff;
+text-transform: uppercase;
+font-weight: bold;
+text-shadow: 0 0 3px #444;
+}
+
+
+main table tbody tr td:first-child{
+background-color: #2980b9;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 30px;
+height: 30px;
+margin: 10px auto;
+transition: .3s;
+}
+
+main table tbody tr{
+cursor: pointer;
+transition: .3s;
+}
+
+main table tbody tr:hover{
+background-color: #2980b9;
+font-weight: bold;
+transform: scale(1.05);
+box-shadow: 0 0 3px #444;
+}
+
+main table tbody tr:hover td:first-child{
+background-color: #3498db;
+}
