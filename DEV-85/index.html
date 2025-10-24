@@ -3,12 +3,12 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Filtro de Contatos</title>
+	<title>Agenda de Contatos</title>
+	<script type="text/javascript" src="assets/js/buscarContato.js"></script>
 	<link rel="stylesheet" type="text/css" href="assets/css/estilo.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Montez&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
-	<script type="text/javascript" src="assets/js/buscar_contato.js">
 	<script src="https://kit.fontawesome.com/ed13afc6d1.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -17,65 +17,54 @@
 		<table>
 			<thead>
 				<tr>
-					<th colspan="2"><h1><i class="fa-solid fa-address-book"></i> Contatos</h1>
-					</th>
+					<th colspan="2"><h1><i class="fa-solid fa-address-book"></i> Agenda</h1></th>
 				</tr>
-				
+
 				<tr>
-					<th colspan="2"><input onkeyup="buscarContato();" id="busca" type="text" placeholder="Buscar contato">
-					</th>
+					<th colspan="2"><i class="fa-solid fa-magnifying-glass fa-2x"></i> <input onkeyup="buscarContato()" type="text" placeholder="Buscar"></th>
 				</tr>
 			</thead>
 
 			<tbody>
-				<tr class="registro">
+				<tr>
 					<td>A</td>
-					<td class="nome">Allan Thomazelli</td>
+					<td>Allan Thomazelli</td>
 				</tr>
-
-				<tr class="registro">
+				<tr>
 					<td>A</td>
-					<td class="nome">Augusto Barsi</td>
+					<td>Augusto Barsi</td>
 				</tr>
-
-				<tr class="registro">
+				<tr>
 					<td>B</td>
-					<td class="nome">Bren Bomfim</td>
+					<td>Bren Bomfim</td>
 				</tr>
-
-				<tr class="registro">
+				<tr>
 					<td>B</td>
-					<td class="nome">Bruno Alves</td>
+					<td>Bruno Alves</td>
 				</tr>
-
-				<tr class="registro">
+				<tr>
 					<td>C</td>
-					<td class="nome">Carol Celia</td>
+					<td>Carol Celia</td>
 				</tr>
-
-				<tr class="registro">
+				<tr>
 					<td>C</td>
-					<td class="nome">Cida Soares</td>
+					<td>Cida Soares</td>
 				</tr>
-
-				<tr class="registro">
+				<tr>
 					<td>D</td>
-					<td class="nome">Daiana Molina</td>
+					<td>Daiana Molina</td>
 				</tr>
-
-				<tr class="registro">
+				<tr>
 					<td>D</td>
-					<td class="nome">Diego Silva</td>
+					<td>Diego Silva</td>
 				</tr>
-
-				<tr class="registro">
+				<tr>
 					<td>E</td>
-					<td class="nome">Everton Santos</td>
+					<td>Everton Santos</td>
 				</tr>
-
-				<tr class="registro">
+				<tr>
 					<td>E</td>
-					<td class="nome">Eduardo Oliveira</td>
+					<td>Eduardo Oliveira</td>
 				</tr>
 			</tbody>
 		</table>
