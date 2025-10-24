@@ -1,25 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Tab Image Gallery</title>
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	<script type="text/javascript" src="assets/js/changeImg.js"></script>
+	<title>Galeria de Imagem com JavaScript</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/estilo.css">
+	<script type="text/javascript" src="assets/js/modificarImagem.js"></script>
 </head>
 <body>
 
-	<div class="images">
-		<img onclick="changeImg(this)" src="assets/img/homemComNotebook.jpg">
-		<img onclick="changeImg(this)" src="assets/img/rochasANoite.jpg">
-		<img onclick="changeImg(this)" src="assets/img/winnatsPass.jpg">
-		<img onclick="changeImg(this)" src="assets/img/bolognaItaly.jpg">
-	</div>
+	<header>
+		<nav>
+			<ul>
+				<li><img onclick="modificarImagem(this)" src="assets/img/bolognaItaly.jpg"></li>
+				<li><img onclick="modificarImagem(this)" src="assets/img/homemComNotebook.jpg"></li>
+				<li><img onclick="modificarImagem(this)" src="assets/img/rochasANoite.jpg"></li>
+				<li><img onclick="modificarImagem(this)" src="assets/img/winnatsPass.jpg"></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<main>
+		<section>
+			<picture>
+				<a onclick="esconderImagem(this)" href="#"><ion-icon name="close-outline"></ion-icon></a>
+				<img id="quadro" src="assets/img/bolognaItaly.jpg">
+			</picture>
+		</section>
+	</main>
 
-	<div class="pre">
-		<a onclick="this.parentElement.style.display='none'" class="ion-close"></a>
-		<img id="p" src="assets/img/homemComNotebook.jpg" alt="">
-	</div>
-
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
