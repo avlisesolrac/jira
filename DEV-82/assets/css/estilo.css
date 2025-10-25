@@ -1,71 +1,70 @@
 *{
 margin: 0;
 padding: 0;
+color: #fff;
 font-family: 'Century Gothic', sans-serif;
 font-style: normal;
 list-style-type: none;
 text-decoration: none;
-color: #fff;
 border: none;
+border-collapse: collapse;
 outline: none;
 box-sizing: content-box;
 }
 
 body{
-background-color: #1abc9c;
+background-color: #3498db;
 }
 
 header{
+box-shadow: 0 0 10px #444;
 display: flex;
 justify-content: center;
 align-items: center;
 height: 100px;
-box-shadow: 0 0 10px #444;
 }
 
 header label{
-display: flex;
-justify-content: center;
-background-color: #16a085;
-border-radius: 40px;
-width: 0;
-transition: .3s;
-max-width: 300px;
+background-color: #2980b9;
+padding: 10px 10px;
+border-radius: 20px;
+width: 20px;
+position: relative;
+transition: .4s;
 }
 
 header label:hover{
-width: 50%;
-}
-
-header label:hover input{
-width: 80%;
+width: 400px;
 }
 
 header label:hover i{
-background-color: #fff;
-color: #444;
+background-color: #3498db;
+border-radius: 50%;
+width: 40px;
+height: 40px;
+top: 1px;
+right: 2px;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
 header label input{
-padding: 10px;
-float: left;
+width: 90%;
 background-color: transparent;
-color: #fff;
-border-radius: 20px;
-width: 0;
-transition: .3s;
+text-align: center;
 }
 
 header label input::placeholder{
 color: #fff;
-text-align:center;
+text-transform: uppercase;
 }
 
 header label i{
-background-color: #16a085;
+position: absolute;
+font-size: 25px;
+background-color: #2980b9;
 border-radius: 50%;
-display: block;
-padding: 10px;
-float: right;
-transition: .3s;
+right: 7px;
+cursor: pointer;
 }
