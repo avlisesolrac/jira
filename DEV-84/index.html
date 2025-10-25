@@ -1,26 +1,26 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lan="pt-BR">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Mudança de Cor com JavaScript</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/estilo.css">
-	<script type="text/javascript" src="assets/js/alterarCor.js"></script>
 </head>
 <body>
 
 	<header>
 		<nav>
 			<ul>
-				<!-- Estou enviando para a função alterarCorDeFundo o próprio elemento de link que está sendo clicado com a palavra reservada 'this'. -->
-
-				<li><a onclick="alterarCorDeFundo(this)" href="#" id="#c0392b" name="vermelho"></a>#c0392b</li>
-				<li><a onclick="alterarCorDeFundo(this)" href="#" id="#2980b9" name="azul"></a>#2980b9</li>
-				<li><a onclick="alterarCorDeFundo(this)" href="#" id="#27ae60" name="verde"></a>#27ae60</li>
-				<li><a onclick="alterarCorDeFundo(this)" href="#" id="#8e44ad" name="roxo"></a>#8e44ad</li>
-				<li><a onclick="alterarCorDeFundo(this)" href="#" id="#d35400" name="laranja"></a>#d35400</li>
+				<li><a onclick="mudarCorDeFundo(this)" href="#" id="#e74c3c" name="vermelho"></a></li>
+				<li><a href="#" id="#3498db" onclick="mudarCorDeFundo(this)" name="azul"></a></li>
+				<li><a onclick="mudarCorDeFundo(this)" href="#" id="#2ecc71" name="verde"></a></li>
+				<li><a onclick="mudarCorDeFundo(this)" href="#" id="#9b59b6" name="roxo"></a></li>
+				<li><a onclick="mudarCorDeFundo(this)" href="#" id="#e67e22" name="laranja"></a></li>
 			</ul>
 		</nav>
 	</header>
+
+	<script type="text/javascript" src="assets/js/mudarCorDeFundo.js"></script>
+
 </body>
 </html>

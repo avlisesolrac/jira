@@ -1,12 +1,13 @@
 *{
 margin: 0;
 padding: 0;
+color: #444;
 font-family: 'Century Gothic', sans-serif;
 font-style: normal;
 list-style-type: none;
 text-decoration: none;
-color: #444;
 border: none;
+border-collapse: collapse;
 outline: none;
 box-sizing: content-box;
 }
@@ -15,55 +16,23 @@ body{
 background-color: #f1f1f1;
 }
 
-header{
-padding: 40px;
-}
-
 header nav ul{
 display: flex;
-position: absolute;
-width: 280px;
-right: 40px;
-}
-
-header nav ul li{
-width: 40px;
-height: 40px;
-overflow: hidden;
-border: 5px solid #fff;
-transition: .3s;
-margin: 0 5px;
-box-shadow: 0 0 2px;
+justify-content: right;
+padding: 0 20px;
 }
 
 header nav ul li a{
+border: 5px solid #fff;
+margin: 20px 5px;
+width: 40px;
+height: 40px;
 display: block;
-width: 30px;
-height: 30px;
-padding: 5px;
-}
-
-header nav ul li:hover{
-transform: scale(1.1);
+transition: .3s;
 box-shadow: 0 0 5px;
 }
 
-header nav ul li a[name="vermelho"]{
-background-color: #c0392b;
-}
-
-header nav ul li a[name="azul"]{
-background-color: #2980b9;
-}
-
-header nav ul li a[name="verde"]{
-background-color: #27ae60;
-}
-
-header nav ul li a[name="roxo"]{
-background-color: #8e44ad;
-}
-
-header nav ul li a[name="laranja"]{
-background-color: #d35400;
+header nav ul li a:hover{
+transform: scale(1.08);
+box-shadow: 0 0 10px;
 }
