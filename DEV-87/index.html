@@ -5,31 +5,29 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Galeria de Imagem com JavaScript</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/estilo.css">
-	<script type="text/javascript" src="assets/js/modificarImagem.js"></script>
 </head>
 <body>
 
-	<header>
-		<nav>
-			<ul>
-				<li><img onclick="modificarImagem(this)" src="assets/img/bolognaItaly.jpg"></li>
-				<li><img onclick="modificarImagem(this)" src="assets/img/homemComNotebook.jpg"></li>
-				<li><img onclick="modificarImagem(this)" src="assets/img/rochasANoite.jpg"></li>
-				<li><img onclick="modificarImagem(this)" src="assets/img/winnatsPass.jpg"></li>
-			</ul>
-		</nav>
-	</header>
-	
 	<main>
+	
 		<section>
+			<ul>
+				<li><img src="assets/img/bolognaItaly.jpg" onclick="expandirImagem(this)"></li>
+				<li><img src="assets/img/homemComNotebook.jpg" onclick="expandirImagem(this)"></li>
+				<li><img src="assets/img/rochasANoite.jpg" onclick="expandirImagem(this)"></li>
+				<li><img src="assets/img/winnatsPass.jpg" onclick="expandirImagem(this)"></li>
+			</ul>
+
 			<picture>
-				<a onclick="esconderImagem(this)" href="#"><ion-icon name="close-outline"></ion-icon></a>
-				<img id="quadro" src="assets/img/bolognaItaly.jpg">
+				<a href="#" onclick="fecharImagem(this)">X</a>
+				<img class="imagemExpandida" src="assets/img/bolognaItaly.jpg">
 			</picture>
 		</section>
+		
 	</main>
 
-	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+	<script type="text/javascript" src="assets/js/expandirImagem.js"></script>
+
 </body>
 </html>
