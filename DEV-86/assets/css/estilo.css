@@ -1,6 +1,7 @@
 *{
 margin: 0;
 padding: 0;
+color: #fff;
 font-family: Montserrat, 'Century Gothic', sans-serif;
 font-style: normal;
 list-style-type: none;
@@ -9,50 +10,56 @@ border: none;
 border-collapse: collapse;
 outline: none;
 box-sizing: content-box;
-color: #fff;
+text-transform: uppercase;
+text-align: center;
 }
 
 html,body{
 height: 100%;
+width: 100%;
 display: flex;
 justify-content: center;
 align-items: center;
 background-color: #000;
 }
 
-main section{
-text-transform: uppercase;
-text-align: center;
-}
-
-main section h1{
+main{
+width: 100%;
 position: relative;
-margin-bottom: 20px;
+}
+
+main h1{
 font-size: 50px;
-letter-spacing: 0px;
+color: #3498db;
+position: absolute;
+left: 50%;
+transform: translateX(-50%);
+width: 100%;
 background-color: #000;
-animation: efeitoDeEntrada 3s 1;
+animation: animandoTexto 3s 1;
+letter-spacing: 0px;
+top: -60px;
 }
 
-main section h2{
-color: tomato;
-text-align: center;
+main h2{
+padding-top: 20px;
+color: #2ecc71;
 }
 
-@keyframes efeitoDeEntrada{
+@keyframes animandoTexto{
 
 0%{
-color: #000;
-margin-bottom: -40px;
+top: 0;
+color: #ccc;
 }
 
 50%{
-letter-spacing: 10px;
-margin-bottom: -40px;
+top: 0;
+letter-spacing: 20px;
 }
 
 80%{
-margin-bottom: -40px;
+top: 0;
 }
 
 }
