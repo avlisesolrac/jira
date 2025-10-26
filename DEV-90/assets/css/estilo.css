@@ -2,7 +2,7 @@
 margin: 0;
 padding: 0;
 color: #444;
-font-family: Montserrat, 'Century Gothic', sans-serif;
+font-family: 'Century Gothic', sans-serif;
 font-style: normal;
 list-style-type: none;
 text-decoration: none;
@@ -18,130 +18,124 @@ background-color: #9b59b6;
 
 main section article{
 width: 400px;
-box-shadow: 0 0 10px;
-margin: 20px auto;
+box-shadow: 0 0 10px #444;
+margin: 10px auto 0;
 border-radius: 10px;
 overflow: hidden;
+}
+
+main section article:hover > main{
+padding: 20px 20px 0;
+height: 230px;
 }
 
 main section article header{
 position: relative;
 height: 300px;
-box-shadow: 0 0 10px;
 }
 
-main section article header img{
-width: 100%;
-filter: opacity(70%);
-position: absolute;
-}
-
-main section article header ul{
+main section article header > i, header > ul{
 position: absolute;
 top: 20px;
 right: 20px;
-font-size: 30px;
-text-align: right;
 display: flex;
-direction: rtl;
-width: 12px;
-overflow: hidden;
-transition: .3s;
+color: #fff;
 }
 
-main section article header ul:hover{
-width: 35%;
+main section article header > ul{
+position: absolute;
+top: 18px;
+right: 15px;
+display: flex;
+padding-right: 20px;
+opacity: 0;
 }
 
-/*PRIMEIRO ITEM DO MENU LATERAL*/
-main section article header ul li:first-child a i:hover{
-color: #fffffff3;
+main section article header > ul:hover{
+opacity: 1;
+cursor: pointer;
 }
 
-/*X-TWITTER*/
+main section article header ul li{
+padding: 0 10px;
+background-color: #fff;
+}
 
-main section article header ul li:nth-child(2) a i:hover{
+main section article header ul li a i{
 color: #444;
 }
 
-/*FACEBOOK*/
-main section article header ul li:nth-child(3) a i:hover{
-color: #3b5998;
-}
-
-/*INSTAGRAM*/
-main section article header ul li:last-child a i:hover{
-  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-  -webkit-background-clip: text; /* For WebKit browsers */
-  background-clip: text;
-  -webkit-text-fill-color: transparent; /* For WebKit browsers */
-}
-
-
-main section article header ul li a i{
-color: #fff;
-margin: 0 2px;
-}
-
-main section article header h1{
-color: #ffffff;
+main section article header picture{
 position: absolute;
-bottom: 20px;
-left: 20px;
-text-transform: uppercase;
+top: 0;
+z-index: -1;
+}
+
+main section article header picture img{
+width: 100%;
+filter: opacity(70%);
+}
+
+main section article header h1,h2{
+position: absolute;
+bottom: 10px;
+left: 10px;
 font-size: 40px;
+text-transform: uppercase;
+text-shadow: 0 0 10px #000;
+letter-spacing: 5px;
+color: #fff;
 }
 
 main section article header h2{
-color: #ffffff;
-position: absolute;
-bottom: 65px;
-left: 20px;
-text-transform: uppercase;
 font-size: 30px;
+bottom: 60px;
 }
 
-main section article footer{
+main section article main{
 background-color: #fff;
 display: flex;
-padding: 30px 20px;
+padding: 0 10px;
+height: 0;
+overflow: hidden;
+transition: .3s;
+padding: 0;
 }
 
-main section article footer div h1{
+main section article main div h3{
 color: #9b59b6;
 text-transform: uppercase;
+font-size: 30px;
+letter-spacing: 5px;
+padding-bottom: 20px;
 }
 
-main section article footer div p{
-margin: 20px 0;
+main section article main div p{
+text-align: justify;
 }
 
-main section article footer div a{
-text-transform: uppercase;
-background-color: #9b59b6;
-color: #fff;
-border-radius: 10px;
-padding: 10px 20px;
-width: 80%;
-display: block;
-text-align: center;
-}
-
-main section article footer div a:hover{
-background-color: #9b59b6B3;
-color: #444;
-}
-
-main section article footer ul{
-margin: auto
-}
-
-main section article footer ul li{
+main section article main ul li{
 text-align: right;
-padding-bottom: 10px;
+text-transform: uppercase;
+padding: 0 0 0 15px;
 }
 
-main section article footer ul li span{
+main section article main ul li span{
 display: block;
 font-size: 40px;
+}
+
+main section article footer a{
+color: #fff;
+text-transform: uppercase;
+text-align: center;
+display: block;
+padding: 20px 0;
+background-color: #9b59b6;
+font-weight: bold;
+}
+
+main section article footer a:hover{
+background-color: #ffffff33;
+color: #444;
 }
