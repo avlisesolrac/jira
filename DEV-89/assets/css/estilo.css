@@ -1,15 +1,15 @@
 *{
 margin: 0;
 padding: 0;
-color: #fff;
+color: #ffffffb3;
 font-family: Montserrat, 'Century Gothic', sans-serif;
 font-style: normal;
 list-style-type: none;
 text-decoration: none;
 border: none;
 outline: none;
-border-collapse: collapse;
 box-sizing: content-box;
+/*border-collapse: collapse;*/
 }
 
 html,body{
@@ -17,61 +17,79 @@ height: 100%;
 display: flex;
 justify-content: center;
 align-items: center;
-background-color: #444;
+background-color: #34495e;
 }
 
-main nav ul{
-width: 400px;
-}
-
-main nav ul li{
-float: left;
-background-color: #3498db;
-margin: 1px;
-width: 100px;
-height: 100px;
-padding: 10px;
-display: flex;
-justify-content: center;
-align-items: center;
-position: relative;
-text-transform: uppercase;
-transition: .4s;
+main section table tbody tr td{
+box-shadow: 0 0 5px #000;
+transition: .3s;
 cursor: pointer;
+padding: 50px;
+position: relative;
 }
 
-main nav ul li:hover{
-transform: scale(0.9);
+main section table tbody tr td:hover{
+box-shadow: 0 0 4px #000;
+transform: scale(0.95);
 }
 
-main nav ul li:nth-child(2){
-width: 223px;
+main section table tbody tr td span.material-symbols-outlined {
+font-size: 50px;
+display: block;
+text-align: center;
 }
 
-main nav ul li ion-icon{
-font-size: 40px;
-opacity: .8;
-}
-
-main nav ul li p{
+main section table tbody tr td i{
+display: block;
 position: absolute;
-bottom: 10px;
-left: 10px;
-opacity: .8;
+left: 5px;
+bottom: 5px;
+padding: 10px 0 5px;
+text-transform: uppercase;
+font-weight: bold;
 }
 
-main nav ul li:first-child{
-background-color: #27ae60;
+/*BOTÃO DO ANDROID*/
+main section table tbody tr:first-child td:first-child{
+background-color: #c0392b;
 }
 
-main nav ul li:nth-child(2){
+main section table tbody tr:first-child td:first-child:hover{
 background-color: #e74c3c;
 }
 
-main nav ul li:nth-child(3){
-background-color: #f1c40f;
+/*BOTÃO DE VIDEOS*/
+main section table tbody tr:first-child td:last-child{
+background-color: #27ae60;
 }
 
-main nav ul li:last-child{
-background-color: #95a5a6;
+main section table tbody tr:first-child td:last-child:hover{
+background-color: #2ecc71;
+}
+
+/*BOTÃO DE FOTOS*/
+main section table tbody tr:last-child td:first-child{
+background-color: #2980b9;
+}
+
+main section table tbody tr:last-child td:first-child:hover{
+background-color: #3498db;
+}
+
+/*BOTÃO DE MUSICAS*/
+main section table tbody tr:last-child td:nth-child(2){
+background-color: #16a085;
+}
+
+main section table tbody tr:last-child td:nth-child(2):hover{
+background-color: #1abc9c;
+}
+
+/*BOTÃO DE AJUSTES*/
+main section table tbody tr:last-child td:last-child{
+background-color: #d35400;
+}
+
+main section table tbody tr:last-child td:last-child:hover{
+background-color: #e67e22;
 }
