@@ -1,12 +1,10 @@
-let contador = 0, texto = 'Carlos Eduardo Silva';
+let nome = "Carlos Eduardo Silva", contador = 0;
 
 function digitandoTexto(){
-	if(contador < texto.length){
-		document.getElementById("digitando").innerHTML += texto.charAt(contador);
-		contador++;
-
-		setTimeout(digitandoTexto,50);
-	}
+	document.querySelector("main>h1").innerHTML += nome.charAt(contador);
+	contador++;
+	
+	setTimeout(digitandoTexto,50);
 }
 
 digitandoTexto();
