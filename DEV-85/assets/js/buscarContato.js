@@ -1,25 +1,25 @@
-function buscarContato(){
-	let consulta, registros, nome, contador;
-	
-	/*Retorna o texto em maiúsculo digitado pelo usuário no campo input*/
-	consulta = document.getElementsByTagName('input')[0].value.toUpperCase();
+function buscarContato(buscaDoUsuario){
+	let entradaDoUsuario, listaContatos, nomeEncontrado, contador;
 
-	/*Retorna todas as linhas da tabela*/
-	registros = document.getElementsByTagName('tr');
+/*Retorna o nome digitado pelo usuário e deixa em maiúscula.*/
+	entradaDoUsuario = buscaDoUsuario.value.toUpperCase();
 
-	/*Varre cada linha de registro contido na tabela, e o contador começa em 2 por que as duas primeiras tr[0 e 1] são do THEAD da tabela [h1 e input]*/
-	for(contador=2; contador < registros.length; contador++){
-	
-	/*Retorna o conteúdo de Texto já em maiúsculo do segundo filho da TR da Tabela, que é onde está o nome do registro ao invés de children[0] que é onde está a letra inicial do nome do contato*/
+/*Retorna a lista de da tabela na ultima coluna onde consta os nomes dos contatos.*/
+	listaContatos = document.querySelectorAll('tbody>tr>td:last-child');
 
-		nome = registros[contador].children[1].innerText.toUpperCase();
-		
-	/*Se alguma letra no nome que foi capturado na linha anterior existir na variavel consulta que foi o que o usuario digitou no campo de busca, então ele vai aplicar o display: table-row na linha do registro, caso contrário vai aplicar display: none para o nome desaparecer da lista da agenda */
+/*Varre toda a listaContatos e verifica que se o texto digitado pelo usuario existe na tabela*/
+	for(contador = 0; contador < listaContatos.length; contador++){
 
-		if(nome.indexOf(consulta) > -1){
-			registros[contador].style.display = "table-row";
-		} else {
-			registros[contador].style.display = "none";
+		nomeEncontrado = document.querySelectorAll('tbody>tr>td:last-child')[contador].innerText.toUpperCase();
+
+/*Em caso positivo atribui na linha o display: table-row para exibir o contato.*/
+		if(nomeEncontrado.indexOf(entradaDoUsuario) > -1){
+			document.querySelectorAll('tbody>tr')[contador].style.display = "table-row";
+		} else{
+
+/*Em caso negativo atribui na linha o display: none para esconder o contato.*/
+			console.log(nomeEncontrado.indexOf(entradaDoUsuario));
+			document.querySelectorAll('tbody>tr')[contador].style.display = "none";
 		}
 	}
 }

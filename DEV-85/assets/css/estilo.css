@@ -1,97 +1,110 @@
 *{
 margin: 0;
 padding: 0;
+color: #fff;
 font-family: Montserrat, 'Century Gothic', sans-serif;
 font-style: normal;
 list-style-type: none;
 text-decoration: none;
-color: #fff;
 border: none;
-outline: none;
 border-collapse: collapse;
-box-sizing: none;
+outline: none;
+box-sizing: content-box;
 }
 
 body{
-margin: 20px 0;
-height: 100%;
+background-color: #e74c3c;
+}
+
+main section{
 display: flex;
 justify-content: center;
-align-items: center;
-background-color: #3498db;
 }
 
-main table{
+main section table{
+margin: 20px auto;
+box-shadow: 0 0 10px #444;
+width: 400px;
 overflow: hidden;
-box-shadow: 0 0 5px #444;
 border-radius: 10px;
+background-color: #fff;
+
 }
 
-main table thead tr th{
-padding: 10px;
+main section table thead{
+background-color: #3498db;
+box-shadow: 0 0 10px #444;
 }
 
-main table thead tr th h1{
-text-transform: uppercase;
+main section table thead tr th{
+padding: 20px 0;
+}
+
+main section table thead tr th h1{
 border: 10px solid;
+display: inline-block;
 padding: 10px 30px;
-margin: 20px;
-box-shadow: 0 0 5px #444;
-text-shadow: 0 0 5px #444;
-border-radius: 5px;
+text-transform: uppercase;
+border-radius: 20px;
+box-shadow: 0 0 10px #444;
+text-shadow: 0 0 10px #444;
 }
 
-main table thead tr:last-child{
+main section table thead tr th input{
+padding: 10px;
+width: 80%;
+color: #444;
+text-align: center;
+border-radius: 20px;
+position: relative;
+box-shadow: 0 0 5px #444;
+}
+
+main section table thead tr:last-child{
 position: relative;
 }
 
-main table thead tr:last-child th i{
+main section table thead tr:last-child th span{
 position: absolute;
 top: 50%;
 transform: translateY(-50%);
-}
-
-main table thead tr th input{
-padding: 10px 0 10px 40px;
-font-size: 15px;
-width: 80%;
-background: none;
-border-bottom: 1px solid #fff;
-margin: 10px 0;
-}
-
-main table thead tr th input::placeholder{
-color: #fff;
-text-transform: uppercase;
-font-weight: bold;
-text-shadow: 0 0 3px #444;
-}
-
-
-main table tbody tr td:first-child{
-background-color: #2980b9;
+right: 32px;
+cursor: pointer;
+background-color: #3498db;
 border-radius: 50%;
+width: 30px;
+height: 30px;
+}
+
+main section table tbody{
+background-color: #fff;
+color: #444;
+}
+
+main section table tbody tr{
+display: flex;
+align-items: center;
+transition: .3s;
+cursor: pointer;
+}
+
+main section table tbody tr:hover{
+transform: scale(0.9);
+}
+
+main section table tbody tr td{
+color: #444;
+background-color: #fff;
+margin: 10px;
+}
+
+main section table tbody tr td:first-child{
+background-color: #3498db;
+border-radius: 50%;
+width: 40px;
+height: 40px;
+color: #fff;
 display: flex;
 justify-content: center;
 align-items: center;
-width: 30px;
-height: 30px;
-margin: 10px auto;
-transition: .3s;
-}
-
-main table tbody tr{
-cursor: pointer;
-transition: .3s;
-}
-
-main table tbody tr:hover{
-background-color: #2980b9;
-font-weight: bold;
-transform: scale(1.05);
-box-shadow: 0 0 3px #444;
-}
-
-main table tbody tr:hover td:first-child{
-background-color: #3498db;
 }

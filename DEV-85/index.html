@@ -4,71 +4,77 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Agenda de Contatos</title>
-	<script type="text/javascript" src="assets/js/buscarContato.js"></script>
 	<link rel="stylesheet" type="text/css" href="assets/css/estilo.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Montez&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
-	<script src="https://kit.fontawesome.com/ed13afc6d1.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />	
 </head>
 <body>
 
 	<main>
-		<table>
-			<thead>
-				<tr>
-					<th colspan="2"><h1><i class="fa-solid fa-address-book"></i> Agenda</h1></th>
-				</tr>
+		<section>
+			<table>
+				<thead>
+					<tr>
+						<th colspan="2"><h1><span class="material-symbols-outlined">
+contacts_product
+</span> Agenda</h1></th>
+					</tr>
 
-				<tr>
-					<th colspan="2"><i class="fa-solid fa-magnifying-glass fa-2x"></i> <input onkeyup="buscarContato()" type="text" placeholder="Buscar"></th>
-				</tr>
-			</thead>
+					<tr>
+						<th colspan="2"><input type="text" placeholder="BUSCAR" onkeyup="buscarContato(this)"><span class="material-symbols-outlined">
+person_search
+</span></th>
+					</tr>
+				</thead>
 
-			<tbody>
-				<tr>
-					<td>A</td>
-					<td>Allan Thomazelli</td>
-				</tr>
-				<tr>
-					<td>A</td>
-					<td>Augusto Barsi</td>
-				</tr>
-				<tr>
-					<td>B</td>
-					<td>Bren Bomfim</td>
-				</tr>
-				<tr>
-					<td>B</td>
-					<td>Bruno Alves</td>
-				</tr>
-				<tr>
-					<td>C</td>
-					<td>Carol Celia</td>
-				</tr>
-				<tr>
-					<td>C</td>
-					<td>Cida Soares</td>
-				</tr>
-				<tr>
-					<td>D</td>
-					<td>Daiana Molina</td>
-				</tr>
-				<tr>
-					<td>D</td>
-					<td>Diego Silva</td>
-				</tr>
-				<tr>
-					<td>E</td>
-					<td>Everton Santos</td>
-				</tr>
-				<tr>
-					<td>E</td>
-					<td>Eduardo Oliveira</td>
-				</tr>
-			</tbody>
-		</table>
+				<tbody>
+					<tr>
+						<td>A</td>
+						<td>Allan Thomazelli</td>
+					</tr>
+					<tr>
+						<td>A</td>
+						<td>Augusto Barsi</td>
+					</tr>
+					<tr>
+						<td>B</td>
+						<td>Bren Bomfim</td>
+					</tr>
+					<tr>
+						<td>B</td>
+						<td>Bruno Alves</td>
+					</tr>
+					<tr>
+						<td>C</td>
+						<td>Carol Celia</td>
+					</tr>
+					<tr>
+						<td>C</td>
+						<td>Cida Soares</td>
+					</tr>
+					<tr>
+						<td>D</td>
+						<td>Daiana Molina</td>
+					</tr>
+					<tr>
+						<td>D</td>
+						<td>Diego Silva</td>
+					</tr>
+					<tr>
+						<td>E</td>
+						<td>Everton Santos</td>
+					</tr>
+					<tr>
+						<td>E</td>
+						<td>Eduardo Oliveira</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
 	</main>
 
+	<script type="text/javascript" src="assets/js/buscarContato.js"></script>
 </body>
 </html>
