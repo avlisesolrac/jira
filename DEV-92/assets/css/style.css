@@ -1,0 +1,64 @@
+body,html{
+margin: 0;
+padding: 0;
+font-family: sans-serif;
+width: 100%;
+height: 100%;
+}
+
+.section-top{
+width: 100%;
+height: 100%;
+overflow: hidden;
+position: relative;
+background-image: url(../img/uBeinBridgeMyanmar.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+animation: slide 10s infinite;
+}
+
+.content{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+text-transform: uppercase;
+text-align: center;
+}
+
+.content h1{
+color: white;
+font-size: 60px;
+letter-spacing: 16px;
+}
+
+.content a{
+background: #0984e3;
+padding: 10px 24px;
+color: white;
+text-decoration: none;
+font-size: 18px;
+border-radius: 20px;
+}
+
+p{
+font-size: 20px;
+padding: 10px;
+line-height: 24px;
+}
+
+@keyframes slide{
+
+0%{
+background-image: url(../img/uBeinBridgeMyanmar.jpg);
+}
+
+33%{
+background-image: url(../img/fortMyersBeach.jpg);
+}
+
+67%{
+background-image: url(../img/skyNight.jpg);
+}
+
+}
