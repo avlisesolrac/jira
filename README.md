@@ -8,7 +8,7 @@ Canal do Youtube utilizado como base.
 
 🔗 ![DarkCode](https://img.shields.io/badge/DarkCode-671351?style=flat&&logoColor=fff)
 
-### Código em JavaScript para gerar a tabela de acordo com cada card que desenvolvido neste repositório.
+### Código em JavaScript para gerar a tabela de acordo com cada card que foi desenvolvido neste repositório.
 
 ```js
 const corpoDaTabela = document.querySelector('table tbody');
