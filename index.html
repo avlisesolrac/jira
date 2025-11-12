@@ -1,0 +1,43 @@
+<table>
+  <thead>
+    <tr>
+      <th>Desenvolvimento</th>
+      <th>Resultado:</th>
+    </tr>
+  </thead>
+
+  <tbody>
+  </tbody>
+</table>
+
+<script>
+
+const corpoDaTabela = document.querySelector('table tbody');
+
+for (let contador = 0; contador < 94; contador++) {
+
+  // Cria a linha
+  const linhaDaTabela = document.createElement('tr');
+
+  // Primeira célula (texto)
+  const celulaDaLinha = document.createElement('td');
+  const conteudoDaCelula = document.createTextNode('DEV-' + (contador + 1));
+  celulaDaLinha.appendChild(conteudoDaCelula);
+  linhaDaTabela.appendChild(celulaDaLinha);
+
+  // Segunda célula (imagem)
+  const celulaDaLinha2 = document.createElement('td');
+  const imagem = document.createElement('img');
+
+  imagem.setAttribute('src', 'DEV-' + (contador + 1) + '/success.gif');
+  imagem.setAttribute('alt', 'DEV-' + (contador + 1)); // boa prática
+  imagem.style.width = '500px';
+
+  celulaDaLinha2.appendChild(imagem);
+  linhaDaTabela.appendChild(celulaDaLinha2);
+
+  // Adiciona a linha completa ao corpo da tabela
+  corpoDaTabela.appendChild(linhaDaTabela);
+}
+
+</script>
