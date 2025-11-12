@@ -1,0 +1,53 @@
+### Propósito
+
+Neste repositório serão tratados todos os assuntos relacionados ao desenvolvimento de cada ensinamento aprendido através do canal DarkCode.
+
+### Fonte
+
+Canal do Youtube utilizado como base.
+
+🔗 ![DarkCode](https://img.shields.io/badge/DarkCode-671351?style=flat&&logoColor=fff)
+
+### Código em JavaScript para gerar a tabela de acordo com cada card que desenvolvido neste repositório.
+
+```js
+const corpoDaTabela = document.querySelector('table tbody');
+
+for (let contador = 0; contador < 94; contador++) {
+
+  // Cria a linha
+  const linhaDaTabela = document.createElement('tr');
+
+  // Primeira célula (texto)
+  const celulaDaLinha = document.createElement('td');
+  const conteudoDaCelula = document.createTextNode('DEV-' + (contador + 1));
+  celulaDaLinha.appendChild(conteudoDaCelula);
+  linhaDaTabela.appendChild(celulaDaLinha);
+
+  // Segunda célula (imagem)
+  const celulaDaLinha2 = document.createElement('td');
+  const imagem = document.createElement('img');
+
+  imagem.setAttribute('src', 'DEV-' + (contador + 1) + '/success.gif');
+  imagem.setAttribute('alt', 'DEV-' + (contador + 1)); // boa prática
+  imagem.style.width = '500px';
+
+  celulaDaLinha2.appendChild(imagem);
+  linhaDaTabela.appendChild(celulaDaLinha2);
+
+  // Adiciona a linha completa ao corpo da tabela
+  corpoDaTabela.appendChild(linhaDaTabela);
+}
+```
+
+<table>
+  <thead>
+    <tr>
+      <th>Desenvolvimento</th>
+      <th>Resultado:</th>
+    </tr>
+  </thead>
+
+  <tbody>
+  <tr><td>DEV-1</td><td><img src="DEV-1/success.gif" alt="DEV-1" style="width: 500px;"></td></tr><tr><td>DEV-2</td><td><img src="DEV-2/success.gif" alt="DEV-2" style="width: 500px;"></td></tr><tr><td>DEV-3</td><td><img src="DEV-3/success.gif" alt="DEV-3" style="width: 500px;"></td></tr><tr><td>DEV-4</td><td><img src="DEV-4/success.gif" alt="DEV-4" style="width: 500px;"></td></tr><tr><td>DEV-5</td><td><img src="DEV-5/success.gif" alt="DEV-5" style="width: 500px;"></td></tr><tr><td>DEV-6</td><td><img src="DEV-6/success.gif" alt="DEV-6" style="width: 500px;"></td></tr><tr><td>DEV-7</td><td><img src="DEV-7/success.gif" alt="DEV-7" style="width: 500px;"></td></tr><tr><td>DEV-8</td><td><img src="DEV-8/success.gif" alt="DEV-8" style="width: 500px;"></td></tr><tr><td>DEV-9</td><td><img src="DEV-9/success.gif" alt="DEV-9" style="width: 500px;"></td></tr><tr><td>DEV-10</td><td><img src="DEV-10/success.gif" alt="DEV-10" style="width: 500px;"></td></tr><tr><td>DEV-11</td><td><img src="DEV-11/success.gif" alt="DEV-11" style="width: 500px;"></td></tr><tr><td>DEV-12</td><td><img src="DEV-12/success.gif" alt="DEV-12" style="width: 500px;"></td></tr><tr><td>DEV-13</td><td><img src="DEV-13/success.gif" alt="DEV-13" style="width: 500px;"></td></tr><tr><td>DEV-14</td><td><img src="DEV-14/success.gif" alt="DEV-14" style="width: 500px;"></td></tr><tr><td>DEV-15</td><td><img src="DEV-15/success.gif" alt="DEV-15" style="width: 500px;"></td></tr><tr><td>DEV-16</td><td><img src="DEV-16/success.gif" alt="DEV-16" style="width: 500px;"></td></tr><tr><td>DEV-17</td><td><img src="DEV-17/success.gif" alt="DEV-17" style="width: 500px;"></td></tr><tr><td>DEV-18</td><td><img src="DEV-18/success.gif" alt="DEV-18" style="width: 500px;"></td></tr><tr><td>DEV-19</td><td><img src="DEV-19/success.gif" alt="DEV-19" style="width: 500px;"></td></tr><tr><td>DEV-20</td><td><img src="DEV-20/success.gif" alt="DEV-20" style="width: 500px;"></td></tr><tr><td>DEV-21</td><td><img src="DEV-21/success.gif" alt="DEV-21" style="width: 500px;"></td></tr><tr><td>DEV-22</td><td><img src="DEV-22/success.gif" alt="DEV-22" style="width: 500px;"></td></tr><tr><td>DEV-23</td><td><img src="DEV-23/success.gif" alt="DEV-23" style="width: 500px;"></td></tr><tr><td>DEV-24</td><td><img src="DEV-24/success.gif" alt="DEV-24" style="width: 500px;"></td></tr><tr><td>DEV-25</td><td><img src="DEV-25/success.gif" alt="DEV-25" style="width: 500px;"></td></tr><tr><td>DEV-26</td><td><img src="DEV-26/success.gif" alt="DEV-26" style="width: 500px;"></td></tr><tr><td>DEV-27</td><td><img src="DEV-27/success.gif" alt="DEV-27" style="width: 500px;"></td></tr><tr><td>DEV-28</td><td><img src="DEV-28/success.gif" alt="DEV-28" style="width: 500px;"></td></tr><tr><td>DEV-29</td><td><img src="DEV-29/success.gif" alt="DEV-29" style="width: 500px;"></td></tr><tr><td>DEV-30</td><td><img src="DEV-30/success.gif" alt="DEV-30" style="width: 500px;"></td></tr><tr><td>DEV-31</td><td><img src="DEV-31/success.gif" alt="DEV-31" style="width: 500px;"></td></tr><tr><td>DEV-32</td><td><img src="DEV-32/success.gif" alt="DEV-32" style="width: 500px;"></td></tr><tr><td>DEV-33</td><td><img src="DEV-33/success.gif" alt="DEV-33" style="width: 500px;"></td></tr><tr><td>DEV-34</td><td><img src="DEV-34/success.gif" alt="DEV-34" style="width: 500px;"></td></tr><tr><td>DEV-35</td><td><img src="DEV-35/success.gif" alt="DEV-35" style="width: 500px;"></td></tr><tr><td>DEV-36</td><td><img src="DEV-36/success.gif" alt="DEV-36" style="width: 500px;"></td></tr><tr><td>DEV-37</td><td><img src="DEV-37/success.gif" alt="DEV-37" style="width: 500px;"></td></tr><tr><td>DEV-38</td><td><img src="DEV-38/success.gif" alt="DEV-38" style="width: 500px;"></td></tr><tr><td>DEV-39</td><td><img src="DEV-39/success.gif" alt="DEV-39" style="width: 500px;"></td></tr><tr><td>DEV-40</td><td><img src="DEV-40/success.gif" alt="DEV-40" style="width: 500px;"></td></tr><tr><td>DEV-41</td><td><img src="DEV-41/success.gif" alt="DEV-41" style="width: 500px;"></td></tr><tr><td>DEV-42</td><td><img src="DEV-42/success.gif" alt="DEV-42" style="width: 500px;"></td></tr><tr><td>DEV-43</td><td><img src="DEV-43/success.gif" alt="DEV-43" style="width: 500px;"></td></tr><tr><td>DEV-44</td><td><img src="DEV-44/success.gif" alt="DEV-44" style="width: 500px;"></td></tr><tr><td>DEV-45</td><td><img src="DEV-45/success.gif" alt="DEV-45" style="width: 500px;"></td></tr><tr><td>DEV-46</td><td><img src="DEV-46/success.gif" alt="DEV-46" style="width: 500px;"></td></tr><tr><td>DEV-47</td><td><img src="DEV-47/success.gif" alt="DEV-47" style="width: 500px;"></td></tr><tr><td>DEV-48</td><td><img src="DEV-48/success.gif" alt="DEV-48" style="width: 500px;"></td></tr><tr><td>DEV-49</td><td><img src="DEV-49/success.gif" alt="DEV-49" style="width: 500px;"></td></tr><tr><td>DEV-50</td><td><img src="DEV-50/success.gif" alt="DEV-50" style="width: 500px;"></td></tr><tr><td>DEV-51</td><td><img src="DEV-51/success.gif" alt="DEV-51" style="width: 500px;"></td></tr><tr><td>DEV-52</td><td><img src="DEV-52/success.gif" alt="DEV-52" style="width: 500px;"></td></tr><tr><td>DEV-53</td><td><img src="DEV-53/success.gif" alt="DEV-53" style="width: 500px;"></td></tr><tr><td>DEV-54</td><td><img src="DEV-54/success.gif" alt="DEV-54" style="width: 500px;"></td></tr><tr><td>DEV-55</td><td><img src="DEV-55/success.gif" alt="DEV-55" style="width: 500px;"></td></tr><tr><td>DEV-56</td><td><img src="DEV-56/success.gif" alt="DEV-56" style="width: 500px;"></td></tr><tr><td>DEV-57</td><td><img src="DEV-57/success.gif" alt="DEV-57" style="width: 500px;"></td></tr><tr><td>DEV-58</td><td><img src="DEV-58/success.gif" alt="DEV-58" style="width: 500px;"></td></tr><tr><td>DEV-59</td><td><img src="DEV-59/success.gif" alt="DEV-59" style="width: 500px;"></td></tr><tr><td>DEV-60</td><td><img src="DEV-60/success.gif" alt="DEV-60" style="width: 500px;"></td></tr><tr><td>DEV-61</td><td><img src="DEV-61/success.gif" alt="DEV-61" style="width: 500px;"></td></tr><tr><td>DEV-62</td><td><img src="DEV-62/success.gif" alt="DEV-62" style="width: 500px;"></td></tr><tr><td>DEV-63</td><td><img src="DEV-63/success.gif" alt="DEV-63" style="width: 500px;"></td></tr><tr><td>DEV-64</td><td><img src="DEV-64/success.gif" alt="DEV-64" style="width: 500px;"></td></tr><tr><td>DEV-65</td><td><img src="DEV-65/success.gif" alt="DEV-65" style="width: 500px;"></td></tr><tr><td>DEV-66</td><td><img src="DEV-66/success.gif" alt="DEV-66" style="width: 500px;"></td></tr><tr><td>DEV-67</td><td><img src="DEV-67/success.gif" alt="DEV-67" style="width: 500px;"></td></tr><tr><td>DEV-68</td><td><img src="DEV-68/success.gif" alt="DEV-68" style="width: 500px;"></td></tr><tr><td>DEV-69</td><td><img src="DEV-69/success.gif" alt="DEV-69" style="width: 500px;"></td></tr><tr><td>DEV-70</td><td><img src="DEV-70/success.gif" alt="DEV-70" style="width: 500px;"></td></tr><tr><td>DEV-71</td><td><img src="DEV-71/success.gif" alt="DEV-71" style="width: 500px;"></td></tr><tr><td>DEV-72</td><td><img src="DEV-72/success.gif" alt="DEV-72" style="width: 500px;"></td></tr><tr><td>DEV-73</td><td><img src="DEV-73/success.gif" alt="DEV-73" style="width: 500px;"></td></tr><tr><td>DEV-74</td><td><img src="DEV-74/success.gif" alt="DEV-74" style="width: 500px;"></td></tr><tr><td>DEV-75</td><td><img src="DEV-75/success.gif" alt="DEV-75" style="width: 500px;"></td></tr><tr><td>DEV-76</td><td><img src="DEV-76/success.gif" alt="DEV-76" style="width: 500px;"></td></tr><tr><td>DEV-77</td><td><img src="DEV-77/success.gif" alt="DEV-77" style="width: 500px;"></td></tr><tr><td>DEV-78</td><td><img src="DEV-78/success.gif" alt="DEV-78" style="width: 500px;"></td></tr><tr><td>DEV-79</td><td><img src="DEV-79/success.gif" alt="DEV-79" style="width: 500px;"></td></tr><tr><td>DEV-80</td><td><img src="DEV-80/success.gif" alt="DEV-80" style="width: 500px;"></td></tr><tr><td>DEV-81</td><td><img src="DEV-81/success.gif" alt="DEV-81" style="width: 500px;"></td></tr><tr><td>DEV-82</td><td><img src="DEV-82/success.gif" alt="DEV-82" style="width: 500px;"></td></tr><tr><td>DEV-83</td><td><img src="DEV-83/success.gif" alt="DEV-83" style="width: 500px;"></td></tr><tr><td>DEV-84</td><td><img src="DEV-84/success.gif" alt="DEV-84" style="width: 500px;"></td></tr><tr><td>DEV-85</td><td><img src="DEV-85/success.gif" alt="DEV-85" style="width: 500px;"></td></tr><tr><td>DEV-86</td><td><img src="DEV-86/success.gif" alt="DEV-86" style="width: 500px;"></td></tr><tr><td>DEV-87</td><td><img src="DEV-87/success.gif" alt="DEV-87" style="width: 500px;"></td></tr><tr><td>DEV-88</td><td><img src="DEV-88/success.gif" alt="DEV-88" style="width: 500px;"></td></tr><tr><td>DEV-89</td><td><img src="DEV-89/success.gif" alt="DEV-89" style="width: 500px;"></td></tr><tr><td>DEV-90</td><td><img src="DEV-90/success.gif" alt="DEV-90" style="width: 500px;"></td></tr><tr><td>DEV-91</td><td><img src="DEV-91/success.gif" alt="DEV-91" style="width: 500px;"></td></tr><tr><td>DEV-92</td><td><img src="DEV-92/success.gif" alt="DEV-92" style="width: 500px;"></td></tr><tr><td>DEV-93</td><td><img src="DEV-93/success.gif" alt="DEV-93" style="width: 500px;"></td></tr><tr><td>DEV-94</td><td><img src="DEV-94/success.gif" alt="DEV-94" style="width: 500px;"></td></tr></tbody>
+</table>
