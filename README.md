@@ -6,7 +6,7 @@ Neste repositório serão tratados todos os assuntos relacionados ao desenvolvim
 
 Canal do Youtube utilizado como base.
 
-🔗 ![DarkCode](https://img.shields.io/badge/DarkCode-671351?style=flat&&logoColor=fff)
+🔗 [![DarkCode](https://img.shields.io/badge/DarkCode-671351?style=for-the-badge&logo=youtube&logoColor=fff&link=https://www.youtube.com/@DarkCodeOnline)](https://www.youtube.com/@DarkCodeOnline)
 
 ### Código em JavaScript para gerar a tabela de acordo com cada card que foi desenvolvido neste repositório.
 
@@ -39,6 +39,8 @@ for (let contador = 0; contador < 94; contador++) {
   corpoDaTabela.appendChild(linhaDaTabela);
 }
 ```
+
+### Tabela gerada com o código acima
 
 <table>
   <thead>
