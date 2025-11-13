@@ -1,11 +1,9 @@
-var c = 0;
+/*Quando o usuário clicar no botão 'Exibir Pop-up' vai ser removida a classe esconder da div*/
+document.getElementsByTagName('button')[0].addEventListener('click', function(){
+	document.getElementsByTagName('div')[0].classList.remove('esconder');
+});
 
-function pop(){
-	if(c == 0){
-		document.getElementById('box').style.display = 'block';
-		c = 1;
-	} else {
-		document.getElementById('box').style.display = 'none';
-		c = 0;
-	}
-}
+/*Quando o usuário clicar no botão 'X' do pop-up vai ser adicionada a classe esconder na div*/
+document.getElementsByTagName('ion-icon')[1].addEventListener('click', function(){
+	document.getElementsByTagName('div')[0].classList.add('esconder');
+});
